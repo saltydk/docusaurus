@@ -1,0 +1,11 @@
+{
+  "label": "Sandbox",
+  "collapsible": true,
+  "collapsed": false,
+  "className": "sandbox",
+  "position": 3.5,
+  "link": {
+    "type": "generated-index",
+    "description": "Sandbox Guide"
+  }
+}

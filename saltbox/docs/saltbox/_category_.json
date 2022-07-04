@@ -1,0 +1,11 @@
+{
+  "label": "Saltbox",
+  "collapsible": true,
+  "collapsed": false,
+  "className": "saltbox",
+  "position": 2.5,
+  "link": {
+    "type": "generated-index",
+    "description": "Saltbox Installation Guide"
+  }
+}
