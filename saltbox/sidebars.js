@@ -19,9 +19,11 @@ const sidebars = {
       type: 'category',
       label: 'Saltbox',
       link: {
-        type: 'generated-index',
+        type: 'doc',
+        id: 'saltbox/basics',
       },
       collapsed: true,
+      collapsible: true,
       items: [
         'saltbox/basics',
         'saltbox/test',
@@ -31,9 +33,11 @@ const sidebars = {
       type: 'category',
       label: 'Sandbox',
       link: {
-        type: 'generated-index',
+        type: 'doc',
+        id: 'sandbox/index',
       },
       collapsed: true,
+      collapsible: true,
       items: [
         'sandbox/index',
         'sandbox/test',
