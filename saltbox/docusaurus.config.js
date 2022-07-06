@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Saltbox',
+  tagline: 'Ansible-based solution for rapidly deploying a Docker containerized cloud media server.',
   url: 'https://docusaurus.saltbox.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -42,6 +42,9 @@ const config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: false,
+        theme: {
+          customCss: [require.resolve('./src/css/custom.css')],
+        },
       }),
     ],
   ],
@@ -78,8 +81,21 @@ const config = {
         title: 'Saltbox Documentation',
         items: [
           {
+            href: 'https://github.com/sponsors/saltydk',
+            className: "header-donate-link",
+            "aria-label": "Sponsor",
+            position: 'right',
+          },
+          {
+            href: 'https://discord.gg/ugfKXpFND8',
+            className: "header-discord-link",
+            "aria-label": "Discord",
+            position: 'right',
+          },
+          {
             href: 'https://github.com/saltyorg/docs',
-            label: 'GitHub',
+            className: "header-github-link",
+            "aria-label": "GitHub repository",
             position: 'right',
           },
         ],
