@@ -1,3 +1,7 @@
+---
+title: arrX
+---
+
 # arr**X**
 
 ## Create multiple container instances

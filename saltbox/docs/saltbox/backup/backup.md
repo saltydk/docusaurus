@@ -1,3 +1,7 @@
+---
+title: Backup
+---
+
 # Backup
 
 With Saltbox you can either run a backup task manually or schedule it to run automatically.

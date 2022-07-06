@@ -34,6 +34,22 @@ const sidebars = {
         'saltbox/basics/accessing_apps',
         'saltbox/basics/paths',
         'saltbox/inventory/index',
+        {
+          type: 'category',
+          label: 'Backup',
+          link: {
+            type: 'doc',
+            id: 'saltbox/backup/settings',
+          },
+          collapsed: true,
+          collapsible: true,
+          items: [
+            'saltbox/backup/settings',
+            'saltbox/backup/backup',
+            'saltbox/backup/restore',
+            'saltbox/backup/migrate',
+          ],
+        },
       ],
     },
     {
@@ -41,12 +57,100 @@ const sidebars = {
       label: 'Sandbox',
       link: {
         type: 'doc',
-        id: 'sandbox/index',
+        id: 'sandbox/basics',
       },
       collapsed: true,
       collapsible: true,
       items: [
+        'sandbox/basics',
+        'sandbox/settings',
         'sandbox/index',
+        {
+          type: 'category',
+          label: 'Apps',
+          link: {
+            type: 'doc',
+            id: 'sandbox/apps/arrx',
+          },
+          collapsed: true,
+          collapsible: true,
+          items: [
+            'sandbox/apps/arrx',
+            {
+              type: 'category',
+              label: 'General',
+              link: {
+                type: 'doc',
+                id: 'sandbox/apps/adguardhome',
+              },
+              collapsed: true,
+              collapsible: true,
+              items: [
+                'sandbox/apps/adguardhome',
+                'sandbox/apps/nabarr',
+                'sandbox/apps/notifiarr',
+                'sandbox/apps/resiliosync',
+                'sandbox/apps/thelounge',
+                'sandbox/apps/wrapperr',
+                'sandbox/apps/znc',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Content Management',
+              link: {
+                type: 'doc',
+                id: 'sandbox/apps/wordpress',
+              },
+              collapsed: true,
+              collapsible: true,
+              items: [
+                'sandbox/apps/wordpress',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Development',
+              link: {
+                type: 'doc',
+                id: 'sandbox/apps/coder',
+              },
+              collapsed: true,
+              collapsible: true,
+              items: [
+                'sandbox/apps/coder',
+                'sandbox/apps/gitea',
+                {
+                  type: 'category',
+                  label: 'Docker',
+                  link: {
+                    type: 'doc',
+                    id: 'sandbox/apps/dozzle',
+                  },
+                  collapsed: true,
+                  collapsible: true,
+                  items: [
+                    'sandbox/apps/dozzle',
+                    'sandbox/apps/yacht',
+                  ],
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Downloading',
+              link: {
+                type: 'doc',
+                id: 'sandbox/apps/airdcpp',
+              },
+              collapsed: true,
+              collapsible: true,
+              items: [
+                'sandbox/apps/airdcpp',
+              ],
+            },
+          ],
+        },
       ],
     },
   ],
