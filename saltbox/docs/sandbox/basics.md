@@ -60,7 +60,7 @@ sb list
 ### Contributing to Sandbox Apps
 
 
-Note: If you just want to install a container into the Saltbox system without creating a role, see [this article](/saltbox/advanced/your-own-containers.md).
+Note: If you just want to install a container into the Saltbox system without creating a role, see [this article](/advanced/your-own-containers.md).
 
 That work will also help you determine what you will need to do in a role, so starting there would not be wasted effort.
 
@@ -68,7 +68,7 @@ If you want to create a role to allow others to install your role, keep reading.
 
 #### Editing an existing role:
 
-If you want to make a change to an existing role [for example, changing the docker image it uses], you don't have [or want to] to create a new role. You make changes like this for either core or sandbox roles using the [inventory system](/saltbox/inventory/index.md)
+If you want to make a change to an existing role [for example, changing the docker image it uses], you don't have [or want to] to create a new role. You make changes like this for either core or sandbox roles using the [inventory system](/saltbox/inventory/index)
 
 #### Preparatory work:
 

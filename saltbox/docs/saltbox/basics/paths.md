@@ -134,4 +134,4 @@ That means that no path translation is required from context to context.  If nzb
 
 ---
 
-Next, let's discuss the [inventory](/inventory/index.md) system for customization.
+Next, let's discuss the [inventory](/saltbox/inventory/index) system for customization.

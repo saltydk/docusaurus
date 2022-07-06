@@ -52,7 +52,7 @@ Namecheap > Domain List > Manage > Advanced DNS > Add New Record > A Record > `*
 
  - For DNS providers that do not allow wildcards (e.g. Freenom).
 
- - For [Mediabox / Feederbox  install types](/saltbox/basics/install_types.md).
+ - For [Mediabox / Feederbox  install types](/saltbox/basics/install_types).
 
  - For Cloudflare users.
 
