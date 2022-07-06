@@ -61,7 +61,7 @@ sidebar_class_name: saltbox
 - Configuration and data files for all key applications are conveniently stored in /opt, which makes backup so easy. Easily pack up your server and move to another one with Saltbox's built-in Backup.
 
 
-## How does Saltbox function ?
+## How does Saltbox function?
 
 [Sonarr](https://sonarr.tv/) manages downloading your favorite TV Shows and [Radarr](https://radarr.video/) manages downloading your favorite movies. Both use either Usenet (via [NZBGet](https://nzbget.net/)) and/or Torrents (via [ruTorrent](https://github.com/Novik/ruTorrent)) to do this.<sup name="a1">[\[1\]](#f1) </sup><sup name="a2">[\[2\]](#f2)</sup>
 
