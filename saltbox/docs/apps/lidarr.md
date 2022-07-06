@@ -307,7 +307,7 @@ Make changes in the following sections:
 
             4. The settings will look like this:
 
-                ![Lidarr Torrent Cleanup Script CloudBox](/images/lidarr/lidarr-torrentcleanup.png)
+                ![Lidarr Torrent Cleanup Script Saltbox](/images/lidarr/lidarr-torrentcleanup.png)
 
             5. Click "Save" to add the Torrent Cleanup script.
 
@@ -400,10 +400,10 @@ Make changes in the following sections:
 
 ## API Key
 
-This is used during the setup of [Organizr](organizr).
+This is used during the setup of [Organizr](/apps/organizr).
 
 * Go to "Settings" -> "General" -> "Security" -> "API Key".
 
 ## Next
 
-Are you setting Saltbox up for the first time?  Continue to [Tautulli](/tautulli/).
+Are you setting Saltbox up for the first time?  Continue to [Tautulli](/apps/tautulli/).

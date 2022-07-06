@@ -321,7 +321,7 @@ Make changes in the following sections:
 
             4. The settings will look like this:
 
-                ![Radarr Torrent Cleanup Script CloudBox](/images/radarr/radarr-torrentcleanup.png)
+                ![Radarr Torrent Cleanup Script Saltbox](/images/radarr/radarr-torrentcleanup.png)
 
             5. Click "Save" to add the Torrent Cleanup script.
 

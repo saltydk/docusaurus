@@ -46,8 +46,8 @@ Enter setup by clicking on "Config" at the top.
 
 ## 4. API Key
 
-To find the NZBHydra2 API Key, go to "Config" --> "Main". This will be used later in [Sonarr](sonarr) and [Radarr](radarr).
+To find the NZBHydra2 API Key, go to "Config" --> "Main". This will be used later in [Sonarr](/apps/sonarr) and [Radarr](/apps/radarr).
 
 ## 5. Next
 
-Are you setting Saltbox up for the first time?  Continue to [Jackett](/jackett/).
+Are you setting Saltbox up for the first time?  Continue to [Jackett](/apps/jackett/).

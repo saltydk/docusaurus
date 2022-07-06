@@ -2,7 +2,7 @@
 
 ## What is it?
 
-[asshama](APPHOMEPAGE) will install the [Absolute Series Scanner (ASS)](https://github.com/ZeroQI/Absolute-Series-Scanner) and the [HTTP Anidb Metadata Agent (HAMA)](https://github.com/ZeroQI/Hama.bundle).
+[asshama](https://github.com/ZeroQI/Hama.bundle) will install the [Absolute Series Scanner (ASS)](https://github.com/ZeroQI/Absolute-Series-Scanner) and the [HTTP Anidb Metadata Agent (HAMA)](https://github.com/ZeroQI/Hama.bundle).
 
 HAMA is a plex agent specifically for anime and its various challenges. It is recommended to use the HAMA agent with the Absolute Series Scanner (ASS). Hama agent features include: -
 
