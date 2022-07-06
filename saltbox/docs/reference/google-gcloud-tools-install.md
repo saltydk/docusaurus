@@ -1,10 +1,10 @@
 This guide will show you how to set up a Google SDK tools.
 
-It's assuming you're working through the steps from [here](rclone-manual.md) and have completed the following steps:
+It's assuming you're working through the steps from [here](rclone-manual) and have completed the following steps:
 
-  - verified [account drive permissions](google-account-perms.md)
-  - created the required [project](google-project-setup.md)
-  - created the required [group](google-group-setup.md)
+  - verified [account drive permissions](google-account-perms)
+  - created the required [project](google-project-setup)
+  - created the required [group](google-group-setup)
 
 Simplified extract from [here](https://cloud.google.com/sdk/docs/quickstart#deb):
 

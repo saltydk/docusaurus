@@ -34,7 +34,7 @@ Enter setup by clicking on "Config" at the top.
 
 ### Authorization
 
-- Login settings are preset out of the box (`user` / `passwd` as set in [accounts.yml](/reference/accounts.md)).
+- Login settings are preset out of the box (`user` / `passwd` as set in [accounts.yml](/reference/accounts)).
 
 ### Indexers
 
@@ -46,7 +46,7 @@ Enter setup by clicking on "Config" at the top.
 
 ## 4. API Key
 
-To find the NZBHydra2 API Key, go to "Config" --> "Main". This will be used later in [Sonarr](sonarr.md) and [Radarr](radarr.md).
+To find the NZBHydra2 API Key, go to "Config" --> "Main". This will be used later in [Sonarr](sonarr) and [Radarr](radarr).
 
 ## 5. Next
 

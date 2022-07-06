@@ -8,7 +8,7 @@
 
 ## Remote Uploader Function
 
-As setup for Saltbox, Cloudplow uploads all the content in `/mnt/local/Media/` (see [Paths](/saltbox/basics/paths.md#cloudplow)) to your cloud storage provider (e.g. Google Drive), after the folder reaches a `200` GB size threshold, when checked every `30` minutes.
+As setup for Saltbox, Cloudplow uploads all the content in `/mnt/local/Media/` (see [Paths](/saltbox/basics/paths#cloudplow)) to your cloud storage provider (e.g. Google Drive), after the folder reaches a `200` GB size threshold, when checked every `30` minutes.
 
 _Note: The size threshold and the check interval can be changed via steps mentioned on this page._
 
@@ -28,7 +28,7 @@ Cloudplow can also use service accounts to upload and work around this limitatio
 
 ### Default config.json file
 
-See [Example Cloudplow configs](/reference/cloudplow.md).
+See [Example Cloudplow configs](/reference/cloudplow).
 
 ### Location
 
@@ -106,7 +106,7 @@ Cloudplow can throttle Rclone uploads during active, playing Plex streams (pause
 
 `url` - Your Plex URL.
 
-`token` - Your [Plex Access Token](/reference/plex_auth_token.md).
+`token` - Your [Plex Access Token](/reference/plex_auth_token).
 
 `poll_interval` - How often (in seconds) Plex is checked for active streams.
 

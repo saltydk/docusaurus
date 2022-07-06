@@ -7,7 +7,7 @@
 
 | Details     |             |             |             |
 |-------------|-------------|-------------|-------------|
-| [:material-home: Project home ](https://www.ui.com/download/unifi/) | [:octicons-link-16: Docs](https://github.com/linuxserver/docker-unifi-controller/blob/master/README.md) | [:octicons-mark-github-16: Github](https://github.com/linuxserver/docker-unifi-controller) | [:material-docker: Docker ](https://hub.docker.com/r/linuxserver/unifi-controller)|
+| [:material-home: Project home ](https://www.ui.com/download/unifi/) | [:octicons-link-16: Docs](https://github.com/linuxserver/docker-unifi-controller/blob/master/README) | [:octicons-mark-github-16: Github](https://github.com/linuxserver/docker-unifi-controller) | [:material-docker: Docker ](https://hub.docker.com/r/linuxserver/unifi-controller)|
 
 ### 1. Installation
 
@@ -39,7 +39,7 @@ sb install sandbox-unifi
   When using a Security Gateway (router) it could be that network connected devices are unable to obtain an ip address. This can be fixed by setting "DHCP Gateway IP", under Settings > Networks > network_name, to a correct (and accessible) ip address.
 
 
-- [:octicons-link-16: Documentation](https://github.com/linuxserver/docker-unifi-controller/blob/master/README.md)
+- [:octicons-link-16: Documentation](https://github.com/linuxserver/docker-unifi-controller/blob/master/README)
 
 !!! Note
       📢 The default setup only publish the 8080 tcp port, which is the bare minimum to allow communication between your network equipment and Unifi Controller.

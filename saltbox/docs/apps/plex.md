@@ -132,7 +132,7 @@
 
 In this section, we will add two libraries: one for Movies and one for TV.
 
-_Note: If you would like to have custom Plex libraries (more than just a Movies and TV one), see [Customizing Plex Libraries](/reference/customizing-plex-libs.md)._
+_Note: If you would like to have custom Plex libraries (more than just a Movies and TV one), see [Customizing Plex Libraries](/reference/customizing-plex-libs)._
 
 !!! Libraries
 
@@ -209,7 +209,7 @@ _Note: If you would like to have custom Plex libraries (more than just a Movies 
 
 ## Scan Media libraries
 
-As mentioned in the [Introduction](/saltbox/basics/basics.md) page, [Autoscan](/apps/autoscan.md) will automatically scan the media files into Plex as they are downloaded, but this will require the Plex database to not be completely empty. So for every new library that is added, a one-time, manual scan is required.
+As mentioned in the [Introduction](/saltbox/basics/basics) page, [Autoscan](/apps/autoscan) will automatically scan the media files into Plex as they are downloaded, but this will require the Plex database to not be completely empty. So for every new library that is added, a one-time, manual scan is required.
 
 To do so:
 

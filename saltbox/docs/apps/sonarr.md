@@ -127,7 +127,7 @@ Make changes in the following sections:
 
     === "Indexers"
 
-        These settings control [indexers](/saltbox/prerequisites/prerequisites.md#usenet-or-bittorrent-sources) and related behavior.
+        These settings control [indexers](/saltbox/prerequisites/prerequisites#usenet-or-bittorrent-sources) and related behavior.
 
         === "NZBHydra2"
 
@@ -145,7 +145,7 @@ Make changes in the following sections:
 
                 URL: `http://nzbhydra2:5076`
 
-                API Key: [Your NZBHydra2 API Key](/apps/nzbhydra2.md)
+                API Key: [Your NZBHydra2 API Key](/apps/nzbhydra2)
 
                 Additional Parameters: _Leave Blank_
 
@@ -155,7 +155,7 @@ Make changes in the following sections:
 
             5. Click "Save" to add NZBHydra2.
 
-            Note: The "Test" will keep failing until you add an indexer in [NZBHydra2](/apps/nzbhydra2.md).
+            Note: The "Test" will keep failing until you add an indexer in [NZBHydra2](/apps/nzbhydra2).
 
         === "Jackett"
 
@@ -173,9 +173,9 @@ Make changes in the following sections:
 
                 Enable Search: _Your Preference_
 
-                URL: [Indexer's Torznab Feed](/apps/jackett.md)
+                URL: [Indexer's Torznab Feed](/apps/jackett)
 
-                API Key: [Your Jackett API Key](/apps/jackett.md)
+                API Key: [Your Jackett API Key](/apps/jackett)
 
                 Additional Parameters: _Leave Blank_
 
@@ -218,9 +218,9 @@ Make changes in the following sections:
 
                 Port: `6789`
 
-                Username:  [Your NZBGet Username](/apps/nzbget.md)
+                Username:  [Your NZBGet Username](/apps/nzbget)
 
-                Password:  [Your NZBGet Password](/apps/nzbget.md)
+                Password:  [Your NZBGet Password](/apps/nzbget)
 
                 Category: `sonarr`
 
@@ -254,9 +254,9 @@ Make changes in the following sections:
 
                 Use SSL: `No`
 
-                Username: [Your ruTorrent Username](/apps/rutorrent.md)
+                Username: [Your ruTorrent Username](/apps/rutorrent)
 
-                Password: [Your ruTorrent Password](/apps/rutorrent.md)
+                Password: [Your ruTorrent Password](/apps/rutorrent)
 
                 Category: `sonarr`
 
@@ -393,7 +393,7 @@ Make changes in the following sections:
 
 ## API Key
 
-This is used during the setup of [Overseer](overseerr.md) and [Organizr](organizr.md).
+This is used during the setup of [Overseer](overseerr) and [Organizr](organizr).
 
 * Go to "Settings" -> "General" -> "Security" -> "API Key".
 

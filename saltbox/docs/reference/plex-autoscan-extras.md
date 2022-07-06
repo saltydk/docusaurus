@@ -10,7 +10,7 @@ In addition to Plex Autoscan receiving scan requests from Sonarr/Radarr/Lidarr, 
 
 Note: For details on setting up Teamdrives and/or Rclone-crypted remotes, visit [https://github.com/l3uddz/plex_autoscan](https://github.com/l3uddz/plex_autoscan).
 
-If you used the [scripted rclone method](rclone-manual.md), there is a [script in the sb_gd repo](plex-autoscan-config.md) that will help with this setup.
+If you used the [scripted rclone method](rclone-manual), there is a [script in the sb_gd repo](plex-autoscan-config) that will help with this setup.
 
 To set this up:
 
@@ -20,7 +20,7 @@ To set this up:
     nano /opt/plex_autoscan/config/config.json
     ```
 
-2.  Under the `GOOGLE` section of the config, enable Google Drive monitoring and fill in your [Google Drive API Client ID and Secret](google-project-setup.md) [Step 15 of that process].
+2.  Under the `GOOGLE` section of the config, enable Google Drive monitoring and fill in your [Google Drive API Client ID and Secret](google-project-setup) [Step 15 of that process].
 
     ```json
     "ENABLED": true,
@@ -146,7 +146,7 @@ Setup instructions:
     "SERVER_ALLOW_MANUAL_SCAN": true,
     ```
 
-2.  Visit your [Plex Autoscan URL](plex-autoscan-extras.md#obtaining-the-plex-autoscan-url) webpage.
+2.  Visit your [Plex Autoscan URL](plex-autoscan-extras#obtaining-the-plex-autoscan-url) webpage.
 
 3.  Enter in the path to scan.
 

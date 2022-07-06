@@ -12,15 +12,15 @@ All the apps are installed and configured, but here are some things you want to 
 
     1. Disable root login.
 
-2. Set up [scheduled backups](/backup/backup.md). **There is no backup enabled automatically**, so unless you explicitly set them up, you will be disappointed to find that you don't have a backup when something goes wrong.
+2. Set up [scheduled backups](/backup/backup). **There is no backup enabled automatically**, so unless you explicitly set them up, you will be disappointed to find that you don't have a backup when something goes wrong.
 
 3. Take some time to verify disk space usage for the apps.
 
     You need local disk space for stuff between download completion and cloudplow moving things into the cloud.  If you don't, for example, set cloudplow's upload thresholds and Nzbget's "stop downloading" disk space threshold to meaningful values for your situation, you can get into a situation where cloudplow's not uploading because that threshold hasn't been met and nzbget has stopped because its threshold has been met and everything grinds to a halt.  Alternatively, nzbget just keeps going and runs your disk out of space.
 
-    You also need a bunch of disk space for the [scheduled backups](/backup/backup.md) that you just set up to succeed, so be sure to take that into account.
+    You also need a bunch of disk space for the [scheduled backups](/backup/backup) that you just set up to succeed, so be sure to take that into account.
 
-    Another common "hidden" disk space consumer is unfinished or unimported downloads.  If NZBGet downloads something and Radarr can't tell what movie it is, it will just sit consuming disk space.  There is a script you can set up to keep this stuff cleaned up in the [user crontab examples](/advanced/user-crontab-examples.md).
+    Another common "hidden" disk space consumer is unfinished or unimported downloads.  If NZBGet downloads something and Radarr can't tell what movie it is, it will just sit consuming disk space.  There is a script you can set up to keep this stuff cleaned up in the [user crontab examples](/advanced/user-crontab-examples).
 
 4. Spend some time working with the system before you start customizing.  A **lot** of problems are seen when new users rush ahead to install All The Things and customize the system without understanding how things work.  Slow down.  Learn how the thing works, and then make changes in a controlled manner.
 
@@ -50,4 +50,4 @@ All the apps are installed and configured, but here are some things you want to 
 
         1. [first "docker tutorial" result; no endorsement](https://www.docker.com/101-tutorial)
 
-Next, let's discuss how [updates](/basics/update.md) are done.
+Next, let's discuss how [updates](/basics/update) are done.

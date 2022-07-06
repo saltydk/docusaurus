@@ -12,7 +12,7 @@ If you have set it up, the community repo is located in `/opt`, so it will get b
  
 Service files from `/etc/systemd/system` are synced to `/opt/systemd-backup` as part of the backup, so they are included in the tarball creation.  This includes things like the `rclone_vfs`, `mergerfs`, `cloudplow`, `plex_autoscan`, and other system service files.  If you have added additional mounts and the like via your own service files [perhaps with tip #44 or `samount` or the like], these extra service files will be backed up, but will not be automatically restored.
 
-Torrent seeding content, NZBGet queue, anything in `/mnt/`, `/home/`, or anywhere else other than the `/opt/` folder, will **NOT** be backed up (media files are moved to the cloud via [Cloudplow](/apps/cloudplow.md), anyway). If you do want to backup your seeding data, check out the scripts located in `/opt/scripts/rclone/` folder.
+Torrent seeding content, NZBGet queue, anything in `/mnt/`, `/home/`, or anywhere else other than the `/opt/` folder, will **NOT** be backed up (media files are moved to the cloud via [Cloudplow](/apps/cloudplow), anyway). If you do want to backup your seeding data, check out the scripts located in `/opt/scripts/rclone/` folder.
 
 If Rclone/Rsync are enabled, the backup will be uploaded to a remote destination. 
 

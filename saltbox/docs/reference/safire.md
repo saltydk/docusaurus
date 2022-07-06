@@ -4,7 +4,7 @@ To make the setup more straightforward, this guide will leverage `safire` to gen
 
 This will set up three Shared Drives and set up all the infrastructure you need for Saltbox to use them.
 
-If you're here, you probably want to go [here](rclone-manual.md) instead.  `safire` has been acting inconsistently.
+If you're here, you probably want to go [here](rclone-manual) instead.  `safire` has been acting inconsistently.
 
 # This script is a work in progress; it probably has rough edges.
 
@@ -37,11 +37,11 @@ There are two pieces that can't be scripted.
 
 1. You will need to create a new project and generate a credential file:
 
-    [Instructions here](/reference/google-project-setup.md)
+    [Instructions here](/reference/google-project-setup)
 
 2. You will need to create a Google Group to hold service accounts:
 
-    [Instructions here](/reference/google-group-setup.md)
+    [Instructions here](/reference/google-group-setup)
 
 ## `safire` Setup:
 

@@ -12,8 +12,8 @@ fatal: [localhost]: FAILED! => {"changed": false, "msg": "API request not authen
 
 Make sure:
 
-- The `email` in [settings.yml](/reference/accounts.md) matches the one you have listed for your Cloudflare.com account.
+- The `email` in [settings.yml](/reference/accounts) matches the one you have listed for your Cloudflare.com account.
 
-- The `cloudflare_api_key` in  [settings.yml](/reference/accounts.md) matches your `domain`'s Cloudflare Global API Key.
+- The `cloudflare_api_key` in  [settings.yml](/reference/accounts) matches your `domain`'s Cloudflare Global API Key.
 
 

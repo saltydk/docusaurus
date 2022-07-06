@@ -1,10 +1,7 @@
-<!-- TOC depthFrom:1 depthTo:2 withLinks:1 updateOnSave:0 orderedList:0 -->
 
 - [Overview](#overview)
 - [Details](#details)
 
-
-<!-- /TOC -->
 
 ---
 

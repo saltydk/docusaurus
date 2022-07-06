@@ -110,7 +110,7 @@ sb install sandbox-varken
 
 - For app specific instructions refer to the grafana role,
 
-     - [grafana](/sandbox/apps/grafana.md)<Br/>
+     - [grafana](/sandbox/apps/grafana)<Br/>
 
      - and the upstream documentation <BR/>
        [:octicons-link-16: Documentation](https://wiki.cajun.pro/books/varken)

@@ -9,11 +9,11 @@ If you don't want to enable GDM, you don't need to do this.
 !!! info
     GDM is useful if you are planning to add content to your Google Drive directly, outside of Sonarr/Radarr.  It provides a mechanism for PAS to pick up those changes and tell Plex to scan them.  If all your content is coming through Sonarr/Radarr, there's no reason for GDM.
 
-If you used the [scripted rclone method](rclone-manual.md), there is a script in the sb_gd repo that will make the required modifications to the stock Plex Autoscan config.
+If you used the [scripted rclone method](rclone-manual), there is a script in the sb_gd repo that will make the required modifications to the stock Plex Autoscan config.
 
-This script is only useful if you have used the [scripted rclone method](rclone-manual.md).  
+This script is only useful if you have used the [scripted rclone method](rclone-manual).  
 
-AGAIN: This script is **only useful if you have used the [scripted rclone method](rclone-manual.md).**
+AGAIN: This script is **only useful if you have used the [scripted rclone method](rclone-manual).**
 
 This script is going to load the config from the last script in that process, and if it finds that config unmodified [specifically the prefix found in the config, which you create as part of that process] it will exit with a message to that effect.  There is no point in trying to circumvent this, since it is going to look for rclone remotes with specific names based on that prefix, which point at shared drives that it created with that prefix, etc.
 

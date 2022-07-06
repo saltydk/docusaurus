@@ -1,12 +1,12 @@
 This guide will show you how to create default Saltbox Shared Drives and add your group of SAs to them.
 
-It's assuming you're working through the steps from [here](rclone-manual.md) and have completed the following steps:
+It's assuming you're working through the steps from [here](rclone-manual) and have completed the following steps:
 
-  - verified [account drive permissions](google-account-perms.md)
-  - created the required [project](google-project-setup.md)
-  - created the required [group](google-group-setup.md)
-  - installed the [gcloud SDK tools](google-gcloud-tools-install.md)
-  - created the expected [projects and service accounts](google-service-accounts.md)
+  - verified [account drive permissions](google-account-perms)
+  - created the required [project](google-project-setup)
+  - created the required [group](google-group-setup)
+  - installed the [gcloud SDK tools](google-gcloud-tools-install)
+  - created the expected [projects and service accounts](google-service-accounts)
 
 NOTE: This guide is assuming a Google Gsuite Business/Workspace account.
 

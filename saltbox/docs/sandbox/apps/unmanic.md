@@ -6,7 +6,7 @@
 
 | Details     |             |             |             |
 |-------------|-------------|-------------|-------------|
-| [:material-home: Project home ](https://github.com/Unmanic/unmanic) | [:octicons-link-16: Docs](https://github.com/Unmanic/unmanic/blob/master/docs/configuration/README.md) | [:octicons-mark-github-16: Github](https://github.com/Unmanic/unmanic) | [:material-docker: Docker ](https://hub.docker.com/r/josh5/unmanic)|
+| [:material-home: Project home ](https://github.com/Unmanic/unmanic) | [:octicons-link-16: Docs](https://github.com/Unmanic/unmanic/blob/master/docs/configuration/README) | [:octicons-mark-github-16: Github](https://github.com/Unmanic/unmanic) | [:material-docker: Docker ](https://hub.docker.com/r/josh5/unmanic)|
 
 ### 1. Installation
 
@@ -22,4 +22,4 @@ sb install sandbox-unmanic
 
 ### 3. Setup
 
-- [:octicons-link-16: Documentation](https://github.com/Unmanic/unmanic/blob/master/docs/configuration/README.md)
+- [:octicons-link-16: Documentation](https://github.com/Unmanic/unmanic/blob/master/docs/configuration/README)

@@ -19,11 +19,11 @@
 
 ### News-Servers
 
-- Add your [news servers](/reference/usenet-torrent.md).
+- Add your [news servers](/reference/usenet-torrent).
 
 ### Security
 
-- Login settings are preset out of the box (`user` / `passwd` as set in [accounts.yml](/reference/accounts.md)).
+- Login settings are preset out of the box (`user` / `passwd` as set in [accounts.yml](/reference/accounts)).
 
 ### Download Queue
 

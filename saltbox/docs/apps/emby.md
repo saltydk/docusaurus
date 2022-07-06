@@ -19,9 +19,9 @@
 
 ## i. Domain
 
-- See [Adding a Subdomain](/reference/subdomain.md) on how to add the subdomain `emby` to your DNS provider.
+- See [Adding a Subdomain](/reference/subdomain) on how to add the subdomain `emby` to your DNS provider.
 
-- _Note: You can skip this step if you are using [Cloudflare](/reference/domain.md#cloudflare) with Saltbox._
+- _Note: You can skip this step if you are using [Cloudflare](/reference/domain#cloudflare) with Saltbox._
 
 ## ii. Install
 
@@ -132,7 +132,7 @@ In this section, we will add two libraries: one for Movies and one for TV Shows.
 
 1. Type in or choose `/mnt/unionfs/Media/Movies`. Click **OK**.
 
-   _Note: These [paths](/saltbox/basics/paths.md) are for the standard library setup. If you have [customized](/reference/customizing-plex-libs.md) it, use those paths instead._
+   _Note: These [paths](/saltbox/basics/paths) are for the standard library setup. If you have [customized](/reference/customizing-plex-libs) it, use those paths instead._
 
    ![](/images/emby/emby-new-library-movie-path.png)
 
@@ -158,7 +158,7 @@ In this section, we will add two libraries: one for Movies and one for TV Shows.
 
 1. Type in or choose `/mnt/unionfs/Media/TV`. Click **OK**.
 
-   _Note: These [paths](/saltbox/basics/paths.md) are for the standard library setup. If you have [customized](/reference/customizing-plex-libs.md) it, use those paths instead._
+   _Note: These [paths](/saltbox/basics/paths) are for the standard library setup. If you have [customized](/reference/customizing-plex-libs) it, use those paths instead._
 
    ![](/images/emby/emby-new-library-tv-path.png)
 

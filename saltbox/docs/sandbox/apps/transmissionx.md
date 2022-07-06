@@ -2,7 +2,7 @@
 
 ## What is it?
 
-[Transmission**X**](https://transmissionbt.com/) is an [arr**X** role](arrx.md) for [Transmission](/sandbox/apps/transmission.md).
+[Transmission**X**](https://transmissionbt.com/) is an [arr**X** role](arrx) for [Transmission](/sandbox/apps/transmission).
 
 [Transmission](https://transmissionbt.com/) is a fast, easy, and free BitTorrent client.
 
@@ -24,9 +24,9 @@ sb install sandbox-transmissionx
 
 ### 3. Setup
 
-1. Read through the general [arr**X** role instructions](arrx.md).
+1. Read through the general [arr**X** role instructions](arrx).
 
-2. Add your **X** instance names to the Transmission**X** section in [sandbox `settings.yml`:](/sandbox/settings.md) using a list format as below.
+2. Add your **X** instance names to the Transmission**X** section in [sandbox `settings.yml`:](/sandbox/settings) using a list format as below.
 
     ``` { .yaml }
         transmissionx:
@@ -44,6 +44,6 @@ sb install sandbox-transmissionx
       ```
 
 - For app specific instructions refer to the parent role,
-     - [transmission](/sandbox/apps/transmission.md)<Br/>
+     - [transmission](/sandbox/apps/transmission)<Br/>
      - and the transmission upstream documentation <BR/>
        [:octicons-link-16: Documentation ](DOCSLINK)

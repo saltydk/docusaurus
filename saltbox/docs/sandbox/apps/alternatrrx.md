@@ -2,7 +2,7 @@
 
 ## What is it?
 
-[alternatrr**X**](APPHOMEPAGE) is an [arrX role](arrx.md) for [alternatrr](/sandbox/apps/alternatrr.md).
+[alternatrr**X**](APPHOMEPAGE) is an [arrX role](arrx) for [alternatrr](/sandbox/apps/alternatrr).
 
 | Details     |             |             |             |
 |-------------|-------------|-------------|-------------|
@@ -22,9 +22,9 @@ sb install sandbox-alternatrrx
 
 ### 3. Setup
 
-1. Read through the general [arr**X** role instructions](arrx.md).
+1. Read through the general [arr**X** role instructions](arrx).
 
-2. Add your **X** instance names to the alternatrr**X** section in [sandbox `settings.yml`:](/sandbox/settings.md) using a list format as below.
+2. Add your **X** instance names to the alternatrr**X** section in [sandbox `settings.yml`:](/sandbox/settings) using a list format as below.
 
    ``` { .yaml }
     alternatrrx:
@@ -34,6 +34,6 @@ sb install sandbox-alternatrrx
    ```
 
 - For app specific instructions refer to the parent role,
-     - [alternatrr](/sandbox/apps/alternatrr.md)<Br/>
+     - [alternatrr](/sandbox/apps/alternatrr)<Br/>
      - and the upstream documentation <BR/>
        [:octicons-link-16: Documentation ](https://www.github.com/TheUltimateC0der/alternatrr)

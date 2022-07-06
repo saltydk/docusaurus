@@ -6,7 +6,7 @@ title: Accessing Apps
 
 _Note 1: After the initial setup, it will take a a while for the SSL certificates to propagate. A side effect of this will be that certain domains were redirect to other apps (e.g. sonarr.yourdomain.com -> nzbget.yourdomain.com). Just give it a bit of time and this will correct itself._
 
-_Note 2: If pages don't load at all, make sure you've set up your [domain](/reference/domain.md) properly and also checkout the [FAQ](/faq/System.md)._
+_Note 2: If pages don't load at all, make sure you've set up your [domain](/reference/domain) properly and also checkout the [FAQ](/faq/System)._
 
 
 ## Default Apps
@@ -34,4 +34,4 @@ Saltbox apps will be accessed via appname._yourdomain.com_ (see table below).
 
 Coming soon.
 
-Next, let's discuss Saltbox' default [paths](paths.md).
+Next, let's discuss Saltbox' default [paths](paths).

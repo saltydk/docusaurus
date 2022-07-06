@@ -184,7 +184,7 @@ docker run -d  \
 
 - `-e PUID=<your_user_ID> -e PGID=<your_group_ID>`
 
-  - Replace `<user>` and `<group>` to match yours (see [here](/faq/System.md#find-your-user-id-uid-and-group-id-gid)).
+  - Replace `<user>` and `<group>` to match yours (see [here](/faq/System#find-your-user-id-uid-and-group-id-gid)).
 - `--label com.github.saltbox.saltbox_managed=true`
 
   - Is used to determine whether the container is shut down or not during Saltbox backup and other tasks. If you want this container to not be shut down, leave the label out or set it to `false`.
@@ -205,7 +205,7 @@ docker run -d  \
 
       - Set ownership: `sudo chown -R <user>:<group> /opt/<name>`
 
-        - Replace `<user>` and `<group>` to match yours' (see [here](/faq/System.md#find-your-user-id-uid-and-group-id-gid))
+        - Replace `<user>` and `<group>` to match yours' (see [here](/faq/System#find-your-user-id-uid-and-group-id-gid))
 
       - Set permissions: `sudo chmod -R ugo+X /opt<name>`
 
@@ -223,7 +223,7 @@ docker run -d  \
 
       - Set ownership: `sudo chown -R <user>:<group> /mnt/local/downloads/<name>`
 
-        - Replace `<user>` and `<group>` to match yours' (see [here](/faq/System.md#find-your-user-id-uid-and-group-id-gid))
+        - Replace `<user>` and `<group>` to match yours' (see [here](/faq/System#find-your-user-id-uid-and-group-id-gid))
 
       - Set permissions: `sudo chmod -R ugo+X /mnt/local/downloads/<name>`
 

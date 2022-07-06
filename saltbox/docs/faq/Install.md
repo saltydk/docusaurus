@@ -124,5 +124,5 @@ sudo service docker start
 
 ## Updating Saltbox
 
-Follow the appropriate steps from [this page](/saltbox/basics/update.md)
+Follow the appropriate steps from [this page](/saltbox/basics/update)
 

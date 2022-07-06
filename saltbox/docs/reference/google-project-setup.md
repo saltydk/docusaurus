@@ -1,8 +1,8 @@
 This guide will show you how to set up a Google Project and create credentials that will work for safire or sa-gen or similar tools.
 
-It's assuming you're working through the steps from [here](rclone-manual.md) and have completed the following steps:
+It's assuming you're working through the steps from [here](rclone-manual) and have completed the following steps:
 
-  - verified [account drive permissions](google-account-perms.md)
+  - verified [account drive permissions](google-account-perms)
 
 This guide is assuming you are using a standard GSuite Business or GSuite Workspace account.
 

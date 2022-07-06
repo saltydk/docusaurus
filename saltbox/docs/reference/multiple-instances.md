@@ -2,7 +2,7 @@
 
 Apps that used to be supported by the "ArrX" system which allowed the user to define a set of instances of a given app [as opposed to installing multiple instances one at a time] are being transitioned to a new generalized, inventory-driven approach.
 
-The general idea is to move all the configuration into the `/srv/git/saltbox/inventories/host_vars/localhost.yml` along with [other customizations](/saltbox/inventory/index.md).
+The general idea is to move all the configuration into the `/srv/git/saltbox/inventories/host_vars/localhost.yml` along with [other customizations](/saltbox/inventory/index).
 
 At the time of writing the roles supported are:
 
@@ -27,7 +27,7 @@ Ther is a command at the end of this page you can use to get an updated list of 
 
 Define a list of all the instances of the container you want to create; if you don't want to customize them beyond that, this is all that's required.
 
-Add the list to the [inventory file](/saltbox/inventory/index.md) at `/srv/git/saltbox/inventories/host_vars/localhost.yml`, formatted as so:
+Add the list to the [inventory file](/saltbox/inventory/index) at `/srv/git/saltbox/inventories/host_vars/localhost.yml`, formatted as so:
 
 ``` yaml
 sonarr_instances: ["sonarr", "sonarrbing", "sonarrbang", "sonarrboing"]

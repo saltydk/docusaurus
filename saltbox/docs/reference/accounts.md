@@ -25,7 +25,7 @@
 
     - `domain`: Domain name for the Saltbox server.
 
-        - If you don't have one, see [here](domain.md).
+        - If you don't have one, see [here](domain).
         - This should be the domain "below" the saltbox subdomains.  For example, if you want to access Sonarr at "sonarr.domain.tld", enter "domain.tld".  If you want "sonarr.foo.domain.tld", enter "foo.domain.tld".
 
     - `email`: E-mail address.
@@ -37,7 +37,7 @@
 - `cloudflare`: Cloudflare Account
     - `email`: E-mail address used for the Cloudflare account.
 
-    - `api`: [Global API Key](domain.md#cloudflare-api-key).
+    - `api`: [Global API Key](domain#cloudflare-api-key).
 
         - This parameter is optional.
 
@@ -101,17 +101,11 @@
 
     - Default is `/mnt/unionfs/downloads`.
 
-- `transcodes`: Path of temporary transcoding files.
-
-    - Default is `"/mnt/local/transcodes"`.
-
-    - Note: It is recommended to **not** use `/tmp` or `/dev/shm` as a transcode location because the paths are cleared on reboots, causing Docker to create the folder as root and Plex transcoder to crash. Another reason why not to: [https://forums.plex.tv/discussion/comment/1502936/#Comment_1502936](https://forums.plex.tv/discussion/comment/1502936/#Comment_1502936).
-
 - `rclone`: Rclone options.
 
     - `version`: Rclone version that is installed by Saltbox.
 
-        - Choices are `latest`, `current`, `beta`, or a specific version number (e.g. `1.42`).
+        - Choices are `latest`, `current`, `beta`, or a specific version number (e.g. `1.55`).
 
         - Default is `latest`.
 
@@ -209,7 +203,7 @@
 
         - Default is `no`.
 
-        - see [here](/advanced/styled-error-pages.md) for configuration details.
+        - see [here](/advanced/styled-error-pages) for configuration details.
 
 - `mounts`: cloud storage mount settings.
 

@@ -24,7 +24,7 @@ Samples of the themed pages can be viewed [here](https://tarampampam.github.io/e
 
 The default theme is `l7-dark`.
 
-Changing the theme can be done via the [inventory](/saltbox/inventory/index.md):
+Changing the theme can be done via the [inventory](/saltbox/inventory/index):
 
 ```
 error_pages_template: "hacker-terminal"
@@ -32,7 +32,7 @@ error_pages_template: "hacker-terminal"
 
 ## How do I enable the error pages?
 
-Enable error pages per role by adding the following to the [inventory](/saltbox/inventory/index.md) as desired:
+Enable error pages per role by adding the following to the [inventory](/saltbox/inventory/index) as desired:
 
 ```
 rolename_traefik_error_pages_enabled: true

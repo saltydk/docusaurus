@@ -14,5 +14,5 @@ However, since Saltbox uses Rclone VFS to mount cloud data, you can tweak the mo
 
 ## Don't see your remote files in /mnt/remote?
 
-[See here](/reference/guides/chazguides/no-media.md)
+[See here](/reference/guides/chazguides/no-media)
 

@@ -18,13 +18,13 @@ _Note: public trackers are disabled by default in the standard install.  Refer t
 
 ### Setup
 
-The setup for [Sonarr](sonarr.md#rutorrent), [Radarr](radarr.md#rutorrent), and [Lidarr](lidarr.md#rutorrent) are done on their respective wiki pages.
+The setup for [Sonarr](sonarr#rutorrent), [Radarr](radarr#rutorrent), and [Lidarr](lidarr#rutorrent) are done on their respective wiki pages.
 
 ## 3. Enable AutoUnpack
 
 AutoUnpack is a plugin that will automatically unrar/unzip torrent data.
 
-_This will allow Sonarr/Radarr/Lidarr to import the media files that would otherwise be ignored. After Sonarr and Radarr import the media files, [Torrent Cleanup Script](/reference/saltbox-tools.md#torrent-cleanup-script) will then delete the extracted media files and ruTorrent will continue to seed the torrents (until they are either removed manually or automatically via ruTorrent's Ratio Group rules)._
+_This will allow Sonarr/Radarr/Lidarr to import the media files that would otherwise be ignored. After Sonarr and Radarr import the media files, [Torrent Cleanup Script](/reference/saltbox-tools#torrent-cleanup-script) will then delete the extracted media files and ruTorrent will continue to seed the torrents (until they are either removed manually or automatically via ruTorrent's Ratio Group rules)._
 
 To enable AutoUnpack:
 

@@ -31,6 +31,6 @@ Note that this is a general overview of the things that have to happen, not a li
 
 ### Instructions:
 
-[Automated](rclone-auto.md).
+[Automated](rclone-auto).
 
-[Partially scripted](rclone-manual.md).
+[Partially scripted](rclone-manual).

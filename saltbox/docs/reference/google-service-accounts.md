@@ -1,11 +1,11 @@
 This guide will show you how to create projects and service accounts using `sa-gen` and add them to a Google Group.
 
-It's assuming you're working through the steps from [here](rclone-manual.md) and have completed the following steps:
+It's assuming you're working through the steps from [here](rclone-manual) and have completed the following steps:
 
-  - verified [account drive permissions](google-account-perms.md)
-  - created the required [project](google-project-setup.md)
-  - created the required [group](google-group-setup.md)
-  - installed the [gcloud SDK tools](google-gcloud-tools-install.md)
+  - verified [account drive permissions](google-account-perms)
+  - created the required [project](google-project-setup)
+  - created the required [group](google-group-setup)
+  - installed the [gcloud SDK tools](google-gcloud-tools-install)
 
 NOTE: This guide is assuming a Google Gsuite Business/Workspace account.
 
@@ -75,7 +75,7 @@ IF YOU HAVE DONE THIS BEFORE, THERE IS NO REASON TO REPEAT IT. USE THE SAME 300 
     storage.googleapis.com               Cloud Storage API
     ```
 
-    If any of these are missing from your list, go back to the [project setup](google-project-setup.md) and add all the APIs shown there to the project.
+    If any of these are missing from your list, go back to the [project setup](google-project-setup) and add all the APIs shown there to the project.
 
 1. Retrieve the `sa-gen` code
 
@@ -94,7 +94,7 @@ IF YOU HAVE DONE THIS BEFORE, THERE IS NO REASON TO REPEAT IT. USE THE SAME 300 
     ```
     #!/bin/bash
     # Running this script requires gcloud command line tools. To install go to https://cloud.google.com/sdk/docs/quickstarts
-    # See readme.md to understand the variables used in this script
+    # See readme to understand the variables used in this script
 
     KEYS_DIR=/opt/sa/all               <<<< path where you want to store sa JSON files [you will need to add the /all here, most likely]
     ORGANIZATION_ID="123456789098"     <<<< organization ID from gcloud SDK step

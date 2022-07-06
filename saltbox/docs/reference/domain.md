@@ -1,6 +1,6 @@
 ## Domain Name
 
-**You will need a domain name** as Saltbox apps are only accessed via https://appname._yourdomain.com_ (see [Accessing Saltbox Apps](/saltbox/basics/accessing_apps.md)). The steps below will help you set up a domain and DNS settings for use with Saltbox.
+**You will need a domain name** as Saltbox apps are only accessed via https://appname._yourdomain.com_ (see [Accessing Saltbox Apps](/saltbox/basics/accessing_apps)). The steps below will help you set up a domain and DNS settings for use with Saltbox.
 
 Ports are [for the most part] bound only to the internal `saltbox` docker network, which means they are not visible on the host; you won't be able to connect externally to the apps using `IP:PORT`.
 
@@ -38,13 +38,12 @@ Created an A Record for your subdomains with `*` for host and set the value to y
    | A Record | *        | _Server IP Address_ | 300       |
 
 
-<details><summary>Example</summary>
+Example
 
 Namecheap > Domain List > Manage > Advanced DNS > Add New Record > A Record > `*` for Host > Server IP for Value.
 
-![](/images/cloudflare/cloudflare-a-record.png)
+[](/images/cloudflare/cloudflare-a-record.png)
 
-</details>
 
 ## ii. Non-Wildcard DNS Setup
 
@@ -136,13 +135,13 @@ _Note: Saltbox does not enable CDN / Proxy by default, but you may do so yoursel
 
     "Dashboard" -> _your domain.tld_ -> "Manage" -> "Name Servers" -> "Custom DNS" -> add the nameservers in.
 
-    ![](/images/namecheap-dns.png)
+    [](/images/namecheap-dns.png)
 
 === "Namesilo.com"
 
     "Manage My Domains" -> _your domain.tld_ -> "NameServers" -> "Change" ->  add the nameservers in.
 
-    ![](/images/namesilo-dns.png)
+    [](/images/namesilo-dns.png)
 
 ### Setup
 
@@ -150,23 +149,14 @@ _Note: Saltbox does not enable CDN / Proxy by default, but you may do so yoursel
 
 1. Here you will see that your domain will have an "Active" status. Click on your domain to continue.
 
-   ![](/images/cloudflare/cloudflare-active.png)
+   [](/images/cloudflare/cloudflare-active.png)
 
 1. Click the **SSL/TLS** tab.
 
 1. Set **SSL** to `Full (strict)`.
 
-   ![](/images/cloudflare/cloudflare-full-strict.png)
+   [](/images/cloudflare/cloudflare-full-strict.png)
 
-<!-- Temporarily commented out - may not be needed..
-
-1. Set **Always Use HTTPS** to `off`.
-
-1. Set **HTTP Strict Transport Security (HSTS)** to `disabled`.
-
-   ![](/images/cloudflare/cloudflare-always-redirect.png)
-
--->
 
 ### Cloudflare API Key
 
@@ -176,19 +166,19 @@ _Note: Saltbox does not enable CDN / Proxy by default, but you may do so yoursel
 
 1. Click **Get your API token**.
 
-   ![](/images/cloudflare/cloudflare-api-token.png){ width=60% }
+   [](/images/cloudflare/cloudflare-api-token.png)
 
 1. Under **API Keys** and then **Global API Key** click **View**.
 
-   ![](/images/cloudflare/cloudflare-global-api.png){ width=60% }
+   [](/images/cloudflare/cloudflare-global-api.png)
 
 1. On the login popup, type in your **password** and click **View**.
 
-   ![](/images/cloudflare/cloudflare-api-password.png){ width=50% }
+   [](/images/cloudflare/cloudflare-api-password.png)
 
 1. Save your API key.
 
-   ![](/images/cloudflare/cloudflare-api-show.png){ width=50% }
+   [](/images/cloudflare/cloudflare-api-show.png)
 
 ### Post-Setup
 
@@ -212,4 +202,4 @@ You can do this by:
 
 4. Under "Status", click the switch next to the gray cloud icon (i.e. `DNS Only`) to switch to an orange one (i.e. `DNS and HTTP proxy (CDN)`).
 
-   ![](/images/cloudflare/cloudflare-proxy-off.png){ width=60% }
+   [](/images/cloudflare/cloudflare-proxy-off.png)

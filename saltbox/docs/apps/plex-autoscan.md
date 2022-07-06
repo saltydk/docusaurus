@@ -90,15 +90,15 @@ _Note 2: If the url is `plex.domain.com`, but you decide to enable Cloudflare pr
 
 _Note 3: For Mediabox setups, make sure that the port is open in the firewall and/or router._
 
-_Note 4: The PAS URL is not meant to be accessed via a browser by default (i.e. going there will give you a `401 Unauthorized` error). However, you can enable a web UI for manual scan requests, see [here](/reference/plex-autoscan-extras.md#web-app)._
+_Note 4: The PAS URL is not meant to be accessed via a browser by default (i.e. going there will give you a `401 Unauthorized` error). However, you can enable a web UI for manual scan requests, see [here](/reference/plex-autoscan-extras#web-app)._
 
 #### Upload Control File to Google Drive
 
 The following step is important so that Plex Autoscan can remove missing/replaced media files out of Plex (i.e. empty trash). Without it, Plex will be left with "unavailable" media that can't play (i.e. media posters with trash icons on them).
 
-For more details on what the control file is, see [here](/faq/Plex-Autoscan.md#purpose-of-a-control-file-in-plex-autoscan).
+For more details on what the control file is, see [here](/faq/Plex-Autoscan#purpose-of-a-control-file-in-plex-autoscan).
 
-If you used the [scripted rclone setup](/reference/rclone-manual.md); these control files were created for you, and you can skip this step.
+If you used the [scripted rclone setup](/reference/rclone-manual); these control files were created for you, and you can skip this step.
 
 To upload the mounted.bin control file, run the following command:
 
@@ -154,11 +154,11 @@ If you did step 4; you can skip this step.
 
 #### Enabling Google Drive Monitoring in Plex Autoscan
 
-See the [Plex-autoscan Extras page](/reference/plex-autoscan-extras.md#google-drive-monitoring)
+See the [Plex-autoscan Extras page](/reference/plex-autoscan-extras#google-drive-monitoring)
 
 ### Invoking a manual scan in Plex Autoscan
 
-See the [Plex-autoscan Extras page](/reference/plex-autoscan-extras.md#make-plex-scan-a-specific-file-or-folder)
+See the [Plex-autoscan Extras page](/reference/plex-autoscan-extras#make-plex-scan-a-specific-file-or-folder)
 
 ### Plex Autoscan and its Virtual Environment
 

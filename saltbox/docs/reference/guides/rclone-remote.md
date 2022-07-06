@@ -9,7 +9,7 @@ To go through this process, you will need either one of these for your Google ac
    1. ClientID/Secret
    2. Service Account JSON file(s)
 
-The project associated with these needs to be set to "external".  See step 9 on [this page](/reference/google-project-setup.md).
+The project associated with these needs to be set to "external".  See step 9 on [this page](/reference/google-project-setup).
 
 You will need rclone and a web browser installed on a machine local to you [this machine needs a GUI].
 
@@ -325,5 +325,5 @@ If you are using Google Drive and the Rclone remote in your config has a differe
 
 OR
 
-- Edit the Rclone remote entry in [settings.yml](/reference//accounts.md) with yours.
+- Edit the Rclone remote entry in [settings.yml](/reference//accounts) with yours.
 

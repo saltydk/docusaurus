@@ -1,7 +1,7 @@
 # Cloud Storage
 ## Provider
 
-If you want to forego cloud storage and put your media on something like your own NAS, there are some notes [here](local-storage.md).
+If you want to forego cloud storage and put your media on something like your own NAS, there are some notes [here](local-storage).
 
 Saltbox can be set up to use any cloud storage provider that [Rclone](https://rclone.org/) supports. However, Google Drive via [G-Suite Business](https://gsuite.google.com/pricing.html) is the popular choice among users.  Some of the components are designed expressly for Google Drive, like the Google Drive monitoring in plex-autoscan and the service-account rotation in cloudplow.
 
@@ -34,7 +34,7 @@ If you have media in other folders, you can simply move them into these folders 
 
 Note 1: For Google Drive, you can use the [Shift-Z trick](https://www.labnol.org/internet/add-files-multiple-drive-folders/28715/) to "symlink" folders here.
 
-Note 2: All the paths/folders mentioned here, and elsewhere, are **CASE SENSITIVE** (see [Saltbox Paths](/saltbox/basics/paths.md)).
+Note 2: All the paths/folders mentioned here, and elsewhere, are **CASE SENSITIVE** (see [Saltbox Paths](/saltbox/basics/paths)).
 
 ## Google "My Drive" vs. "Shared Drives"
 
@@ -65,4 +65,4 @@ If, in `settings.yml`, you leave the rclone remote name blank, neither `cloudplo
 Alternatively, you can configure an rclone remote pointing at your primary storage [named "google"], then install normally.  Everything would then work as it typically does, except that cloudplow would move media from the local system to your NAS or whatever.  Perhaps that would allow downloads and imports to go faster.
 
 ---
- <sub> <a id="note1" href="#note1ref"><sup>1</sup></a> If you would like to customize your Plex libraries beyond what is listed above, see [Customizing Plex Libraries](/reference/customizing-plex-libs.md).</sub>
+ <sub> <a id="note1" href="#note1ref"><sup>1</sup></a> If you would like to customize your Plex libraries beyond what is listed above, see [Customizing Plex Libraries](/reference/customizing-plex-libs).</sub>

@@ -4,4 +4,4 @@ Ultimately, saltbox will have an automated rclone setup that does as much as pos
 
 This software is still under construction.
 
-Please follow the [partially scripted version of this process](rclone-manual.md).
+Please follow the [partially scripted version of this process](rclone-manual).

@@ -124,7 +124,7 @@ IF THAT DOESN’T WORK, DON’T CONTINUE UNTIL IT DOES.  Verify your port forwar
 
 From this point on there is nothing special about the install process on this home server as opposed to a remote server.  I’m just following the docs.
 
-This is just an example of the install.  You should refer to the actual [install docs](/saltbox/install/install.md).
+This is just an example of the install.  You should refer to the actual [install docs](/saltbox/install/install).
 
 I installed Ubuntu server 20.04 on the machine, accepting all defaults except:
 
@@ -136,7 +136,7 @@ Since I installed Ubuntu on my own hardware, the first user I created is a membe
 
 First, I set up the post forwards and the like as detailed above.
 
-I ran the first dependency script on [this page](/saltbox/install/install.md).
+I ran the first dependency script on [this page](/saltbox/install/install).
 
 That ran for a while and finished without errors.
 

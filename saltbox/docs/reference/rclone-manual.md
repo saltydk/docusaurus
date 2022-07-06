@@ -1,6 +1,6 @@
 [Rclone](https://rclone.org) (by Nick Craig-Wood) is "rsync for the cloud". Basically, it is used to transfer data to or from a variety of supported cloud storage providers (eg Google Drive).
 
-Rclone is used by [Cloudplow](cloudplow.md) and [Backup](/saltbox/backup/backup.md) to upload media and backup Saltbox, respectively.
+Rclone is used by [Cloudplow](cloudplow) and [Backup](/saltbox/backup/backup) to upload media and backup Saltbox, respectively.
 
 The guide below assumes you are using Google Drive.
 
@@ -67,21 +67,21 @@ If you already have media on shared drives from your time with Cloudbox or PlexG
 
 ### Step 1: Verify that the Shared Drive permissions are correct on your Google account:
 
-[Instructions here](google-account-perms.md)
+[Instructions here](google-account-perms)
 
 ### Step 2: Create a new project and generate a credential file:
 
-[Instructions here](google-project-setup.md)
+[Instructions here](google-project-setup)
 
 Save that credential file on your server at `/opt/sa/project-creds.json`
 
 ### Step 3: Create a Google Group to hold service accounts:
 
-[Instructions here](google-group-setup.md)
+[Instructions here](google-group-setup)
 
 ### Step 4: Set up the GCloud SDK:
 
-[Instructions here](google-gcloud-tools-install.md)
+[Instructions here](google-gcloud-tools-install)
 
 ### Step 5: Generate a random prefix
 
@@ -101,11 +101,11 @@ This prefix is used for two purposes:
 
 ### Step 6: Generate some service accounts
 
-[Instructions here](google-service-accounts.md)
+[Instructions here](google-service-accounts)
 
 ### Step 7: Create some Shared Drives and related infrastructure
 
-[Instructions here](google-shared-drives.md)
+[Instructions here](google-shared-drives)
 
 ### Step 8: Verify that the union remote shows you the expected contents:
 
@@ -131,9 +131,9 @@ This should display something like:
 7 directories, 3 files
 ```
 
-You now have three shared drives and union combining them; the saltbox install will merge this with your local drive and cloudplow will upload to the union mount, which will distribute media to the three shared drives by path.  You will still be limited to the 750GB/day Google upload limit until you configure cloudplow to upload directly to the individual shared drives.  Eventually this will be automated, but for now there is [this guide](cloudplow-config.md).
+You now have three shared drives and union combining them; the saltbox install will merge this with your local drive and cloudplow will upload to the union mount, which will distribute media to the three shared drives by path.  You will still be limited to the 750GB/day Google upload limit until you configure cloudplow to upload directly to the individual shared drives.  Eventually this will be automated, but for now there is [this guide](cloudplow-config).
 
-If you want to use Plex Autoscan's Google Drive Monitoring, there are some changes that will be required in the configuration. See [this guide](plex-autoscan-config.md).
+If you want to use Plex Autoscan's Google Drive Monitoring, there are some changes that will be required in the configuration. See [this guide](plex-autoscan-config).
 
 ## Existing Rclone Setup
 

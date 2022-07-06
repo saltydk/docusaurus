@@ -113,8 +113,9 @@ const config = {
         },
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: require('prism-react-renderer/themes/github'),
+        darkTheme: require('prism-react-renderer/themes/oceanicNext'),
+        additionalLanguages: ['shell-session'],
       },
     }),
 };

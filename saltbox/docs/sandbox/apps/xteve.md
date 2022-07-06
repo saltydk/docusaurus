@@ -22,7 +22,7 @@ xTeVe emulates a SiliconDust HDHomeRun OTA tuner, which allows it to expose IPTV
 
 | Details     |             |             |             |
 |-------------|-------------|-------------|-------------|
-| [:material-home: Project home ](https://github.com/xteve-project/xTeVe) | [:octicons-link-16: Docs](https://github.com/xteve-project/xTeVe-Documentation/blob/master/en/configuration.md) | [:octicons-mark-github-16: Github](https://github.com/xteve-project/xTeVe) | [:material-docker: Docker ](https://hub.docker.com/r/dnsforge/xteve)|
+| [:material-home: Project home ](https://github.com/xteve-project/xTeVe) | [:octicons-link-16: Docs](https://github.com/xteve-project/xTeVe-Documentation/blob/master/en/configuration) | [:octicons-mark-github-16: Github](https://github.com/xteve-project/xTeVe) | [:material-docker: Docker ](https://hub.docker.com/r/dnsforge/xteve)|
 
 ### 1. Installation
 
@@ -42,4 +42,4 @@ sb install sandbox-xteve
 
 - Run through the Configuration Wizard.
 
-- [:octicons-link-16: Documentation](https://github.com/xteve-project/xTeVe-Documentation/blob/master/en/configuration.md)
+- [:octicons-link-16: Documentation](https://github.com/xteve-project/xTeVe-Documentation/blob/master/en/configuration)

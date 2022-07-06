@@ -60,7 +60,7 @@ sb list
 ### Contributing to Sandbox Apps
 
 
-Note: If you just want to install a container into the Saltbox system without creating a role, see [this article](/advanced/your-own-containers.md).
+Note: If you just want to install a container into the Saltbox system without creating a role, see [this article](/advanced/your-own-containers).
 
 That work will also help you determine what you will need to do in a role, so starting there would not be wasted effort.
 
@@ -144,7 +144,7 @@ roles/my-cool-role/tasks/main.yml
 
 This file drives the install of your role. The stuff in there should be self-explanatory or understandable with comparisons to existing roles; if it's not, then again, with all respect you probably shouldn't be creating a role right now.
 
-There is a wiki article on adding new containers [here](/advanced/your-own-containers.md); this may be of some use.
+There is a wiki article on adding new containers [here](/advanced/your-own-containers); this may be of some use.
 
 Don't forget the header in both these files:
 
