@@ -13,8 +13,8 @@ As setup for Saltbox, Cloudplow uploads all the content in `/mnt/local/Media/` (
 _Note: The size threshold and the check interval can be changed via steps mentioned on this page._
 
 
-<details>
-<summary>Google Drive Daily Upload Limit (click to expand)</summary><br />
+
+Google Drive Daily Upload Limit (click to expand)<br />
 
 Google Drive has a max upload limit of about 750GB per day. When this limit is reached, Google Drive will put you in a 24 hour soft ban. When Cloudplow detects this (with the phrase `Failed to copy: googleapi: Error 403: User rate limit exceeded`), uploading will be suspended for 25 hours (i.e. a 25 hour ban sleep), and upon waking up, it will resume its checking and uploading tasks. This feature is enabled by default. This method is better than running Rclone task with a bwlimit, becasuse you can just upload in bursts when the uploading resumes.
 
@@ -22,7 +22,7 @@ _Note: The keywords or phrases that are used to monitor the ban, and the duratio
 
 Cloudplow can also use service accounts to upload and work around this limitation.
 
-</details>
+
 
 ## Config
 

@@ -12,7 +12,7 @@ If you want to create a role file that you can install like the built-in applica
 # Format
 
 
-<pre>
+
 docker run -d  \
   --name=<strong>APPNAME</strong>  \
   --restart=unless-stopped  \
@@ -35,13 +35,13 @@ docker run -d  \
   --label traefik.http.routers.<strong>APPNAME</strong>.tls.options=securetls@file \
   --label traefik.http.services.<strong>APPNAME</strong>.loadbalancer.server.port=<strong>APPLICATION_PORT</strong> \
   <strong>docker/image</strong>
-</pre>
+
 
 # Format (detailed)
 
 Note: containers will not always use `/config`, nor will they necessarily use everything shown here.  The required volume maps and environment variables will vary by the docker image being used.
 
-<pre>
+
 docker run -d \
     --name <strong>APPNAME</strong> \
     --restart=unless-stopped \
@@ -66,12 +66,12 @@ docker run -d \
     --label traefik.http.routers.<strong>APPNAME</strong>.tls.options=securetls@file \
     --label traefik.http.services.<strong>APPNAME</strong>.loadbalancer.server.port=<strong>APPLICATION_PORT</strong> \
     <strong>docker-hub-user/repo-name</strong>
-</pre>
+
 
 # Examples
 
 Tautulli listens on port 8181
-<pre>
+
 docker run -d \
     --name <strong>tautulli</strong> \
     --restart=unless-stopped \
@@ -98,10 +98,10 @@ docker run -d \
     --label traefik.http.routers.<strong>tautulli</strong>.tls.options=securetls@file \
     --label traefik.http.services.<strong>tautulli</strong>.loadbalancer.server.port=<strong>8181</strong> \    
     <strong>linuxserver/tautulli</strong>
-</pre>
+
 
 Speedtest listens on port 80, doesn't have a config dir
-<pre>
+
 docker run -d  \
   --name=<strong>speedtest</strong>  \
   --restart=unless-stopped  \
@@ -123,10 +123,10 @@ docker run -d  \
   --label traefik.http.routers.<strong>speedtest</strong>.tls.options=securetls@file \
   --label traefik.http.services.<strong>speedtest</strong>.loadbalancer.server.port=<strong>80</strong> \
   <strong>satzisa/html5-speedtest</strong>
-</pre>
+
 
 Plex-Patrol doesn't need to be behind the proxy, but you want it on the saltbox network and you want saltbox to take it down for backups.
-<pre>
+
 docker run -d  \
   --name=<strong>plex_patrol</strong>  \
   --restart=unless-stopped  \
@@ -137,10 +137,10 @@ docker run -d  \
   --label com.github.saltbox.saltbox_managed=true \
   --label traefik.enable=false \
   <strong>cloudb0x/plex_patrol:latest</strong>
-</pre>
+
 
 Autoscan exposing an alternate port for perhaps a second instance, but only visible on the host [not outside]
-<pre>
+
 docker run -d  \
   --name=<strong>autoscan</strong>  \
   --restart=unless-stopped  \
@@ -154,7 +154,7 @@ docker run -d  \
   --label com.github.saltbox.saltbox_managed=true \
   --label traefik.enable=false \
   <strong>cloudb0x/autoscan:master</strong>
-</pre>
+
 
 # Details
 

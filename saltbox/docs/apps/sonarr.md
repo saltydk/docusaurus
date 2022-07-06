@@ -30,8 +30,8 @@ Make changes in the following sections:
 
             - Set your preferred naming format; here are some examples:
 
-                <details>
-                <summary>Plex's Naming Preference</summary>
+                
+                Plex's Naming Preference
 
                 Example:
                 ```
@@ -64,11 +64,11 @@ Make changes in the following sections:
                 ```
 
                 Reference: https://support.plex.tv/articles/200220687-naming-series-season-based-tv-shows/ 
-                </details>
+                
 
 
-                <details>
-                <summary>TRaSH' naming guide</summary>
+                
+                TRaSH' naming guide
 
                 Example: 
                 ```
@@ -87,7 +87,7 @@ Make changes in the following sections:
                 ```
 
                 for more examples and discussion see the reference: https://trash-guides.info/Sonarr/Sonarr-recommended-naming-scheme/
-                </details>
+                
 
         === "Folders"
 

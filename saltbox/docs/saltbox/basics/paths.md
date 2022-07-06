@@ -23,7 +23,7 @@ Media
   ![](/images/google-drive-filesystem.png)
 
 
-| Path  <pre>                 </pre>                 | Description  <pre>                                                                                              </pre>                                                                                                                                                          |
+| Path                                    | Description                                                                                                                                                                                                                                                          |
 |:---------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `/Media/`     | Location of all your media folders.                                                                                                                         |
 | `/Media/Movies/` | Location of all your movies (folder format: `/Media/Movies/Movie Name (year)/movie file.ext`).                                                                                                  |
@@ -47,7 +47,7 @@ mnt
 
 ### Media
 
-| <pre>                 </pre> Path                   | <pre>                                                                                                 </pre> Description                                                                                                                                                            |
+|                   Path                   |                                                                                                   Description                                                                                                                                                            |
 |:---------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `/mnt/local/Media/`     | Location of media stored on the server. <br />This is the local part of `/mnt/unionfs/Media/`.                                                                                                                        |
 | `/mnt/remote/Media/` | Location of media stored on Google Drive (mounted by rclone).                                                                                                  |
@@ -58,7 +58,7 @@ _Note: Make sure `/mnt/local/` has enough space to store the imported media (bef
 ### Cloudplow
 
 
-| Path<pre>                 </pre>               | Description <pre>                 </pre>                                                                                                                                                                                      |
+| Path                                | Description                                                                                                                                                                                                        |
 |:------------------ |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `/mnt/local/Media/` | Location of media stored on the server.<br /> Size of this path is checked periodically (default 30 min). When the folder size reaches its target (default 200GB), media files are moved off/uploaded to the cloud, freeing up local disk space. |
 
@@ -77,7 +77,7 @@ _Note: It is advised to leave at least 100GB free on `/opt` for the storage of D
 ### Any container that requires disk access
 
 
-| Docker Path <pre>                 </pre>   | Host Path <pre>                 </pre>                  | Description <pre>                 </pre>                     |
+| Docker Path                     | Host Path                                    | Description                                       |
 |:-------------- |:--------------------------- |:---------------------------- |
 | `/mnt` | `/mnt` | Provides access to all standard mounted storage.   |
 
@@ -89,7 +89,7 @@ That means that no path translation is required from context to context.  If nzb
 ### Plex
 
 
-| Docker Path <pre>                 </pre>   | Host Path <pre>                 </pre>                  | Description <pre>                 </pre>                     |
+| Docker Path                     | Host Path                                    | Description                                       |
 |:-------------- |:--------------------------- |:---------------------------- |
 | `/mnt/unionfs/Media/Movies/` | `/mnt/unionfs/Media/Movies/` | Plex reads this for Movies.   |
 | `/mnt/unionfs/Media/TV/`     | `/mnt/unionfs/Media/TV/`    | Plex reads this for TV Shows. |
@@ -99,7 +99,7 @@ That means that no path translation is required from context to context.  If nzb
 ### Sonarr
 
 
-| Docker Path  <pre>                 </pre>          | Host Path <pre>                                     </pre>                        | Description <pre>                                                                                                                                                             </pre>                                                                |
+| Docker Path                             | Host Path                                                              | Description                                                                                                                                                                                                                              |
 |:---------------------- |:--------------------------------- |:--------------------------------------------------------------------------- |
 | `/mnt/unionfs/Media/TV/`              | `/mnt/unionfs/Media/TV/`       | Sonarr will import to `/tv/`, which is actually `/mnt/unionfs/Media/TV/` on host system. |
 | `/mnt/unionfs/downloads/nzbs/`    | `/mnt/local/downloads/nzbs/` (default) | NZB downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  For example, when using NZBGet, Sonarr will import from `/mnt/unionfs/downloads/nzbs/nzbget/`, which is essentially `/mnt/local/downloads/nzbs/nzbget/` on host system.                          |
@@ -109,7 +109,7 @@ That means that no path translation is required from context to context.  If nzb
 ### Radarr
 
 
-| Docker Path  <pre>                 </pre>          | Host Path <pre>                                     </pre>                        | Description <pre>                                                                                                                                                             </pre>                                                                |
+| Docker Path                             | Host Path                                                              | Description                                                                                                                                                                                                                              |
 |:---------------------- |:--------------------------------- |:--------------------------------------------------------------------------- |
 | `/mnt/unionfs/Media/movies/`              | `/mnt/unionfs/Media/Movies/`       | Radarr will import to `/movies/`, which is actually `/mnt/unionfs/Media/Movies/` on host system. |
 | `/mnt/unionfs/downloads/nzbs/`    | `/mnt/local/downloads/nzbs/` (default) | NZB downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  For example, when using NZBGet, Radarr will import from `/mnt/unionfs/downloads/nzbs/nzbget/`, which is essentially `/mnt/local/downloads/nzbs/nzbget/` on host system.                          |

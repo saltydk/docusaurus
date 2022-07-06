@@ -10,8 +10,8 @@ This process will use various scripts to do as much of this for you as possible,
 
 It also assumes you are using a [Google Workspace](https://workspace.google.com/) account, since it assumes you can create shared drives.  You can do some of this without a Workspace account, but the differences are not documented here.  You won't be able to directly follow the steps below, and most of the scripts won't work for you.
 
-<details>
-<summary>What about `safire`? Can't it do all this automatically?</summary>
+
+What about `safire`? Can't it do all this automatically?
 <br />
 
   Sure, and the first version of this attempt at automation used safire to do everything from step 3 on with two runs of a script which asked a couple questions.  It always worked on the developer's machine, but failed half the time on not-the-developer's machine.  So this approach was built out to not use `safire`.
@@ -20,7 +20,7 @@ It also assumes you are using a [Google Workspace](https://workspace.google.com/
 
   If you have suggestions about how this can be made more clear, by all means open an issue.
 
-</details>
+
 
 _NOTE: IF YOU ARE HERE TO DO THIS A SECOND TIME, RETHINK THAT.  IF YOU SUCCESSFULLY RAN THROUGH THIS PROCESS ONCE, YOU HAVE EVERYTHING YOU NEED TO SET SALTBOX UP AND SHOULD PROBABLY REUSE THOSE SHARED DRIVES, SERVICE ACCOUNTS, AND GROUP.  THERE'S RARELY A REASON TO CREATE A SECOND SET._
 

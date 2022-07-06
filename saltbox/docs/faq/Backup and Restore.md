@@ -38,7 +38,7 @@ Note that the `.ansible_vault` file is NOT backed up.
 
 Nice table to see what is restored during simple backup/restore:
 
-| <pre>                         </pre> Items Backed UP              | <pre>     </pre> Backed Up From                   | <pre>     </pre> Restored To |
+|                           Items Backed UP              |       Backed Up From                   |       Restored To |
 |:----------------------------- |:-------------------------------- |:----------- |
 | Application Data              | `/opt/`                          | `/opt/`     |
 | Ansible Config                | `/srv/git/saltbox/ansible.cfg`         |             |

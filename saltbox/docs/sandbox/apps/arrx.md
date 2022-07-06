@@ -126,8 +126,8 @@ Again, the same thing holds for every `arrX` variant discussed here.
 
 1. Edit [`settings.yml`](/sandbox/settings) and change the bazarrx roles to what you want:
 
-   <details>
-     <summary>I want to add a BING [4K, kids, German, whatever] version and leave my existing container untouched.</summary>
+   
+     I want to add a BING [4K, kids, German, whatever] version and leave my existing container untouched.
     
 
    ```yaml
@@ -135,10 +135,10 @@ Again, the same thing holds for every `arrX` variant discussed here.
      roles:
        - BING
    ```
-   </details>
+   
 
-   <details>
-     <summary>I want to add BING and BANG versions and leave my existing container untouched.</summary>
+   
+     I want to add BING and BANG versions and leave my existing container untouched.
     
 
    ```yaml
@@ -147,10 +147,10 @@ Again, the same thing holds for every `arrX` variant discussed here.
        - BING
        - BANG
    ```
-   </details>
+   
 
-   <details>
-     <summary>I want to replace my existing version and add BANG and BOING versions.</summary>
+   
+     I want to replace my existing version and add BANG and BOING versions.
     
 
    ```yaml
@@ -162,7 +162,7 @@ Again, the same thing holds for every `arrX` variant discussed here.
    ```
    **Refer to the notes above about overwriting the default container.**
 
-   </details>
+   
 
 1. Run the bazarrx role as a normal saltbox community role.
 

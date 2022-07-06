@@ -30,8 +30,8 @@ Make changes in the following sections:
 
             - Set your preferred naming format; here are some examples.
 
-            <details>
-            <summary>Plex's Naming Preference</summary>
+            
+            Plex's Naming Preference
 
             Example:
             ```
@@ -54,7 +54,7 @@ Make changes in the following sections:
             ```
 
             Reference: https://support.plex.tv/articles/categories/media-preparation/naming-and-organizing-music-media/
-            </details>
+            
 
         === "Folders"
 

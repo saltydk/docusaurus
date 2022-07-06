@@ -34,8 +34,8 @@ Make changes in the following sections:
 
             - Set your preferred naming format; here are some examples.
 
-            <details>
-            <summary>Plex's Naming Preference</summary>
+            
+            Plex's Naming Preference
             Example:
             ```
             /Guardians of the Galaxy (2014)/Guardians of the Galaxy (2014).mkv
@@ -52,10 +52,10 @@ Make changes in the following sections:
             ```
 
             Reference: https://support.plex.tv/articles/200381023-naming-movie-files/
-            </details>
+            
 
-            <details>
-            <summary>Radarr's Wiki Example</summary>
+            
+            Radarr's Wiki Example
             Example: 
             ```
             The Movie Title (2010) - [ULTIMATE EXTENDED EDITION][BLURAY-1080P PROPER][DTS 5.1][X264]-EVOLVE.mkv
@@ -67,10 +67,10 @@ Make changes in the following sections:
             ```
 
             Reference: https://github.com/Radarr/Radarr/wiki/Sorting-and-Renaming
-            </details>
+            
 
-            <details>
-            <summary>TRaSH' naming guide</summary>
+            
+            TRaSH' naming guide
             Example: 
             ```
             The Movie Title (2010) Ultimate Extended Edition [imdb-tt0066921][Surround Sound x264][Bluray-1080p Proper][3D][HDR][10bit][x264][DTS 5.1]-EVOLVE.mkv
@@ -82,7 +82,7 @@ Make changes in the following sections:
             ```
 
             Reference: https://trash-guides.info/Radarr/Radarr-recommended-naming-scheme/
-            </details>
+            
 
         === "Folders"
 

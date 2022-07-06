@@ -4,8 +4,8 @@
 
 This is the default config; it contains a single remote/uploader pair.  This set uploads everything from `/mnt/local/Media` to `google:/Media` once there is 200GB in `/mnt/local/Media`.
 
-<details>
-<summary>Example config.json (click to expand)</summary><br />
+
+Example config.json (click to expand)<br />
 
 ```json
 {
@@ -68,7 +68,7 @@ This is the default config; it contains a single remote/uploader pair.  This set
     }
 }
 ```
-</details>
+
 
 ## Cloudplow with Multiple Remotes
 
@@ -77,8 +77,8 @@ A couple points:
  - Uploader tasks run sequentially (vs in parallel)
  - Each `uploader` task needs a separate `remote`. You can't have two “uploaders” referencing one “remote”. 
 
-<details>
-<summary>Example config.json (click to expand)</summary><br />
+
+Example config.json (click to expand)<br />
 
 ```json
 {
@@ -201,15 +201,15 @@ A couple points:
     }
 }
 ```
-</details>
+
 
 ## Cloudplow with Multiple Folders
 
 This config uploads everything from `/mnt/local/Media` to `google:/Media` [triggered at 100GB] and  everything in `/mnt/local/downloads/torrents/rutorrent/completed/` to `google:/Downloads/` [triggered at 50GB].
 
 
-<details>
-<summary>Example config.json (click to expand)</summary><br />
+
+Example config.json (click to expand)<br />
 
 ```json
 {
@@ -334,14 +334,14 @@ This config uploads everything from `/mnt/local/Media` to `google:/Media` [trigg
     }
 }
 ```
-</details>
+
 
 ## Cloudplow with Notifications Enabled
 
 This is the default config with Pushover notifications configured.
 
-<details>
-<summary>Example config.json (click to expand)</summary><br />
+
+Example config.json (click to expand)<br />
 
 ```json
 {
@@ -410,4 +410,4 @@ This is the default config with Pushover notifications configured.
     }
 }
 ```
-</details>
+

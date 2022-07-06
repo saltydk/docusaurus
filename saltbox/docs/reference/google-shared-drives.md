@@ -164,8 +164,7 @@ IF YOU HAVE DONE THIS BEFORE, THERE IS NO REASON TO REPEAT IT.  THIS SCRIPT MAY 
 
     Drive names and IDs will be written to `drive_create_log`.
 
-    <details>
-    <summary>What are those directories and files for?</summary>
+    What are those directories and files for?
    
 
     This script creates an empty directory and a zero-byte file on the root of each shared drive.
@@ -186,7 +185,6 @@ IF YOU HAVE DONE THIS BEFORE, THERE IS NO REASON TO REPEAT IT.  THIS SCRIPT MAY 
             0 azasjsklaj-tv_mounted.bin
             0 azasjsklaj-music_mounted.bin
     ```
-    </details>
 
 7. You're done.  Deactivate the virtual env used by this script.
 
@@ -201,4 +199,4 @@ BEFORE YOU DO ANYTHING ELSE:
 
 If for some reason you want to wipe your machine and start again OUTSIDE THE USUAL BACKUP/RESTORE you will need those files. You can just restore them rather than going through this whole process again.
 
-If you are going through the manual rclone instructions, [continue with the next step](/rclone-manual#step-8-verify-that-the-union-remote-shows-you-the-expected-contents)
+If you are going through the manual rclone instructions, [continue with the next step](/reference/rclone-manual#step-8-verify-that-the-union-remote-shows-you-the-expected-contents)
