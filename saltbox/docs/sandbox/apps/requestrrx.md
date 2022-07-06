@@ -22,9 +22,9 @@ sb install sandbox-requestrrx
 
 ### 3. Setup
 
-1. Read through the general [arr**X** role instructions](arrx.md).
+1. Read through the general [arr**X** role instructions](/sandbox/apps/arrx).
 
-2. Add your **X** instance names to the Requestrr**X** section in [saltbox `settings.yml`:](/settings.md) using a list format as below.
+2. Add your **X** instance names to the Requestrr**X** section in [sandbox `settings.yml`:](/sandbox/settings) using a list format as below.
 
     ``` { .yaml }
         requestrrx:

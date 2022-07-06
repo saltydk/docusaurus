@@ -26,7 +26,7 @@ sb install sandbox-delugevpn
 
 See the parent [Deluge](/apps/deluge.md) role for app setup.
 
-- Edit the DelugeVPN settings in the delugevpn section in [saltbox `settings.yml`:](/settings.md) as shown below.
+- Edit the DelugeVPN settings in the delugevpn section in [sandbox `settings.yml`:](/sandbox/settings.md) as shown below.
 
    ``` { .yaml }
     delugevpn:

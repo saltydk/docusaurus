@@ -2,7 +2,7 @@
 
 You have a teamdrive you want to add to your Saltbox server so Plex can see it.  In this article I’m assuming that’s ALL you want to do.
 
-If you want to set up a teamdrive and upload to it, see the [“Tip #44” document](tip44.md)
+If you want to set up a teamdrive and upload to it, see the [“Tip #44” document](/reference/guides/chazguides/tip44)
 
 Here, I’m assuming you have access to a teamdrive, and you want to set it up so you can point Plex or Emby at it.  No more than that.
 
@@ -34,7 +34,7 @@ Everything in this doc that appears in ALL_CAPS is a placeholder that needs to b
 
 Let’s go!
 
-1. Create the [rclone remote](/rclone-remote.md)
+1. Create the [rclone remote](/reference/guides/rclone-remote)
 
     After saving the remote and exiting rclone, and before you continue, verify that the remote is working correctly.
 
@@ -235,6 +235,6 @@ Personally, I think the wiki over there is very clear, but you will need to know
 
 No.  I’m afraid there isn’t.
 
-With the smount scripts, you need to rename a file or two [perhaps], make simple edits to maybe 2 files, run a script, copy and paste some output to another file, then run another script.
+With the smount scripts, you may need to rename a file or two, make simple edits to maybe 2 files, run a script, copy and paste some output to another file, then run another script.
 
 Honestly, if that’s too much this really isn’t for you.

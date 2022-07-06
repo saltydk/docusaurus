@@ -26,7 +26,7 @@ sb install sandbox-transmissionx
 
 1. Read through the general [arr**X** role instructions](arrx.md).
 
-2. Add your **X** instance names to the Transmission**X** section in [saltbox `settings.yml`:](/settings.md) using a list format as below.
+2. Add your **X** instance names to the Transmission**X** section in [sandbox `settings.yml`:](/sandbox/settings.md) using a list format as below.
 
     ``` { .yaml }
         transmissionx:
