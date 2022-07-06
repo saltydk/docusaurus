@@ -1,0 +1,25 @@
+# Nextcloud
+
+## What is it?
+
+[Nextcloud](https://nextcloud.com/) is safe home for all your data. Access & share your files, calendars, contacts, mail & more from any device, on your terms.
+
+| Details     |             |             |             |
+|-------------|-------------|-------------|-------------|
+| [:material-home: Project home ](https://nextcloud.com/) | [:octicons-link-16: Docs](https://docs.nextcloud.com/server/latest/admin_manual/contents.html) | [:octicons-mark-github-16: Github](https://github.com/nextcloud/docker) | [:material-docker: Docker ](https://hub.docker.com/_/nextcloud)|
+
+### 1. Installation
+
+``` shell
+
+sb install sandbox-nextcloud
+
+```
+
+### 2. URL
+
+- To access Nextcloud, visit `https://nextcloud._yourdomain.com_`
+
+### 3. Setup
+
+- [:octicons-link-16: Documentation](https://docs.nextcloud.com/server/latest/admin_manual/contents.html)

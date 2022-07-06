@@ -1,14 +1,11 @@
 ---
-sidebar_position: 2
-sidebar_label: Basics
-sidebar_class_name: saltbox
+title: Basics
 ---
-
 # Basics
 
 ## What is Saltbox?
 
-- [Saltbox](https://github.com/saltyorg/Saltbox) is an [Ansible](https://www.ansible.com/how-ansible-works) and [Docker](https://www.docker.com/what-container) based solution for rapidly deploying a cloud media server using Ubuntu Server 20.04 or Ubuntu Server 22.04 LTS running on AMD64 [ARM processors (Raspberry Pi, notably) are not supported).
+- [Saltbox](https://github.com/saltyorg/Saltbox) is an [Ansible](https://www.ansible.com/how-ansible-works) and [docker](https://www.docker.com/what-container) based solution for rapidly deploying a cloud media server using Ubuntu Server 20.04 or Ubuntu Server 22.04 LTS running on AMD64 [ARM processors (Raspberry Pi, notably) are not supported).
 
 - Primary functions are: the automatic acquisition of media, storing that media on the cloud, and being able to  play it back from anywhere and from any device.
 
@@ -76,7 +73,7 @@ Once the downloads are complete, Sonarr & Radarr will move [or copy in the case 
 
 During this migration, the media files will continue to be accessible to Media Servers (e.g. Plex) because the remote cloud storage (e.g. Google Drive) will be mounted on to the server as if it were a local drive. This is accomplished with an [Rclone](https://rclone.org/) VFS mount pointing to the cloud storage, and a union of that mount with the server’s own local storage (accomplished via [`mergerfs`](https://github.com/trapexit/mergerfs)).
 
-![image](/images/basics-flowchart.png)
+![](/images/basics-flowchart.png)
 
 ***
 
@@ -88,6 +85,6 @@ During this migration, the media files will continue to be accessible to Media S
 
 <sup><b name="f4">[4](#a4)</b> By default, Cloudplow will check every half hour to see if there is 200GB of data staged in `/mnt/local`; if there is, all that data is pushed to your Google Drive.  This threshold can be adjusted as needed in the Cloudplow config. </sup>
 
-<sup><b name="f5">[5](#a5)</b> There is presently a 750GB/day upload limitation on Google accounts.  The standard Saltbox setup will describe setting up a Google Drive remote pointed at your My Drive.  This limit can be eliminated by cycling through a set of service accounts [each of which can upload 750GB] to upload to one or more Shared Drives [aka Teamdrives].  See Tip44 Doc for details.  </sup>
+<sup><b name="f5">[5](#a5)</b> There is presently a 750GB/day upload limitation on Google accounts.  The standard Saltbox setup will describe setting up a Google Drive remote pointed at your My Drive.  This limit can be eliminated by cycling through a set of service accounts [each of which can upload 750GB] to upload to one or more Shared Drives [aka Teamdrives].  See [Tip44 Doc](/reference/guides/chazguides/tip44.md) for details.  </sup>
 
-Next, let's discuss the Prerequisites for Saltbox installation.
+Next, let's discuss the [Prerequisites](saltbox/prerequisites/prerequisites.md) for Saltbox installation.

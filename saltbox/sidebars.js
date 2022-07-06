@@ -20,13 +20,20 @@ const sidebars = {
       label: 'Saltbox',
       link: {
         type: 'doc',
-        id: 'saltbox/basics',
+        id: 'saltbox/basics/basics',
       },
       collapsed: true,
       collapsible: true,
       items: [
-        'saltbox/basics',
-        'saltbox/test',
+        'saltbox/basics/basics',
+        'saltbox/prerequisites/prerequisites',
+        'saltbox/basics/install_types',
+        'saltbox/install/install',
+        'saltbox/install/after',
+        'saltbox/basics/update',
+        'saltbox/basics/accessing_apps',
+        'saltbox/basics/paths',
+        'saltbox/inventory/index',
       ],
     },
     {
@@ -40,7 +47,6 @@ const sidebars = {
       collapsible: true,
       items: [
         'sandbox/index',
-        'sandbox/test',
       ],
     },
   ],
