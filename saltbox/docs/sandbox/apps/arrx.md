@@ -5,7 +5,7 @@
 Read through this entire page, even if you are only installing one of the apps.
 
 NOTE:
-This functionality is being moved to a more generalized and customizable [multiple instances](/../reference/multiple-instances.md) system.  As roles are transitioned, they will be removed from the table below.
+This functionality is being moved to a more generalized and customizable [multiple instances](/reference/multiple-instances.md) system.  As roles are transitioned, they will be removed from the table below.
 
 ## Background
 
@@ -23,7 +23,7 @@ They're all named something*X* because they allow creation of *X* number of *som
 
 They are all configured in the same way.
 
-In general terms, you'll enter the instances you want into the [sandbox `settings.yml`:](/../sandbox/settings)
+In general terms, you'll enter the instances you want into the [sandbox `settings.yml`:](/sandbox/settings)
 
 ```yaml
 appnamex:
@@ -124,7 +124,7 @@ Again, the same thing holds for every `arrX` variant discussed here.
 
 ## Examples: multiple Bazarr containers
 
-1. Edit [`settings.yml`](/../sandbox/settings.md) and change the bazarrx roles to what you want:
+1. Edit [`settings.yml`](/sandbox/settings.md) and change the bazarrx roles to what you want:
 
    <details>
      <summary>I want to add a BING [4K, kids, German, whatever] version and leave my existing container untouched.</summary>

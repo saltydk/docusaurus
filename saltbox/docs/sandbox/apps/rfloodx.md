@@ -2,7 +2,7 @@
 
 ## What is it?
 
-[rFloodX](https://github.com/jesec/flood) is an [arr**X** role](arrx.md) for [rFlood](/../sandbox/apps/rflood.md).
+[rFloodX](https://github.com/jesec/flood) is an [arr**X** role](arrx.md) for [rFlood](/sandbox/apps/rflood.md).
 
 ## Project Information
 - [:material-home: rFlood ](https://github.com/jesec/flood)
@@ -45,6 +45,6 @@ sb install sandbox-rfloodx
       ```
 
 - For app specific instructions refer to the parent role,
-     - [rflood](/../sandbox/apps/rflood.md)<Br/>
+     - [rflood](/sandbox/apps/rflood.md)<Br/>
      - and the rflood upstream documentation <BR/>
        [:octicons-link-16: Documentation ](https://github.com/jesec/flood/wiki)

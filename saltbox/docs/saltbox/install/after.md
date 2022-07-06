@@ -20,7 +20,7 @@ All the apps are installed and configured, but here are some things you want to 
 
     You also need a bunch of disk space for the [scheduled backups](/backup/backup.md) that you just set up to succeed, so be sure to take that into account.
 
-    Another common "hidden" disk space consumer is unfinished or unimported downloads.  If NZBGet downloads something and Radarr can't tell what movie it is, it will just sit consuming disk space.  There is a script you can set up to keep this stuff cleaned up in the [user crontab examples](/../advanced/user-crontab-examples.md).
+    Another common "hidden" disk space consumer is unfinished or unimported downloads.  If NZBGet downloads something and Radarr can't tell what movie it is, it will just sit consuming disk space.  There is a script you can set up to keep this stuff cleaned up in the [user crontab examples](/advanced/user-crontab-examples.md).
 
 4. Spend some time working with the system before you start customizing.  A **lot** of problems are seen when new users rush ahead to install All The Things and customize the system without understanding how things work.  Slow down.  Learn how the thing works, and then make changes in a controlled manner.
 

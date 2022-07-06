@@ -2,7 +2,7 @@
 
 ## What is it?
 
-[RequestrrX](https://github.com/darkalfx/requestrr) is an [arr**X** role](arrx.md) for [Requestrr](/../sandbox/apps/requestrr.md).
+[RequestrrX](https://github.com/darkalfx/requestrr) is an [arr**X** role](arrx.md) for [Requestrr](/sandbox/apps/requestrr.md).
 
 | Details     |             |             |             |
 |-------------|-------------|-------------|-------------|
@@ -42,6 +42,6 @@ sb install sandbox-requestrrx
       ```
 
 - For app specific instructions refer to the parent role,
-     - [requestrr](/../sandbox/apps/requestrr.md)<Br/>
+     - [requestrr](/sandbox/apps/requestrr.md)<Br/>
      - and the requestrr upstream documentation <BR/>
        [:octicons-link-16: Documentation ](https://github.com/darkalfx/requestrr/wiki)

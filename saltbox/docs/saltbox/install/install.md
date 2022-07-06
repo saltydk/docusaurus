@@ -40,7 +40,7 @@ Broadly, the base install consists of six steps:
     ```
 
 !!! info
-    See [here](/../reference/dependencies.md) for more information about the dependencies.
+    See [here](/reference/dependencies.md) for more information about the dependencies.
 
 
 ## Configuration
@@ -157,7 +157,7 @@ authelia:
     On a Feederbox where you want to use Authelia on the Mediabox just put in the same subdomain the Mediabox uses for Authelia (master having been set to no on the Feederbox).
 
 !!! info
-    See [here](/../reference/accounts.md) for more information about these settings.
+    See [here](/reference/accounts.md) for more information about these settings.
 
 ## Preinstall
 
@@ -176,7 +176,7 @@ sb install preinstall
 If your server did not need to reboot you can run `su username` to switch user or reconnect to SSH as the newly created user. Everything after this point will assume you are running as the user entered in accounts.yml
 
 !!! info
-    See [here](/../reference/preinstall.md) for more information about the preinstall.
+    See [here](/reference/preinstall.md) for more information about the preinstall.
 
 ## Rclone
 Saltbox assumes an rclone remote pointed at your google storage named `google` [as shown in the settings.yml above].
@@ -189,11 +189,11 @@ If you do, you are probably best served to use your existing setup.
 
 If you are coming from Cloudbox, you *can and should* use your existing rclone setup rather than going through the setup again.
 
-If you are starting from scratch, the process is documented [here](/../reference/rclone.md).
+If you are starting from scratch, the process is documented [here](/reference/rclone.md).
 
 ## Saltbox
 
-If you are installing a Feederbox/Mediabox setup, set up the Feederbox first, then add the [feeder mount](/../advanced/feeder.md) to the mediabox prior to install.
+If you are installing a Feederbox/Mediabox setup, set up the Feederbox first, then add the [feeder mount](/advanced/feeder.md) to the mediabox prior to install.
 
 === "Saltbox"
     ``` shell
@@ -216,7 +216,7 @@ If you are installing a Feederbox/Mediabox setup, set up the Feederbox first, th
     ```
 
 !!! info
-    See [here](/../reference/install.md) for more information about the install.
+    See [here](/reference/install.md) for more information about the install.
 
 ## Reboot
 
@@ -226,18 +226,18 @@ You're now ready to go through the basic setup for the apps. After rebooting!
 
 Go through these one at a time in order; some of the setups depend on previous setups.
 
-1. [NZBGet](/../apps/nzbget.md)
-1. [ruTorrent](/../apps/rutorrent.md)
-1. [NZBHydra2](/../apps/nzbhydra2.md)
-1. [Jackett](/../apps/jackett.md)
-1. [Plex Media Server](/../apps/plex.md)
-1. [Autoscan](/../apps/autoscan.md)
-1. [Sonarr](/../apps/sonarr.md)
-1. [Radarr](/../apps/radarr.md)
-1. [Lidarr](/../apps/lidarr.md)
-1. [Tautulli](/../apps/tautulli.md)
-1. [Overseerr](/../apps/overseerr.md)
-1. [Portainer](/../apps/portainer.md)
-1. [Organizr](/../apps/organizr.md)
+1. [NZBGet](/apps/nzbget.md)
+1. [ruTorrent](/apps/rutorrent.md)
+1. [NZBHydra2](/apps/nzbhydra2.md)
+1. [Jackett](/apps/jackett.md)
+1. [Plex Media Server](/apps/plex.md)
+1. [Autoscan](/apps/autoscan.md)
+1. [Sonarr](/apps/sonarr.md)
+1. [Radarr](/apps/radarr.md)
+1. [Lidarr](/apps/lidarr.md)
+1. [Tautulli](/apps/tautulli.md)
+1. [Overseerr](/apps/overseerr.md)
+1. [Portainer](/apps/portainer.md)
+1. [Organizr](/apps/organizr.md)
 
 Next, some tasks to perform [after installation is complete](after.md).

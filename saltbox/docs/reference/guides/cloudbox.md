@@ -67,7 +67,7 @@ Do not proceed unless the machine you're using is a fresh install of Ubuntu 20.0
 
   ```
 
-- Copy `rclone.conf` to `/srv/git/saltbox` <Br/> and edit the configuration files as needed. You can follow the [saltbox install instructions for saltbox for this](/../saltbox/install/install.md)<Br/>
+- Copy `rclone.conf` to `/srv/git/saltbox` <Br/> and edit the configuration files as needed. You can follow the [saltbox install instructions for saltbox for this](/saltbox/install/install.md)<Br/>
   
   Saltbox is going to move this file into the correct location; you're putting it here only so saltbox knows where to find it.
 

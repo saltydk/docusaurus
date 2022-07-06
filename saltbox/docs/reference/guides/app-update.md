@@ -2,7 +2,7 @@ The info below will show you how to update your Saltbox apps, individually.
 
 ## Notes
 
-- To update Saltbox as a whole (i.e. the core part and all the default roles), see [Updating Saltbox](/../saltbox/basics/update.md#updating-saltbox).
+- To update Saltbox as a whole (i.e. the core part and all the default roles), see [Updating Saltbox](/saltbox/basics/update.md#updating-saltbox).
 
 - Do not update the following apps within the app itself: Sonarr, Radarr, Lidarr, NZBGet, Ombi, Jackett, NZBHydra2, and Bazarr. If you do you may get the following error: `Update process failed: Cannot install update because startup folder '/app' is not writable by the user 'hotio'.`
 
@@ -11,20 +11,20 @@ The info below will show you how to update your Saltbox apps, individually.
 
 | Saltbox Apps  | How to update         |
 |:------------- |:--------------------- |
-| Plex          | [Ansible tag](/../saltbox/basics/update.md#updating-apps) |
-| Tautulli      | [Ansible tag](/../saltbox/basics/update.md#updating-apps) |
-| AutoScan      | [Ansible tag](/../saltbox/basics/update.md#updating-apps) |
-| Sonarr        | [Ansible tag](/../saltbox/basics/update.md#updating-apps) |
-| Radarr        | [Ansible tag](/../saltbox/basics/update.md#updating-apps) |
-| NZBGet        | [Ansible tag](/../saltbox/basics/update.md#updating-apps) |
-| ruTorrent     | [Ansible tag](/../saltbox/basics/update.md#updating-apps) |
-| Jackett       | [Ansible tag](/../saltbox/basics/update.md#updating-apps) |
-| NZBHydra2     | [Ansible tag](/../saltbox/basics/update.md#updating-apps) |
-| Ombi          | [Ansible tag](/../saltbox/basics/update.md#updating-apps) |
+| Plex          | [Ansible tag](/saltbox/basics/update.md#updating-apps) |
+| Tautulli      | [Ansible tag](/saltbox/basics/update.md#updating-apps) |
+| AutoScan      | [Ansible tag](/saltbox/basics/update.md#updating-apps) |
+| Sonarr        | [Ansible tag](/saltbox/basics/update.md#updating-apps) |
+| Radarr        | [Ansible tag](/saltbox/basics/update.md#updating-apps) |
+| NZBGet        | [Ansible tag](/saltbox/basics/update.md#updating-apps) |
+| ruTorrent     | [Ansible tag](/saltbox/basics/update.md#updating-apps) |
+| Jackett       | [Ansible tag](/saltbox/basics/update.md#updating-apps) |
+| NZBHydra2     | [Ansible tag](/saltbox/basics/update.md#updating-apps) |
+| Ombi          | [Ansible tag](/saltbox/basics/update.md#updating-apps) |
 | Organizr      | Update within the app |
-| Portainer     | [Ansible tag](/../saltbox/basics/update.md#updating-apps) |
-| Cloudplow     | [Ansible tag](/../saltbox/basics/update.md#updating-apps) |
-| Emby          | [Ansible tag](/../saltbox/basics/update.md#updating-apps) |
+| Portainer     | [Ansible tag](/saltbox/basics/update.md#updating-apps) |
+| Cloudplow     | [Ansible tag](/saltbox/basics/update.md#updating-apps) |
+| Emby          | [Ansible tag](/saltbox/basics/update.md#updating-apps) |
 <br />
 
 

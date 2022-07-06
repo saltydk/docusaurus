@@ -2,7 +2,7 @@
 
 ## What is it?
 
-[Ombi**X**](https://ombi.io) is an [arr**X** role](arrx.md) for [Ombi](/../sandbox/apps/ombi.md).
+[Ombi**X**](https://ombi.io) is an [arr**X** role](arrx.md) for [Ombi](/sandbox/apps/ombi.md).
 
 [Ombi](https://ombi.io/) is a self-hosted web application that automatically gives your shared Plex or Emby users the ability to request content by themselves!
 
@@ -36,6 +36,6 @@ sb install sandbox-ombix
    ```
 
 - For app specific instructions refer to the parent role,
-     - [Ombi](/../sandbox/apps/ombi.md)<Br/>
+     - [Ombi](/sandbox/apps/ombi.md)<Br/>
      - and the upstream documentation <BR/>
        [:octicons-link-16: Documentation ](https://docs.ombi.app/guides/installation/)

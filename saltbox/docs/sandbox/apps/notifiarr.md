@@ -37,7 +37,7 @@ After logging in, you should be redirected to your profile screen.
   - Select your Notification Language
   - **Don't forget to Save your changes**
 
-Add your API key to the **[Sandbox settings file](/../sandbox/settings.md)**
+Add your API key to the **[Sandbox settings file](/sandbox/settings.md)**
 
 Now run the installer
 

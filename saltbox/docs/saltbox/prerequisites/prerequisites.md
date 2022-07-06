@@ -32,7 +32,7 @@ For best results, the assumed server environment for Saltbox is:
  - with at least 500GB of disk space, and
  - allowing root access
 
-See [here](/../reference/server.md) for more information about server requirements.
+See [here](/reference/server.md) for more information about server requirements.
 
 ## Domain
 
@@ -40,13 +40,13 @@ See [here](/../reference/server.md) for more information about server requiremen
 
 Ports are [for the most part] bound only to the internal `saltbox` docker network, which means they are not visible on the host; you **won't be able to connect externally** to the apps using `IP:PORT`.
 
-See [here](/../reference/domain.md) for more information about setting up a domain and DNS settings for use with Saltbox.
+See [here](/reference/domain.md) for more information about setting up a domain and DNS settings for use with Saltbox.
 
 ## Cloud Storage
 
 A base assumption in Saltbox is that you are storing your media on cloud storage.  Saltbox can be set up to use any cloud storage provider that [Rclone](https://rclone.org/) supports. However, Google Drive via [G-Suite Business](https://gsuite.google.com/pricing.html) is the preferred choice among users.  Some of the components are designed expressly for Google Drive, like the Google Drive monitoring in plex-autoscan and the service-account rotation in cloudplow.
 
-See [here](/../reference/cloud.md) for more information about Cloud Storage requirements and running Saltbox without it.
+See [here](/reference/cloud.md) for more information about Cloud Storage requirements and running Saltbox without it.
 
 
 
@@ -56,7 +56,7 @@ You'll need a [Plex account](https://www.plex.tv/sign-up/), if you don't already
 
 This may change in the future, but for now it's a requirement for the simplest Happy Path install described here.
 
-See [here](/../reference/plex.md) for more information about Plex account requirements.
+See [here](/reference/plex.md) for more information about Plex account requirements.
 
 ## Usenet or Bittorrent sources
 
@@ -64,6 +64,6 @@ If you are planning to set up a standard Saltbox or a feederbox, you will need a
 
 You won't need these particular [media source] details for the initial install, but you will need them for application setup.
 
-See [here](/../reference/usenet-torrent.md) for more information about media source requirements.
+See [here](/reference/usenet-torrent.md) for more information about media source requirements.
 
 Next, let's discuss Saltbox [Install types](/basics/install_types.md).

@@ -18,9 +18,9 @@ Listed below are some common scenarios and their migration instructions.
 
 3. Install the relevant Saltbox type: [Saltbox, Mediabox, or Feederbox](/install/install.md#install-saltbox).
 
-4. Install any extra, not-default containers you had installed previously from [Sandbox](/../sandbox/index.md) or on your own.
+4. Install any extra, not-default containers you had installed previously from [Sandbox](/sandbox/index.md) or on your own.
 
-5. Check to see if your [Plex Autoscan URL](/../../apps/plex-autoscan/#obtaining-the-plex-autoscan-url) has changed and update [Sonarr](/../apps/sonarr.md), [Radarr](/../apps/radarr.md), and [Lidarr](/../apps/lidarr.md) accordingly, if you are using Plex Autoscan.
+5. Check to see if your [Plex Autoscan URL](/apps/plex-autoscan/#obtaining-the-plex-autoscan-url) has changed and update [Sonarr](/apps/sonarr.md), [Radarr](/apps/radarr.md), and [Lidarr](/apps/lidarr.md) accordingly, if you are using Plex Autoscan.
 
 ## Move Saltbox to Another Server and Change the Domain Name
 
@@ -36,7 +36,7 @@ Listed below are some common scenarios and their migration instructions.
 
 3. If you are using Cloudflare:
 
-    1. Register your domain with [Cloudflare](/../faq/Cloudflare.md).
+    1. Register your domain with [Cloudflare](/faq/Cloudflare.md).
 
     2. Add the Cloudflare API into [Settings](settings.md).
 
@@ -58,9 +58,9 @@ Listed below are some common scenarios and their migration instructions.
 
 3. Install the relevant Saltbox type: [Saltbox, Mediabox, or Feederbox](/install/install.md#install-saltbox).
 
-7. Install any extra, not-default containers you had installed previously from [Sandbox](/../sandbox/index.md) or on your own.
+7. Install any extra, not-default containers you had installed previously from [Sandbox](/sandbox/index.md) or on your own.
 
-5. Check to see if your [Plex Autoscan URL](/../../apps/plex-autoscan/#obtaining-the-plex-autoscan-url) has changed and update [Sonarr](/../apps/sonarr.md), [Radarr](/../apps/radarr.md), and [Lidarr](/../apps/lidarr.md) accordingly, if you are using Plex Autoscan.
+5. Check to see if your [Plex Autoscan URL](/apps/plex-autoscan/#obtaining-the-plex-autoscan-url) has changed and update [Sonarr](/apps/sonarr.md), [Radarr](/apps/radarr.md), and [Lidarr](/apps/lidarr.md) accordingly, if you are using Plex Autoscan.
 6.
 ## Keep Saltbox on the Same Server but Change the Domain Name
 
@@ -70,7 +70,7 @@ Listed below are some common scenarios and their migration instructions.
 
 3. If you are using Cloudflare:
 
-    1. Register your domain with [Cloudflare](/../faq/Cloudflare.md).
+    1. Register your domain with [Cloudflare](/faq/Cloudflare.md).
 
     2. Add the Cloudflare API into [Settings](settings.md).
 
@@ -92,8 +92,8 @@ Listed below are some common scenarios and their migration instructions.
 
 3. Install the relevant Saltbox type: [Saltbox, Mediabox, or Feederbox](/install/install.md#install-saltbox).
 
-7. Install any extra, not-default containers you had installed previously from [Sandbox](/../sandbox/index.md) or on your own.
+7. Install any extra, not-default containers you had installed previously from [Sandbox](/sandbox/index.md) or on your own.
 
-5. Check to see if your [Plex Autoscan URL](/../../apps/plex-autoscan/#obtaining-the-plex-autoscan-url) has changed and update [Sonarr](/../apps/sonarr.md), [Radarr](/../apps/radarr.md), and [Lidarr](/../apps/lidarr.md) accordingly, if you are using Plex Autoscan.
+5. Check to see if your [Plex Autoscan URL](/apps/plex-autoscan/#obtaining-the-plex-autoscan-url) has changed and update [Sonarr](/apps/sonarr.md), [Radarr](/apps/radarr.md), and [Lidarr](/apps/lidarr.md) accordingly, if you are using Plex Autoscan.
 
 ---
