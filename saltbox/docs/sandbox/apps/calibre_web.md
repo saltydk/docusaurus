@@ -42,16 +42,16 @@ sb install sandbox-calibre-web
 
 You can access advanced features of the Guacamole remote desktop using ctrl+alt+shift enabling you to use remote copy/paste and different languages.
 
-- Shell access whilst the container is running: <br />
+- Shell access whilst the container is running:
   `docker exec -it calibre-web /bin/bash`
 
-- To monitor the logs of the container in realtime: <br />
+- To monitor the logs of the container in realtime:
   `docker logs -f calibre-web`
 
-- Container version number: <br />
+- Container version number:
   `docker inspect -f '{{ index .Config.Labels "build_version" }}' calibre-web`
 
-- Image version number: <br />
+- Image version number:
   `docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/calibre-web`
 
 
@@ -82,7 +82,7 @@ If you (or your users) want to have books sent directly to a Kindle from Calibre
       * In the popup, add `@yourdomain.com` and save.  Done!
 
 
-    Before closing the website, you might want to grab your device email address for the next step.  Under the Send-to-Kindle E-Mail Settings, copy the email address where you want the books sent by default. <br />
+    Before closing the website, you might want to grab your device email address for the next step.  Under the Send-to-Kindle E-Mail Settings, copy the email address where you want the books sent by default.
 
   * **Add your Kindle email address to your profile on books.yourdomain.com**
       * Once logged in, on the top ride side, click your name to open your profile

@@ -35,18 +35,18 @@ Make changes in the following sections:
             - Set your preferred naming format; here are some examples.
 
             <details>
-            <summary>Plex's Naming Preference</summary> <br />
-            Example: <br />
+            <summary>Plex's Naming Preference</summary>
+            Example:
             ```
             /Guardians of the Galaxy (2014)/Guardians of the Galaxy (2014).mkv
             ```
 
-            Standard Movie Format: <br />
+            Standard Movie Format:
             ```
             {Movie Title} ({Release Year})
             ```
 
-            Movie Folder Format: <br />
+            Movie Folder Format:
             ```
             {Movie Title} ({Release Year})
             ```
@@ -55,13 +55,13 @@ Make changes in the following sections:
             </details>
 
             <details>
-            <summary>Radarr's Wiki Example</summary> <br />
-            Example:  <br />
+            <summary>Radarr's Wiki Example</summary>
+            Example: 
             ```
             The Movie Title (2010) - [ULTIMATE EXTENDED EDITION][BLURAY-1080P PROPER][DTS 5.1][X264]-EVOLVE.mkv
             ```
 
-            Standard Movie Format: <br />
+            Standard Movie Format:
             ```
             {Movie Title} ({Release Year}) - {[EDITION TAGS]}{[QUALITY FULL]}{[MEDIAINFO AUDIOCODEC}{ MEDIAINFO AUDIOCHANNELS]}{[MEDIAINFO VIDEOCODEC]}{-RELEASE GROUP}
             ```
@@ -70,13 +70,13 @@ Make changes in the following sections:
             </details>
 
             <details>
-            <summary>TRaSH' naming guide</summary> <br />
-            Example:  <br />
+            <summary>TRaSH' naming guide</summary>
+            Example: 
             ```
             The Movie Title (2010) Ultimate Extended Edition [imdb-tt0066921][Surround Sound x264][Bluray-1080p Proper][3D][HDR][10bit][x264][DTS 5.1]-EVOLVE.mkv
             ```
 
-            Standard Movie Format: <br />
+            Standard Movie Format:
             ```
             {Movie CleanTitle} {(Release Year)} {Edition Tags} [imdb-{ImdbId}]{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRange]}[{Mediainfo VideoBitDepth}bit][{Mediainfo VideoCodec}]{[Mediainfo AudioCodec}{ Mediainfo AudioChannels}]{-Release Group}
             ```

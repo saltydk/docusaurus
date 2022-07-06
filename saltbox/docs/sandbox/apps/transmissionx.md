@@ -24,7 +24,7 @@ sb install sandbox-transmissionx
 
 ### 3. Setup
 
-1. Read through the general [arr**X** role instructions](arrx).
+1. Read through the general [arr**X** role instructions](/sandbox/apps/arrx).
 
 2. Add your **X** instance names to the Transmission**X** section in [sandbox `settings.yml`:](/sandbox/settings) using a list format as below.
 
@@ -44,6 +44,6 @@ sb install sandbox-transmissionx
       ```
 
 - For app specific instructions refer to the parent role,
-     - [transmission](/sandbox/apps/transmission)<Br/>
-     - and the transmission upstream documentation <BR/>
-       [:octicons-link-16: Documentation ](DOCSLINK)
+     - [transmission](/sandbox/apps/transmission)
+     - and the transmission upstream documentation
+       [:octicons-link-16: Documentation](https://github.com/transmission/transmission/wiki)

@@ -32,7 +32,7 @@ See [here](/reference/server) for more information about server requirements.
 
 ## Domain
 
-**You will need a domain name** as Saltbox apps are only accessed via https://appname._yourdomain.com_ (see [Accessing Apps](/basics/accessing_apps)).
+**You will need a domain name** as Saltbox apps are only accessed via https://appname._yourdomain.com_ (see [Accessing Apps](/saltbox/basics/accessing_apps)).
 
 Ports are [for the most part] bound only to the internal `saltbox` docker network, which means they are not visible on the host; you **won't be able to connect externally** to the apps using `IP:PORT`.
 
@@ -62,4 +62,4 @@ You won't need these particular [media source] details for the initial install, 
 
 See [here](/reference/usenet-torrent) for more information about media source requirements.
 
-Next, let's discuss Saltbox [Install types](/basics/install_types).
+Next, let's discuss Saltbox [Install types](/saltbox/basics/install_types).

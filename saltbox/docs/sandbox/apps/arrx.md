@@ -128,7 +128,7 @@ Again, the same thing holds for every `arrX` variant discussed here.
 
    <details>
      <summary>I want to add a BING [4K, kids, German, whatever] version and leave my existing container untouched.</summary>
-     <br />
+    
 
    ```yaml
    bazarrx:
@@ -139,7 +139,7 @@ Again, the same thing holds for every `arrX` variant discussed here.
 
    <details>
      <summary>I want to add BING and BANG versions and leave my existing container untouched.</summary>
-     <br />
+    
 
    ```yaml
    bazarrx:
@@ -151,7 +151,7 @@ Again, the same thing holds for every `arrX` variant discussed here.
 
    <details>
      <summary>I want to replace my existing version and add BANG and BOING versions.</summary>
-     <br />
+    
 
    ```yaml
    bazarrx:

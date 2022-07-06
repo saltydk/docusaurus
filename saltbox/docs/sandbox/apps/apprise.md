@@ -18,11 +18,11 @@ sb install sandbox-apprise
 
 ### 2. Setup
 
-As configured, the instance runs on the Docker network accessible to other saltbox network containers at <br />
-`http://apprise:8000` <br />
-as well as via the reverse proxy at <br />
+As configured, the instance runs on the Docker network accessible to other saltbox network containers at
+`http://apprise:8000`
+as well as via the reverse proxy at
 `https://apprise.domain.tld`.
 
-The configured username/password are taken from your Saltbox [`accounts.yml`](/saltbox/install/install/#configuration) file located in `/srv/git/saltbox/accounts.yml`
+The configured username/password are taken from your Saltbox [`accounts.yml`](/saltbox/install/install#configuration) file located in `/srv/git/saltbox/accounts.yml`
 
 - [:octicons-link-16: Documentation: Apprise Client Docs](https://github.com/caronc/apprise/wiki)

@@ -49,9 +49,9 @@ mnt
 
 | <pre>                 </pre> Path                   | <pre>                                                                                                 </pre> Description                                                                                                                                                            |
 |:---------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `/mnt/local/Media/`     | Location of media stored on the server.  <br /><br />This is the local part of `/mnt/unionfs/Media/`.                                                                                                                        |
+| `/mnt/local/Media/`     | Location of media stored on the server. <br />This is the local part of `/mnt/unionfs/Media/`.                                                                                                                        |
 | `/mnt/remote/Media/` | Location of media stored on Google Drive (mounted by rclone).                                                                                                  |
-| `/mnt/unionfs/Media/`   | Combined folder of local media (`/mnt/local/Media/`) and online media (`/mnt/remote/Media/`). <br /><br /> This is the folder that Plex, Sonarr, and Radarr read when scanning for media.|
+| `/mnt/unionfs/Media/`   | Combined folder of local media (`/mnt/local/Media/`) and online media (`/mnt/remote/Media/`).<br /> This is the folder that Plex, Sonarr, and Radarr read when scanning for media.|
 
 _Note: Make sure `/mnt/local/` has enough space to store the imported media (before cloudplow is able to move it to Google Drive)._
 
@@ -60,7 +60,7 @@ _Note: Make sure `/mnt/local/` has enough space to store the imported media (bef
 
 | Path<pre>                 </pre>               | Description <pre>                 </pre>                                                                                                                                                                                      |
 |:------------------ |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/mnt/local/Media/` | Location of media stored on the server. <br /><br /> Size of this path is checked periodically (default 30 min). When the folder size reaches its target (default 200GB), media files are moved off/uploaded to the cloud, freeing up local disk space. |
+| `/mnt/local/Media/` | Location of media stored on the server.<br /> Size of this path is checked periodically (default 30 min). When the folder size reaches its target (default 200GB), media files are moved off/uploaded to the cloud, freeing up local disk space. |
 
 _Note: For more info, see the [Cloudplow](/reference/cloudplow) page._
 
@@ -102,8 +102,8 @@ That means that no path translation is required from context to context.  If nzb
 | Docker Path  <pre>                 </pre>          | Host Path <pre>                                     </pre>                        | Description <pre>                                                                                                                                                             </pre>                                                                |
 |:---------------------- |:--------------------------------- |:--------------------------------------------------------------------------- |
 | `/mnt/unionfs/Media/TV/`              | `/mnt/unionfs/Media/TV/`       | Sonarr will import to `/tv/`, which is actually `/mnt/unionfs/Media/TV/` on host system. |
-| `/mnt/unionfs/downloads/nzbs/`    | `/mnt/local/downloads/nzbs/` (default) | NZB downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  <br /> <br /> For example, when using NZBGet, Sonarr will import from `/mnt/unionfs/downloads/nzbs/nzbget/`, which is essentially `/mnt/local/downloads/nzbs/nzbget/` on host system.                          |
-| `/mnt/unionfs/downloads/torrents/` | `/mnt/local/downloads/torrents/` (default) | Torrent downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  <br /> <br /> For example, when using ruTorrent, Sonarr will import from `/mnt/unionfs/downloads/torrents/rutorrent/`, which is essentially `/mnt/local/downloads/torrents/rutorrent/` on host system.                     |
+| `/mnt/unionfs/downloads/nzbs/`    | `/mnt/local/downloads/nzbs/` (default) | NZB downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  For example, when using NZBGet, Sonarr will import from `/mnt/unionfs/downloads/nzbs/nzbget/`, which is essentially `/mnt/local/downloads/nzbs/nzbget/` on host system.                          |
+| `/mnt/unionfs/downloads/torrents/` | `/mnt/local/downloads/torrents/` (default) | Torrent downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  For example, when using ruTorrent, Sonarr will import from `/mnt/unionfs/downloads/torrents/rutorrent/`, which is essentially `/mnt/local/downloads/torrents/rutorrent/` on host system.                     |
 
 
 ### Radarr
@@ -112,8 +112,8 @@ That means that no path translation is required from context to context.  If nzb
 | Docker Path  <pre>                 </pre>          | Host Path <pre>                                     </pre>                        | Description <pre>                                                                                                                                                             </pre>                                                                |
 |:---------------------- |:--------------------------------- |:--------------------------------------------------------------------------- |
 | `/mnt/unionfs/Media/movies/`              | `/mnt/unionfs/Media/Movies/`       | Radarr will import to `/movies/`, which is actually `/mnt/unionfs/Media/Movies/` on host system. |
-| `/mnt/unionfs/downloads/nzbs/`    | `/mnt/local/downloads/nzbs/` (default) | NZB downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  <br /> <br /> For example, when using NZBGet, Radarr will import from `/mnt/unionfs/downloads/nzbs/nzbget/`, which is essentially `/mnt/local/downloads/nzbs/nzbget/` on host system.                          |
-| `/mnt/unionfs/downloads/torrents/` | `/mnt/local/downloads/torrents/` (default) | Torrent downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  <br /> <br /> For example, when using ruTorrent, Radarr will import from `/mnt/unionfs/downloads/torrents/rutorrent/`, which is essentially `/mnt/local/downloads/torrents/rutorrent/` on host system.                     |
+| `/mnt/unionfs/downloads/nzbs/`    | `/mnt/local/downloads/nzbs/` (default) | NZB downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  For example, when using NZBGet, Radarr will import from `/mnt/unionfs/downloads/nzbs/nzbget/`, which is essentially `/mnt/local/downloads/nzbs/nzbget/` on host system.                          |
+| `/mnt/unionfs/downloads/torrents/` | `/mnt/local/downloads/torrents/` (default) | Torrent downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  For example, when using ruTorrent, Radarr will import from `/mnt/unionfs/downloads/torrents/rutorrent/`, which is essentially `/mnt/local/downloads/torrents/rutorrent/` on host system.                     |
 
 ### Lidarr
 
@@ -121,8 +121,8 @@ That means that no path translation is required from context to context.  If nzb
 | Docker Path            | Host Path                        | Description                                                                |
 |:---------------------- |:--------------------------------- |:--------------------------------------------------------------------------- |
 | `/mnt/unionfs/Media/Music/`              | `/mnt/unionfs/Media/Music/`       | Lidarr will import to `/music/`, which is actually `/mnt/unionfs/Media/Music/` on host system. |
-| `/mnt/unionfs/downloads/nzbs/`    | `/mnt/local/downloads/nzbs/` (default) | NZB downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  <br /> <br /> For example, when using NZBGet, Lidarr will import from `/mnt/unionfs/downloads/nzbs/nzbget/`, which is essentially `/mnt/local/downloads/nzbs/nzbget/` on host system.                          |
-| `/mnt/unionfs/downloads/torrents/` | `/mnt/local/downloads/torrents/` (default) | Torrent downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  <br /> <br /> For example, when using ruTorrent, Lidarr will import from `/mnt/unionfs/downloads/torrents/rutorrent/`, which is essentially `/mnt/local/downloads/torrents/rutorrent/` on host system.                     |
+| `/mnt/unionfs/downloads/nzbs/`    | `/mnt/local/downloads/nzbs/` (default) | NZB downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  For example, when using NZBGet, Lidarr will import from `/mnt/unionfs/downloads/nzbs/nzbget/`, which is essentially `/mnt/local/downloads/nzbs/nzbget/` on host system.                          |
+| `/mnt/unionfs/downloads/torrents/` | `/mnt/local/downloads/torrents/` (default) | Torrent downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  For example, when using ruTorrent, Lidarr will import from `/mnt/unionfs/downloads/torrents/rutorrent/`, which is essentially `/mnt/local/downloads/torrents/rutorrent/` on host system.                     |
 
 ### Tautulli
 

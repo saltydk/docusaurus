@@ -33,44 +33,44 @@ Make changes in the following sections:
                 <details>
                 <summary>Plex's Naming Preference</summary>
 
-                Example: <br />
+                Example:
                 ```
                 /Gotham/Season 01/Gotham - s01e01 - Pilot.mkv
                 ```
 
-                Standard Episode Format: <br />
+                Standard Episode Format:
                 ```
                 {Series Title} - s{season:00}e{episode:00} - {Episode Title}
                 ```
 
-                Anime Episode Format: <br />
+                Anime Episode Format:
                 ```
                 {Series Title} - s{season:00}e{episode:00} - {Episode Title}
                 ```
 
-                Daily Episode Format: <br />
+                Daily Episode Format:
                 ```
                 {Series Title} - {Air-Date} - {Episode Title}
                 ```
 
-                Season Folder Format: <br />
+                Season Folder Format:
                 ```
                 Season {season:00}
                 ```
 
-                Multi-Episode Style: <br />
+                Multi-Episode Style:
                 ```
                 Prefixed Range
                 ```
 
-                Reference: https://support.plex.tv/articles/200220687-naming-series-season-based-tv-shows/  <br />
+                Reference: https://support.plex.tv/articles/200220687-naming-series-season-based-tv-shows/ 
                 </details>
 
 
                 <details>
-                <summary>TRaSH' naming guide</summary> <br />
+                <summary>TRaSH' naming guide</summary>
 
-                Example:  <br />
+                Example: 
                 ```
                 Single Episode:
 
@@ -81,7 +81,7 @@ Make changes in the following sections:
                 The Series Title! (2010) - S01E01-E02-E03 - Episode Title [AMZN WEBDL-1080p Proper][HDR][10bit][x264][DTS 5.1]-RlsGrp
                 ```
 
-                Standard Episode Format: <br />
+                Standard Episode Format:
                 ```
                 {Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRange]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{-Release Group}
                 ```

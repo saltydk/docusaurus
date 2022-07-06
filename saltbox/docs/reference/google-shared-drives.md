@@ -166,7 +166,7 @@ IF YOU HAVE DONE THIS BEFORE, THERE IS NO REASON TO REPEAT IT.  THIS SCRIPT MAY 
 
     <details>
     <summary>What are those directories and files for?</summary>
-    <br />
+   
 
     This script creates an empty directory and a zero-byte file on the root of each shared drive.
 

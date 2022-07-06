@@ -45,7 +45,7 @@ Backup from Cloudbox as you normally would. You will need to make the backup dri
 
 - **Rclone configuration file**
 
-  The rclone.conf file located in `~/.config/rclone/rclone.conf` if your configuration uses service accounts to authenticate the remotes you will need make sure the service accounts are accessible. <br />
+  The rclone.conf file located in `~/.config/rclone/rclone.conf` if your configuration uses service accounts to authenticate the remotes you will need make sure the service accounts are accessible.
 
   ``` yaml
 
@@ -77,7 +77,7 @@ IMPORTANT: DO NOT use your cloudbox configuration files.  You can copy and paste
 
 - Run the preinstall command.
 
-  This step will create the specified user account, add it to sudoers, update the kernel, edit GRUB configuration, install Rclone, and reboot the server if needed. <br />
+  This step will create the specified user account, add it to sudoers, update the kernel, edit GRUB configuration, install Rclone, and reboot the server if needed.
 
   ``` shell
 
@@ -85,7 +85,7 @@ IMPORTANT: DO NOT use your cloudbox configuration files.  You can copy and paste
 
   ```
 
-- switch to the newly created user specified in your configuration. <br />
+- switch to the newly created user specified in your configuration.
 
 - If you are restoring a Cloudbox backup, you should change the default rclone backup path in `/srv/git/saltbox/backup_config.yml` to point to your Cloudbox backup.  Once you've done this initial restore, change it back to the location of your choice.
 
@@ -99,7 +99,7 @@ IMPORTANT: DO NOT use your cloudbox configuration files.  You can copy and paste
    ...
   ```
 
-- run the restore command. <br />
+- run the restore command.
 
   ``` shell
 
@@ -111,21 +111,21 @@ IMPORTANT: DO NOT use your cloudbox configuration files.  You can copy and paste
 
   Then you should be able to install tags as you want.
 
-- install top-level tag [if desired] <br />
+- install top-level tag [if desired]
 
   ``` shell
 
     sb install saltbox
 
   ```
-- install individual tags [if desired] <br />
+- install individual tags [if desired]
 
   ``` shell
 
     sb install emby
 
   ```
-- install sandbox tags [if required] <br />
+- install sandbox tags [if required]
 
   ``` shell
 

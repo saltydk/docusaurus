@@ -24,7 +24,7 @@ sb install sandbox-ROLENAME
 
 ### 3. Setup
 
-1. It's highly unlikely your mylar install is up to date. <br />
+1. It's highly unlikely your mylar install is up to date.
   Press the Update link on the dialog in the bottom right hand corner. Mylar3 will update and then restart.
 
 2. Enable some authentication. Add a `username` and `password` and set your preferred `login method`.

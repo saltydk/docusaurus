@@ -6,7 +6,7 @@
 
 | Details     |             |             |             |
 |-------------|-------------|-------------|-------------|
-| [:material-home: Project home ](https://calibre-ebook.com/) | [:octicons-link-16: Docs](https://manual.calibre-ebook.com/) | [:octicons-mark-github-16: Github](GITHUBLINK) | [:material-docker: Docker ](https://registry.hub.docker.com/r/linuxserver/calibre)|
+| [:material-home: Project home](https://calibre-ebook.com/) | [:octicons-link-16: Docs](https://manual.calibre-ebook.com/) | [:octicons-mark-github-16: Github](https://github.com/kovidgoyal/calibre) | [:material-docker: Docker](https://registry.hub.docker.com/r/linuxserver/calibre)|
 
 ### 1. Installation
 
@@ -22,7 +22,7 @@ sb install sandbox-calibre
 
 ### 3. Setup
 
-- The username is `abc` . The configured password is taken from your Saltbox [`accounts.yml`](/saltbox/install/install/#configuration) file located in `/srv/git/saltbox/accounts.yml`
+- The username is `abc` . The configured password is taken from your Saltbox [`accounts.yml`](/saltbox/install/install#configuration) file located in `/srv/git/saltbox/accounts.yml`
 
 - Calibre is ready for use. If you added your pre-existing Calibre library to /mnt/local/Media/Books then you should see your library is ready to go. If not, then you have a blank library ready for you to fill.
 
@@ -37,16 +37,16 @@ sb install sandbox-calibre
 
 You can access advanced features of the Guacamole remote desktop using ctrl+alt+shift enabling you to use remote copy/paste and different languages.
 
-- Shell access whilst the container is running: <br />
+- Shell access whilst the container is running:
   `docker exec -it calibre /bin/bash`
 
-- To monitor the logs of the container in realtime: <br />
+- To monitor the logs of the container in realtime:
   `docker logs -f calibre`
 
-- Container version number: <br />
+- Container version number:
   `docker inspect -f '{{ index .Config.Labels "build_version" }}' calibre`
 
-- Image version number: <br />
+- Image version number:
   `docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/calibre`
 
 - [:octicons-link-16: Documentation](https://manual.calibre-ebook.com/)

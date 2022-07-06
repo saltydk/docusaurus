@@ -6,7 +6,7 @@
 
 | Details     |             |             |             |
 |-------------|-------------|-------------|-------------|
-| [:material-home: Project home ](https://github.com/ArchiveBox/ArchiveBox) | [:octicons-link-16: Docs](https://github.com/ArchiveBox/ArchiveBox/wiki) | [:octicons-mark-github-16: Github](GITHUBLINK) | [:material-docker: Docker ](https://hub.docker.com/r/archivebox/archivebox)|
+| [:material-home: Project home ](https://github.com/ArchiveBox/ArchiveBox) | [:octicons-link-16: Docs](https://github.com/ArchiveBox/ArchiveBox/wiki) | [:octicons-mark-github-16: Github](https://github.com/ArchiveBox/ArchiveBox) | [:material-docker: Docker ](https://hub.docker.com/r/archivebox/archivebox)|
 
 ### 1. Installation
 

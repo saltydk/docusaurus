@@ -10,7 +10,7 @@
 | [:material-home: qBit Management ](https://github.com/StuffAnThings/qbit_manage) | [:octicons-link-16: Docs](https://github.com/StuffAnThings/qbit_manage/wiki) | [:octicons-mark-github-16: Github](https://github.com/StuffAnThings/qbit_manage) | [:material-docker: Docker: ](https://hotio.dev/containers/qbitmanage/) |
 
 
-**Functions include:-** <br />
+**Functions include:-**
 
   - Tag torrents based on tracker and then set seed goals/limit upload speed by tag.
 
@@ -18,7 +18,7 @@
 
   - Remove unregistered torrents (delete data & torrent if it is not being cross-seeded, otherwise it will just remove the torrent).
 
-  - Automatically add cross-seed torrents in paused state. <br />
+  - Automatically add cross-seed torrents in paused state.
     *Note: cross-seed now allows for torrent injections directly to qBit, making this feature obsolete.*
 
   - Recheck paused torrents sorted by lowest size and resume if completed.

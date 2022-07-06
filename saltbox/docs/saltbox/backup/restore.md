@@ -8,22 +8,22 @@
 Start by installing dependencies.
 
 === "curl"
-    ``` shell
+    ```shell
     curl -sL https://install.saltbox.dev | sudo -H bash; cd /srv/git/saltbox
     ```
 
 === "wget"
-    ``` shell
+    ```shell
     wget -qO- https://install.saltbox.dev | sudo -H bash; cd /srv/git/saltbox
     ```
 
 === "curl (verbose)"
-    ``` shell
+    ```shell
     curl -sL https://install.saltbox.dev | sudo -H bash -s -- -v; cd /srv/git/saltbox
     ```
 
 === "wget (verbose)"
-    ``` shell
+    ```shell
     wget -qO- https://install.saltbox.dev | sudo -H bash -s -- -v; cd /srv/git/saltbox
     ```
 
@@ -32,7 +32,7 @@ Then retrieve the configuration files from a backup.
 ## Using Restore Service
 
 === "curl"
-    ``` { .sh .annotate }
+    ```shell
     curl -sL https://restore.saltbox.dev | bash -s 'USERNAME' 'PASSWORD' # (1)!
     ```
 
@@ -41,7 +41,7 @@ Then retrieve the configuration files from a backup.
         Must wrap the username and password in quotes.
 
 === "wget"
-    ``` { .sh .annotate }
+    ```shell
     wget -qO- https://restore.saltbox.dev | bash -s 'USERNAME' 'PASSWORD' # (1)!
     ```
 
@@ -51,19 +51,19 @@ Then retrieve the configuration files from a backup.
 
 Then run `preinstall` which will setup the user account and a few other dependencies for the restore.
 
-``` shell
+```shell
 sb install preinstall
 ```
 
-!!! info
+!!!info
     From this point you'll want to make sure you run commands as the user specified in the accounts.yml
 
-!!! info
+!!!info
     If you are using a service account to authenticate the rclone remote that holds the backup, you will need to put that SA JSON file in place manually so that the restore process can authenticate the remote to download the rest of the backup.
 
 Start the restore process.
 
-``` shell
+```shell
 sb install restore
 ```
 
@@ -84,7 +84,7 @@ Retrieve the following configuration files from your backup manually and place t
 
 Then run `preinstall` which will setup the user account and a few other dependencies for the restore.
 
-``` shell
+```shell
 sb install preinstall
 ```
 
@@ -96,12 +96,12 @@ sb install preinstall
 
 Start the restore process.
 
-``` shell
+```shell
 sb install restore
 ```
 
 Once successfully completed you can now continue:
 
-If you are migrating from one server to another, return to the [migration guide](migrate)
+If you are migrating from one server to another, return to the [migration guide](/saltbox/backup/migrate)
 
 If you are restoring to the same server, you can now follow the installation guide from this [step](/saltbox/install/install#saltbox).

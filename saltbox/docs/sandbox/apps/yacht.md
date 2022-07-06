@@ -6,7 +6,7 @@
 
 | Details     |             |             |             |
 |-------------|-------------|-------------|-------------|
-| [:material-home: Project home ](https://yacht.sh/) | [:octicons-link-16: Docs](https://yacht.sh/docs/) | [:octicons-mark-github-16: Github](GITHUBLINK) | [:material-docker: Docker ](https://hub.docker.com/r/selfhostedpro/yacht)|
+| [:material-home: Project home ](https://yacht.sh/) | [:octicons-link-16: Docs](https://yacht.sh/docs/) | [:octicons-mark-github-16: Github](https://github.com/SelfhostedPro/Yacht) | [:material-docker: Docker ](https://hub.docker.com/r/selfhostedpro/yacht)|
 
 ### 1. Installation
 

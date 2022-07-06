@@ -24,7 +24,7 @@ sb install sandbox-funkwhale
 
 **First create the superuser**
 
-- `docker exec -it funkwhale manage createsuperuser` <br />
+- `docker exec -it funkwhale manage createsuperuser`
    (for ease of access, set it as your Saltbox user and password.)
 - enter the `exit` command when finished to return to your server's shell.
 
@@ -67,12 +67,12 @@ If everything goes as planned you'll get prompted like this:
  - Answer yes at the prompt and the import will begin.
 
 !!! info
-    Useful URLs <br />
-    Libraries URL: `https://funkwhale.domain.com/content/libraries/` <br />
-    Admin Account Edit Page: `https://funkwhale.domain.com/api/admin/users/user/1/change/` <br />
+    Useful URLs
+    Libraries URL: `https://funkwhale.domain.com/content/libraries/`
+    Admin Account Edit Page: `https://funkwhale.domain.com/api/admin/users/user/1/change/`
 
 !!! info
-    If you want to use subsonic clients then you'll need to set a password here:  <br />
+    If you want to use subsonic clients then you'll need to set a password here: 
     `https://funkwhale.domain.com/settings`
     (subsonic protocol requires storing password in cleartext, so to avoid compromising your Funkwhale account, we use a different password).
 

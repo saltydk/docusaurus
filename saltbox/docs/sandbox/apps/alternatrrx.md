@@ -2,7 +2,7 @@
 
 ## What is it?
 
-[alternatrr**X**](APPHOMEPAGE) is an [arrX role](arrx) for [alternatrr](/sandbox/apps/alternatrr).
+[alternatrr**X**](https://www.github.com/TheUltimateC0der/alternatrr) is an [arrX role](arrx) for [alternatrr](/sandbox/apps/alternatrr).
 
 | Details     |             |             |             |
 |-------------|-------------|-------------|-------------|

@@ -38,12 +38,12 @@ See the parent [Deluge](/apps/deluge) role for app setup.
    ```
 
 
-**For Private Internet Access** <br />
+**For Private Internet Access**
 
 - Add your user name and password
 - Change the vpn_endpoint to your chosen server.  Note that PIA occasionally changes which servers have port forwarding.  The Netherlands server no longer offers port forwarding.  See configuration section for more details.
 
-**For other VPN providers** <br />
+**For other VPN providers**
 
 - Add your user name and password
 - Change `vpn_prov` to `custom`
@@ -138,6 +138,6 @@ As of July 4, 2020, the PIA servers that allow port forwarding, and DelugeVPN to
 - Follow installation steps above again
 
 ### For app specific instructions refer to the parent role
- - [Deluge](/apps/deluge) <br />
- - and the upstream documentation <br />
+ - [Deluge](/apps/deluge)
+ - and the upstream documentation
    [:octicons-link-16: Documentation ](https://dev.deluge-torrent.org/wiki/UserGuide)

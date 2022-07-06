@@ -21,7 +21,7 @@ sb install sandbox-filebrowser
 - To access File Browser, visit `https://filebrowser._yourdomain.com_`
 
 !!! info
-    **default login** <br />
+    **default login**
     ``` { .yaml }
         user: admin
     password: admin

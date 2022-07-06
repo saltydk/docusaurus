@@ -31,24 +31,24 @@ Make changes in the following sections:
             - Set your preferred naming format; here are some examples.
 
             <details>
-            <summary>Plex's Naming Preference</summary> <br />
+            <summary>Plex's Naming Preference</summary>
 
-            Example: <br />
+            Example:
             ```
             01 - Shine On You Crazy Diamond (Parts I-V).m4a
             ```
 
-            Standard Track Format: <br />
+            Standard Track Format:
             ```
             {track:00} - {Track Title}
             ```
 
-            Artist Folder Format: <br />
+            Artist Folder Format:
             ```
             {Artist Name}
             ```
 
-            Album Folder Format: <br />
+            Album Folder Format:
             ```
             {Artist Name} - {Album Title}
             ```

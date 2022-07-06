@@ -4,7 +4,7 @@
 
 [Readarr](http://readarr.com/) is an ebook and audiobook collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new books from your favourite authors and will grab, sort and rename them.
 
-Note that only one type of a given book is supported. <br />
+Note that only one type of a given book is supported.
 **If you want both an audiobook and ebook of a given book you will need multiple instances.**
 
 !!! NOTE

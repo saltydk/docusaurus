@@ -22,7 +22,7 @@ sb install sandbox-komga
 
 ### 3. Setup
 
-- On first opening you will be asked to create a user account. <br />
+- On first opening you will be asked to create a user account.
   Choose an email and password, then click on Create User Account.
 
 - Komga expects comics to be stored in `/mnt/unionfs/Media/Comics`.

@@ -48,9 +48,9 @@ sb install sandbox-varken
 
     ```
 
-4. Visit grafana `https://grafana._yourdomain.com_` <br />
+4. Visit grafana `https://grafana._yourdomain.com_`
 
-      - The configured username/password are taken from your Saltbox [`accounts.yml`](/saltbox/install/install/#configuration) file located in `/srv/git/saltbox/accounts.yml`
+      - The configured username/password are taken from your Saltbox [`accounts.yml`](/saltbox/install/install#configuration) file located in `/srv/git/saltbox/accounts.yml`
 
 
 
@@ -79,7 +79,7 @@ sb install sandbox-varken
       You will need to add the piechart and worldmap plugins for the dashboard to work. Use the variables to set the
       different data sources.
 
-      To Install PieChart/WorldMap: <br />
+      To Install PieChart/WorldMap:
 
       ``` { .shell }
 
