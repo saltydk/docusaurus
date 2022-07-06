@@ -6,7 +6,7 @@ Listed below are some common scenarios and their migration instructions.
 
 ### Current Server
 
-1. [Back up](/saltbox/backup/backup) your current Saltbox server.
+1. [Back up](/saltbox/backup) your current Saltbox server.
 
 ### New Server
 
@@ -14,9 +14,9 @@ Listed below are some common scenarios and their migration instructions.
 
 2. If you are not using Cloudflare:
 
-    - Point your domain's [DNS](/saltbox/prerequisites/prerequisites#domain) to the new server.
+    - Point your domain's [DNS](/saltbox/prerequisites#domain) to the new server.
 
-3. Install the relevant Saltbox type: [Saltbox, Mediabox, or Feederbox](/install/install#install-saltbox).
+3. Install the relevant Saltbox type: [Saltbox, Mediabox, or Feederbox](/saltbox/install#install-saltbox).
 
 4. Install any extra, not-default containers you had installed previously from [Sandbox](/sandbox/index) or on your own.
 
@@ -26,7 +26,7 @@ Listed below are some common scenarios and their migration instructions.
 
 ### Current Server
 
-1. [Back up](/saltbox/backup/backup) your current Saltbox server.
+1. [Back up](/saltbox/backup) your current Saltbox server.
 
 ### New Server
 
@@ -42,7 +42,7 @@ Listed below are some common scenarios and their migration instructions.
 
 4. If you are not using Cloudflare:
 
-    - Point your domain's [DNS](/saltbox/prerequisites/prerequisites#domain) to the new server.
+    - Point your domain's [DNS](/saltbox/prerequisites#domain) to the new server.
 
 5. Replace the domain name in app specific config files:
 
@@ -56,7 +56,7 @@ Listed below are some common scenarios and their migration instructions.
 
     - `/opt/plex_patrol/settings.ini` (only if installed)
 
-3. Install the relevant Saltbox type: [Saltbox, Mediabox, or Feederbox](/saltbox/install/install#install-saltbox).
+3. Install the relevant Saltbox type: [Saltbox, Mediabox, or Feederbox](/saltbox/install#install-saltbox).
 
 7. Install any extra, not-default containers you had installed previously from [Sandbox](/sandbox/index) or on your own.
 
@@ -64,7 +64,7 @@ Listed below are some common scenarios and their migration instructions.
 6.
 ## Keep Saltbox on the Same Server but Change the Domain Name
 
-1. [Back up](/saltbox/backup/backup) your current Saltbox server.
+1. [Back up](/saltbox/backup) your current Saltbox server.
 
 2. Add your new domain name into [Settings](/saltbox/backup/settings).
 
@@ -76,7 +76,7 @@ Listed below are some common scenarios and their migration instructions.
 
 4. If you are not using Cloudflare:
 
-    - Point your domain's [DNS](/saltbox/prerequisites/prerequisites#domain) to the new server.
+    - Point your domain's [DNS](/saltbox/prerequisites#domain) to the new server.
 
 5. Replace the domain name in app specific config files:
 
@@ -90,7 +90,7 @@ Listed below are some common scenarios and their migration instructions.
 
     - `/opt/plex_patrol/settings.ini` (only if installed)
 
-3. Install the relevant Saltbox type: [Saltbox, Mediabox, or Feederbox](/install/install#install-saltbox).
+3. Install the relevant Saltbox type: [Saltbox, Mediabox, or Feederbox](/saltbox/install#install-saltbox).
 
 7. Install any extra, not-default containers you had installed previously from [Sandbox](/sandbox/index) or on your own.
 

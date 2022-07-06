@@ -50,7 +50,7 @@ sb install sandbox-varken
 
 4. Visit grafana `https://grafana._yourdomain.com_`
 
-      - The configured username/password are taken from your Saltbox [`accounts.yml`](#configuration) file located in `/srv/git/saltbox/accounts.yml`
+      - The configured username/password are taken from your Saltbox [`accounts.yml`](/saltbox/install#configuration) file located in `/srv/git/saltbox/accounts.yml`
 
 
 
@@ -110,7 +110,7 @@ sb install sandbox-varken
 
 - For app specific instructions refer to the grafana role,
 
-     - [grafana](/sandbox/apps/grafana)<Br/>
+     - [grafana](/sandbox/apps/grafana)
 
-     - and the upstream documentation <BR/>
+     - and the upstream documentation 
        [:octicons-link-16: Documentation](https://wiki.cajun.pro/books/varken)

@@ -1,8 +1,8 @@
 This guide will show you how to set up a Google Project and create credentials that will work for safire or sa-gen or similar tools.
 
-It's assuming you're working through the steps from [here](rclone-manual) and have completed the following steps:
+It's assuming you're working through the steps from [here](/reference/rclone-manual) and have completed the following steps:
 
-  - verified [account drive permissions](google-account-perms)
+  - verified [account drive permissions](/reference/google-account-perms)
 
 This guide is assuming you are using a standard GSuite Business or GSuite Workspace account.
 
@@ -130,5 +130,5 @@ IF YOU HAVE DONE THIS BEFORE, THERE IS NO REASON TO REPEAT IT.
 
     Later on, I'm going to assume you put it on the saltbox server in `/opt/sa/` and named it `project-creds.json`.
 
-If you are going through the manual rclone instructions, [continue with the next step](/rclone-manual#step-3-create-a-google-group-to-hold-service-accounts)
+If you are going through the manual rclone instructions, [continue with the next step](/reference/rclone-manual#step-3-create-a-google-group-to-hold-service-accounts)
 

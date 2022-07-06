@@ -45,6 +45,6 @@ sb install sandbox-rfloodx
       ```
 
 - For app specific instructions refer to the parent role,
-     - [rflood](/sandbox/apps/rflood)<Br/>
-     - and the rflood upstream documentation <BR/>
+     - [rflood](/sandbox/apps/rflood)
+     - and the rflood upstream documentation 
        [:octicons-link-16: Documentation ](https://github.com/jesec/flood/wiki)

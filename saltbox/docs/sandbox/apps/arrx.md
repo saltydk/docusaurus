@@ -34,7 +34,7 @@ appnamex:
     - boing
 ```
 
-That will create:<br/>
+That will create:
 
 - appname
 - appnamebing

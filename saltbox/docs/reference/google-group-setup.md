@@ -1,9 +1,9 @@
 This guide will show you how to set up a Google Group for use with service accounts.
 
-It's assuming you're working through the steps from [here](rclone-manual) and have completed the following steps:
+It's assuming you're working through the steps from [here](/reference/rclone-manual) and have completed the following steps:
 
-  - verified [account drive permissions](google-account-perms)
-  - created the required [project](google-project-setup)
+  - verified [account drive permissions](/reference/google-account-perms)
+  - created the required [project](/reference/google-project-setup)
 
 NOTE: This guide is assuming a Google Gsuite Business/Workspace account.
 
@@ -27,4 +27,4 @@ NOTE: This guide is assuming a Google Gsuite Business/Workspace account.
 
    ![](/images/google-group/05-group-end.png)
 
-If you are going through the manual rclone instructions, [continue with the next step](/rclone-manual#step-4-set-up-the-gcloud-sdk)
+If you are going through the manual rclone instructions, [continue with the next step](/reference/rclone-manual#step-4-set-up-the-gcloud-sdk)

@@ -49,9 +49,9 @@ mnt
 
 |                   Path                   |                                                                                                   Description                                                                                                                                                            |
 |:---------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `/mnt/local/Media/`     | Location of media stored on the server. <br />This is the local part of `/mnt/unionfs/Media/`.                                                                                                                        |
+| `/mnt/local/Media/`     | Location of media stored on the server. This is the local part of `/mnt/unionfs/Media/`.                                                                                                                        |
 | `/mnt/remote/Media/` | Location of media stored on Google Drive (mounted by rclone).                                                                                                  |
-| `/mnt/unionfs/Media/`   | Combined folder of local media (`/mnt/local/Media/`) and online media (`/mnt/remote/Media/`).<br /> This is the folder that Plex, Sonarr, and Radarr read when scanning for media.|
+| `/mnt/unionfs/Media/`   | Combined folder of local media (`/mnt/local/Media/`) and online media (`/mnt/remote/Media/`). This is the folder that Plex, Sonarr, and Radarr read when scanning for media.|
 
 _Note: Make sure `/mnt/local/` has enough space to store the imported media (before cloudplow is able to move it to Google Drive)._
 
@@ -60,7 +60,7 @@ _Note: Make sure `/mnt/local/` has enough space to store the imported media (bef
 
 | Path                                | Description                                                                                                                                                                                                        |
 |:------------------ |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/mnt/local/Media/` | Location of media stored on the server.<br /> Size of this path is checked periodically (default 30 min). When the folder size reaches its target (default 200GB), media files are moved off/uploaded to the cloud, freeing up local disk space. |
+| `/mnt/local/Media/` | Location of media stored on the server. Size of this path is checked periodically (default 30 min). When the folder size reaches its target (default 200GB), media files are moved off/uploaded to the cloud, freeing up local disk space. |
 
 _Note: For more info, see the [Cloudplow](/reference/cloudplow) page._
 

@@ -87,4 +87,4 @@ During this migration, the media files will continue to be accessible to Media S
 
 <sup><b name="f5">[5](#a5)</b> There is presently a 750GB/day upload limitation on Google accounts.  The standard Saltbox setup will describe setting up a Google Drive remote pointed at your My Drive.  This limit can be eliminated by cycling through a set of service accounts [each of which can upload 750GB] to upload to one or more Shared Drives [aka Teamdrives].  See [Tip44 Doc](/reference/guides/chazguides/tip44) for details.  </sup>
 
-Next, let's discuss the [Prerequisites](/saltbox/prerequisites/prerequisites) for Saltbox installation.
+Next, let's discuss the [Prerequisites](/saltbox/prerequisites) for Saltbox installation.

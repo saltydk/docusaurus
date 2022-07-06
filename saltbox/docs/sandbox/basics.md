@@ -54,7 +54,7 @@ sb list
 ```
 
 !!! Tip
-    Where possible the configured username/password are taken from your Saltbox [`accounts.yml`](#configuration) file located in `/srv/git/saltbox/accounts.yml` and used to create a default user an password for logging in.
+    Where possible the configured username/password are taken from your Saltbox [`accounts.yml`](/saltbox/install#configuration) file located in `/srv/git/saltbox/accounts.yml` and used to create a default user an password for logging in.
 
 
 ### Contributing to Sandbox Apps

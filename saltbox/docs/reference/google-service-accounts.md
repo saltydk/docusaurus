@@ -1,11 +1,11 @@
 This guide will show you how to create projects and service accounts using `sa-gen` and add them to a Google Group.
 
-It's assuming you're working through the steps from [here](rclone-manual) and have completed the following steps:
+It's assuming you're working through the steps from [here](/reference/rclone-manual) and have completed the following steps:
 
-  - verified [account drive permissions](google-account-perms)
-  - created the required [project](google-project-setup)
-  - created the required [group](google-group-setup)
-  - installed the [gcloud SDK tools](google-gcloud-tools-install)
+  - verified [account drive permissions](/reference/google-account-perms)
+  - created the required [project](/reference/google-project-setup)
+  - created the required [group](/reference/google-group-setup)
+  - installed the [gcloud SDK tools](/reference/google-gcloud-tools-install)
 
 NOTE: This guide is assuming a Google Gsuite Business/Workspace account.
 
@@ -75,7 +75,7 @@ IF YOU HAVE DONE THIS BEFORE, THERE IS NO REASON TO REPEAT IT. USE THE SAME 300 
     storage.googleapis.com               Cloud Storage API
     ```
 
-    If any of these are missing from your list, go back to the [project setup](google-project-setup) and add all the APIs shown there to the project.
+    If any of these are missing from your list, go back to the [project setup](/reference/google-project-setup) and add all the APIs shown there to the project.
 
 1. Retrieve the `sa-gen` code
 
@@ -158,4 +158,4 @@ IF YOU HAVE DONE THIS BEFORE, THERE IS NO REASON TO REPEAT IT. USE THE SAME 300 
 
 1. You're done.
 
-If you are going through the manual rclone instructions, [continue with the next step](/rclone-manual#step-7-create-some-shared-drives-and-related-infrastructure)
+If you are going through the manual rclone instructions, [continue with the next step](/reference/rclone-manual#step-7-create-some-shared-drives-and-related-infrastructure)

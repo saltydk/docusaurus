@@ -25,7 +25,7 @@ The info below will show you how to update your Saltbox apps, individually.
 | Portainer     | [Ansible tag](/saltbox/basics/update#updating-apps) |
 | Cloudplow     | [Ansible tag](/saltbox/basics/update#updating-apps) |
 | Emby          | [Ansible tag](/saltbox/basics/update#updating-apps) |
-<br />
+
 
 
 **"How to update" options:**
@@ -53,7 +53,7 @@ The info below will show you how to update your Saltbox apps, individually.
    _Note: It's recommended to use `docker stop/start <container>` vs `docker restart <container>`, to prevent corrupting data, especially on apps like ruTorrent._
 
 
-<br />
+
 
 
 ## Ansible tags to update apps

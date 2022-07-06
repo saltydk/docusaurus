@@ -7,10 +7,10 @@ title: Home
 # Welcome to Saltbox
 
 ### What is it?
-You can read more about what Saltbox is [here](/saltbox/basics/basics).
+You can read more about what Saltbox is [here](/saltbox/basics).
 
 ### How do I install it?
-Installation instructions are located [here](/saltbox/prerequisites/prerequisites).
+Installation instructions are located [here](/saltbox/prerequisites).
 
 ### Can I migrate from Cloudbox or PlexGuide?
 There are notes on migration from [Cloudbox](/reference/guides/cloudbox) and [Plexguide](/reference/guides/plexguide).

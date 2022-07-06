@@ -110,7 +110,7 @@ sudo reboot
    docker stop $(docker ps -a -q)
    ```
 
-2. Change ownership of /opt. Replace `user` and `group` to match yours' (see [here](FAQfind-your-user-id-uid-and-group-id-gid)).
+2. Change ownership of /opt. Replace `user` and `group` to match yours' (see [here](/faq/System#find-your-user-id-uid-and-group-id-gid)).
 
    ```
    sudo chown -R user:group /opt

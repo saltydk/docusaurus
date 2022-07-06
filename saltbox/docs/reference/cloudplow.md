@@ -5,7 +5,7 @@
 This is the default config; it contains a single remote/uploader pair.  This set uploads everything from `/mnt/local/Media` to `google:/Media` once there is 200GB in `/mnt/local/Media`.
 
 
-Example config.json (click to expand)<br />
+Example config.json (click to expand)
 
 ```json
 {
@@ -78,7 +78,7 @@ A couple points:
  - Each `uploader` task needs a separate `remote`. You can't have two “uploaders” referencing one “remote”. 
 
 
-Example config.json (click to expand)<br />
+Example config.json (click to expand)
 
 ```json
 {
@@ -209,7 +209,7 @@ This config uploads everything from `/mnt/local/Media` to `google:/Media` [trigg
 
 
 
-Example config.json (click to expand)<br />
+Example config.json (click to expand)
 
 ```json
 {
@@ -341,7 +341,7 @@ Example config.json (click to expand)<br />
 This is the default config with Pushover notifications configured.
 
 
-Example config.json (click to expand)<br />
+Example config.json (click to expand)
 
 ```json
 {

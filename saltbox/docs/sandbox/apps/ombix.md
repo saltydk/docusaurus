@@ -36,6 +36,6 @@ sb install sandbox-ombix
    ```
 
 - For app specific instructions refer to the parent role,
-     - [Ombi](/sandbox/apps/ombi)<Br/>
-     - and the upstream documentation <BR/>
+     - [Ombi](/sandbox/apps/ombi)
+     - and the upstream documentation 
        [:octicons-link-16: Documentation ](https://docs.ombi.app/guides/installation/)

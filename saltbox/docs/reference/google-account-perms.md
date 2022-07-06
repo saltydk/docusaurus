@@ -1,6 +1,6 @@
 This guide will show you how to verify that your Google account has the correct permissions required for the shared drive creation.
 
-It's assuming you're working through the steps from [here](rclone-manual).
+It's assuming you're working through the steps from [here](/reference/rclone-manual).
 
 NOTE: This guide is assuming a Google Gsuite Business/Workspace account.
 
@@ -26,4 +26,4 @@ NOTE: This guide is assuming a Google Gsuite Business/Workspace account.
 
 6. You're done.
 
-If you are going through the manual rclone instructions, [continue with the next step](/rclone-manual#step-2-create-a-new-project-and-generate-a-credential-file)
+If you are going through the manual rclone instructions, [continue with the next step](/reference/rclone-manual#step-2-create-a-new-project-and-generate-a-credential-file)
