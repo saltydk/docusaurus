@@ -27,6 +27,10 @@ const config = {
     locales: ['en'],
   },
 
+  stylesheets: [
+    "https://fonts.googleapis.com/icon?family=Material+Icons",
+  ],
+
   presets: [
     [
       'classic',
