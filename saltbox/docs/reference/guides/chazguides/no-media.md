@@ -21,14 +21,16 @@ I’m further assuming that you are using the default file structure as suggeste
 
 See the end of this doc for some notes on how to tell if 1 and 2 are true.
 
-<span style="color: red;">MY FOLDERS AND FILES IN THESE SCREENSHOTS WILL NOT MATCH YOURS.  THAT’S FINE AND EXPECTED.</span>
+:::caution
+MY FOLDERS AND FILES IN THESE SCREENSHOTS WILL NOT MATCH YOURS.  THAT’S FINE AND EXPECTED.
+:::
 
 When I refer to a shell command throughout, you’re typing the part highlighted in blue and looking for the part highlighted in orange.
 
 In most cases, running the mounts tag will clear up any problems you may be having with the various auto-generated service files.
 
 
-```
+```shell
 sb install mounts
 ```
 
@@ -36,7 +38,7 @@ sb install mounts
 
 The df command can give you a quick look at things:
 
-```
+```shell
 ➜  ~ df -h
 Filesystem   Size   Used  Avail  Use%  Mounted on
 ...
@@ -54,7 +56,7 @@ Now we’ll step through the various layers involved in this and check them one 
 ## rclone remote
 The rclone config command should show you the google remote you defined during setup:
 
-```
+```shell
 ➜  ~ rclone config
 Current remotes:
 
@@ -69,12 +71,11 @@ e/n/d/r/c/s/q> q
 
 You should be able to get a file listing from that remote:
 
-```
+```shell
 ➜  ~ rclone lsd google:/Media
       	-1 2018-12-01 20:16:06    	-1 Music
       	-1 2019-03-15 19:26:14    	-1 Movies
       	-1 2018-12-01 20:14:35    	-1 TV
-➜  ~
 ```
 
 That file listing should match what’s displayed on the Google Drive website.  If you've used the Saltbox scripted setup, those directories witll be spread across the three shared drives that get created.
@@ -90,7 +91,7 @@ Now that the rclone remote is known good, let’s move to the next layer, the rc
 ## rclone_vfs mount
 First, let’s check that the service is running:
 
-```
+```shell
 ➜  ~ sudo systemctl status rclone_vfs.service
 ● rclone_vfs.service - Rclone VFS Mount
    Loaded: loaded (/etc/systemd/system/rclone_vfs.service; enabled; vendor preset: enabled)
@@ -109,7 +110,7 @@ You want to see “`active (running)`” there.
 
 You can look at the log to find out what’s wrong if it’s not “`active (running)`”
 
-```
+```shell
 ➜  ~ sudo journalctl -fu rclone_vfs.service
 -- Logs begin at Mon 2019-08-05 16:56:44 EEST. --
 Nov 02 06:42:44 Ubuntu-1804-bionic-64-minimal rclone[9625]: Serving remote control on http://127.0.0.1:5572/
@@ -130,7 +131,7 @@ In that log you can see an error from last night when my server ran out of disk 
 
 If there are errors there, first try restarting the service:
 
-```
+```shell
 sudo systemctl restart rclone_vfs
 ```
 
@@ -142,7 +143,7 @@ Now that the service is running, let’s make sure the files are showing up wher
 
 You can extract the location where the rclone_vfs service is mounting your google storage with a quick egrep command:
 
-```
+```shell
 ➜  ~ egrep -i -e "/mnt/" /etc/systemd/system/rclone_vfs.service
   google: /mnt/remote
 ExecStop=/bin/fusermount -uz /mnt/remote
@@ -152,13 +153,12 @@ You can see in that output that rclone_vfs is mounting your google: remote at /m
 
 That means that the content of your google drive should also appear at that location.  Let’s check that:
 
-```
+```shell
 ➜  ~ ls -al /mnt/remote/Media
 total 0
 drwxrwxr-x 1 seed seed 0 Dec  1  2018 Music
 drwxrwxr-x 1 seed seed 0 Mar 15  2019 Movies
 drwxrwxr-x 1 seed seed 0 Dec  1  2018 TV
-➜  ~
 ```
 
 Note that that matches the file listing from the Google Drive web UI above.
@@ -175,7 +175,7 @@ The next step is the mergerfs mount where all the apps look for your files.
 
 Just like we did with the rclone_vfs service, check the mergerfs status:
 
-```
+```shell
 ➜  ~ sudo systemctl status mergerfs.service
 ● mergerfs.service - MergerFS Mount
    Loaded: loaded (/etc/systemd/system/mergerfs.service; enabled; vendor preset: enabled)
@@ -191,7 +191,7 @@ Nov 02 06:45:24 Ubuntu-1804-bionic-64-minimal systemd[1]: Started MergerFS Mount
 
 As before, if not “`active (running)`”, you can check the mergerfs log for some clue:
 
-```
+```shell
 ➜  ~ sudo journalctl -fu mergerfs.service
 -- Logs begin at Mon 2019-08-05 16:56:44 EEST. --
 Oct 13 17:00:11 Ubuntu-1804-bionic-64-minimal systemd[1]: Starting MergerFS Mount...
@@ -210,7 +210,7 @@ Nov 02 06:45:24 Ubuntu-1804-bionic-64-minimal systemd[1]: Started MergerFS Mount
 
 If everything looks good, you can check the contents of the filesystem:
 
-```
+```shell
 ➜  ~ ls -al /mnt/unionfs/Media
 total 0
 drwxrwxr-x 1 seed seed   120 Sep 28 18:32 .
@@ -218,7 +218,6 @@ drwxrwxr-x 1 seed seed	  62 Sep 28 18:31 ..
 drwxrwxr-x 1 seed seed   338 Oct 18 20:21 Music
 drwxrwxr-x 1 seed seed    78 May  3  2019 Movies
 drwxrwxr-x 1 seed seed 28196 Nov  2 01:42 TV
-➜  ~
 ```
 
 Again, this should match all the file listings you’ve looked at so far, at least.
@@ -234,7 +233,7 @@ So at this point we know that all the layers on the host are working, so the las
 All the docker containers that need to access your media files have the relevant directories mapped inside them.  You can have a look at specifically how with the docker inspect command:
 
 
-```
+```shell
 ➜  ~ docker inspect plex | head -n 90
 [
 	{
@@ -255,7 +254,6 @@ All the docker containers that need to access your media files have the relevant
             	"/dev/shm:/dev/shm:rw"
         	],
 ...
-➜  ~
 ```
 
 I’ve trimmed some stuff out there particularly on the top].  If the “Binds” section isn’t visible, try scrolling up, or increase the “90” to display more lines.  It should be right around the same place as mine, though.
@@ -275,7 +273,7 @@ Take a look at the “`Binds`” section.  Each entry there shows a path on the 
 
 Let’s check that in Plex:
 
-```
+```shell
 ➜  ~ docker exec plex ls -al /mnt/unionfs/Media
 total 4
 drwxrwxr-x 1 plex plex   120 Sep 28 18:32 .
@@ -290,10 +288,9 @@ Again, all the same files as always.
 If that doesn’t show your files as expected, chances are something happened to the mounts while the container was running and the map has broken.  First restart the container and if that doesn’t work restart the server.
 
 
-```
+```shell
 ➜  ~ docker restart plex
 plex
-➜  ~
 ```
 
 Then try the “`docker exec plex ls -al /mnt/unionfs/Media`” command again.
@@ -304,7 +301,7 @@ Some common problems are:
 
 The log in that case will look something like this:
 
-```
+```shell
 ubuntu systemd[1]: Starting MergerFS Mount...
 Ubuntu mergerfs[10803]: fuse: mountpoint is not empty
 ubuntu mergerfs[10803]: fuse: if you are sure this is safe, use the 'nonempty' mount option
@@ -315,13 +312,13 @@ ubuntu systemd[1]: Failed to start MergerFS Mount.
 
 If you see this, rerunning the mounts tag, with or without rebuild, actually checks for non empty paths left there as part of a previous failure, and moves the folder to `/mnt/unionfs_<date>` before mounting again.
 
-```
+```shell
 sb install mounts
 ```
 
 If this is the result of something writing into that directory while the mergerfs service was down, the mounts tag won’t address it.  You’ll have to clean out `/mnt/unionfs` yourself first.
 
-## HOW DO I KNOW IF I AM USING RCLONE_VFS AND MERGERFS?
+## How do I know if I am using rclone_vfs and mergerfs?
 
 There are a few things you can look at:
 
@@ -329,7 +326,7 @@ In the following examples, you’re typing the part in blue and looking for the 
 
 Look at the settings file:
 
-```
+```shell
 ➜  saltbox git:(master) head adv_settings.yml
 ---
 System:
@@ -337,15 +334,11 @@ System:
 Mounts:
   unionfs: mergerfs     <<<< RIGHT
   remote: rclone_vfs    <<<< HERE
-Plex:
-  open_port: no
-  force_auto_adjust_quality: no
-  force_high_output_bitrates: no
-➜  cloudbox git:(master)
+...
 ```
 
 Check the status of the services
-```
+```shell
 ➜  ~ service rclone_vfs status
 ● rclone_vfs.service - Rclone VFS Mount
    Loaded: loaded (/etc/systemd/system/rclone_vfs.service; enabled; vendor preset: enabled)
@@ -363,7 +356,7 @@ If you’re not using either rclone_vfs or mergerfs you’ll see errors there in
 
 Check the filesystem behind the mounts:
 
-```
+```shell
 ➜  ~ sudo mount | egrep "remote"
 local:remote on /mnt/unionfs type fuse.mergerfs …  <<<< Mergerfs
 google: on /mnt/remote type fuse.rclone …          <<<< RClone
