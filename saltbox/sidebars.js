@@ -64,7 +64,6 @@ const sidebars = {
       items: [
         'sandbox/basics',
         'sandbox/settings',
-        'sandbox/index',
       ],
     },
     {
