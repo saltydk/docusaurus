@@ -22,7 +22,7 @@ Listed below are some common scenarios and their migration instructions.
 
 3. Install the relevant Saltbox type: [Saltbox, Mediabox, or Feederbox](/saltbox/install#install-saltbox).
 
-4. Install any extra, not-default containers you had installed previously from [Sandbox](/sandbox/index) or on your own.
+4. Install any extra, not-default containers you had installed previously from [Sandbox](/sandbox/basics) or on your own.
 
 5. Check to see if your [Plex Autoscan URL](/apps/plex-autoscan/#obtaining-the-plex-autoscan-url) has changed and update [Sonarr](/apps/sonarr), [Radarr](/apps/radarr), and [Lidarr](/apps/lidarr) accordingly, if you are using Plex Autoscan.
 
