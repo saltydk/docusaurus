@@ -1,3 +1,7 @@
+---
+title: Prowlarr
+---
+
 # Prowlarr
 
 ## What is it?

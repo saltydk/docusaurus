@@ -1,3 +1,7 @@
+---
+title: Readarr
+---
+
 # Readarr
 
 ## What is it?

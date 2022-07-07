@@ -1,3 +1,7 @@
+---
+title: Deluge
+---
+
 # Deluge
 
 ## What is it?

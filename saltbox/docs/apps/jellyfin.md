@@ -1,3 +1,7 @@
+---
+title: Jellyfin
+---
+
 # Jellyfin
 
 ## What is it?

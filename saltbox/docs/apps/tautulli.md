@@ -1,3 +1,7 @@
+---
+title: Tautulli
+---
+
 ## What is it?
 
 [Tautulli](http://tautulli.com/) (Tautulli), by JonnyWong16, is a web-based application runs alongside the Plex Media Server to monitor activity and track various statistics (eg most watched media).

@@ -1,3 +1,7 @@
+---
+title: Autoscan
+---
+
 # Autoscan
 
 ## What is it?

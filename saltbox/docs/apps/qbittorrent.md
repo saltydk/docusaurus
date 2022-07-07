@@ -1,3 +1,7 @@
+---
+title: qBittorrent
+---
+
 # qBittorrent
 
 ## What is it?

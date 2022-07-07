@@ -1,3 +1,7 @@
+---
+title: Plex Autoscan
+---
+
 # Plex Autoscan
 
 ## What is it?

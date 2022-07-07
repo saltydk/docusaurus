@@ -1,3 +1,7 @@
+---
+title: Hetzner NFS VLAN
+---
+
 # Hetzner NFS VLAN
 
 ## What is it?

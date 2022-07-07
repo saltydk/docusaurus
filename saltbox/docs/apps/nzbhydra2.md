@@ -1,3 +1,7 @@
+---
+title: NZBHydra2
+---
+
 THIS PAGE HAS NOT BEEN FULLY UPDATED FOR SALTBOX
 
 ## What is it?

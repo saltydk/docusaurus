@@ -1,3 +1,7 @@
+---
+title: ASSHAMA
+---
+
 # Absolute Series Scanner and HAMA role for anime.
 
 ## What is it?
