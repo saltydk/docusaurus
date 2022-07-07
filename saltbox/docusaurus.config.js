@@ -113,7 +113,7 @@ const config = {
         },
       },
       prism: {
-        theme: require('prism-react-renderer/themes/github'),
+        theme: require('prism-react-renderer/themes/oceanicNext'),
         darkTheme: require('prism-react-renderer/themes/oceanicNext'),
         additionalLanguages: ['shell-session'],
       },
