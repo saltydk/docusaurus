@@ -2,11 +2,14 @@
 title: Settings
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Configuration
 
 The configuration file for backup/restore is called `backup_config.yml` and is located in `/srv/git/saltbox`
 
-``` { .yaml .annotate }
+```yaml title="backup_config.yml"
 ---
 backup:
   local:
@@ -29,64 +32,82 @@ backup:
     snapshot: true # (12)
 ```
 
-1. Toggle for keeping a local copy of the backup.
+:::tip Explanations
+<Tabs>
+<TabItem value="local enable" label="1" default>
+Toggle for keeping a local copy of the backup.
 
-    Options are: `true` or `false`
+Options are: `true` or `false`
+</TabItem>
+<TabItem value="local destination" label="2">
+Path used for the local backups.
+</TabItem>
+<TabItem value="rclone enable" label="3">
+Toggle for using Rclone remote backup storage.
 
-2. Path used for the local backups.
+Options are: `true` or `false`
+</TabItem>
+<TabItem value="rclone destination" label="4">
+Path used for the Rclone remote. Backups outside of the most recent one will be located in the `archived` folder.
 
-3. Toggle for using Rclone remote backup storage.
+Make sure that this path is unique if you run multiple instances of Saltbox.
+</TabItem>
+<TabItem value="rsync enable" label="5">
+Toggle for using Rsync backups.
 
-    Options are: `true` or `false`
+Options are: `true` or `false`
+</TabItem>
+<TabItem value="rsync destination" label="6">
+Path used for the Rsync backups.
+</TabItem>
+<TabItem value="rsync port" label="7">
+Port used by rsync on the target server.
+</TabItem>
+<TabItem value="cron cron_time" label="8">
+Schedule for when the backup task will be executed.
 
-4. Path used for the Rclone remote. Backups outside of the most recent one will be located in the `archived` folder.
-    
-    Make sure that this path is unique if you run multiple instances of Saltbox.
+Options are: `reboot`, `yearly`, `annually`, `monthly`, `weekly`, `daily`, `hourly`.
 
-5. Toggle for using Rsync backups.
+Should you desire more granular control over the schedule you can edit the crontab for the Saltbox user once setup.
+</TabItem>
+<TabItem value="cron enable" label="9">
+Toggle for enabling automatic backups.
 
-    Options are: `true` or `false`
+Options are: `no` or `yes`
 
-6. Path used for the Rsync backups.
+Depending on the option set here the cron entry created by Saltbox will be added, removed or modified.
+</TabItem>
+<TabItem value="restore_service user" label="10">
+Username used for the restore service.
 
-7. Port used by rsync on the target server.
+Has to be unique across all users of the service. Try sticking with a url for the server `box.domain.tld` unique to each server for something easily remembered.
 
-8. Schedule for when the backup task will be executed.
+Usernames are hashed before requests are sent to the restore service.
+</TabItem>
+<TabItem value="restore_service pass" label="11">
+Password used encrypt/decrypt the configuration files. 
 
-    Options are: `reboot`, `yearly`, `annually`, `monthly`, `weekly`, `daily`, `hourly`.
+Only used on the client side in scripts.
+</TabItem>
+<TabItem value="misc snapshot" label="12">
+Toggle for BTRFS snaphots.
 
-    Should you desire more granular control over the schedule you can edit the crontab for the Saltbox user once setup.
+Options are: `true` or `false`
 
-9. Toggle for enabling automatic backups.
+Requires BTRFS on `/` or `/opt`
+</TabItem>
+</Tabs>
+:::
 
-    Options are: `no` or `yes`
-
-    Depending on the option set here the cron entry created by Saltbox will be added, removed or modified.
-
-10. Username used for the restore service.
-
-    Has to be unique across all users of the service. Try sticking with a url for the server `box.domain.tld` unique to each server for something easily remembered.
-
-    Usernames are hashed before requests are sent to the restore service.
-
-11. Password used encrypt/decrypt the configuration files. 
-
-    Only used on the client side in scripts.
-
-12. Toggle for BTRFS snaphots.
-
-    Options are: `true` or `false`
-
-    Requires BTRFS on `/` or `/opt`
 
 IMPORTANT:
 
 These values:
 
-```yml
+```yaml
   restore_service:
-    user: # 
-    pass: # 
+    user: 
+    pass: 
  ```
 
 SHOULD NOT BE YOUR SERVER ACCOUNT CREDENTIALS.

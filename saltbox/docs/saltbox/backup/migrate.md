@@ -60,12 +60,12 @@ Listed below are some common scenarios and their migration instructions.
 
     - `/opt/plex_patrol/settings.ini` (only if installed)
 
-3. Install the relevant Saltbox type: [Saltbox, Mediabox, or Feederbox](/saltbox/install#install-saltbox).
+6. Install the relevant Saltbox type: [Saltbox, Mediabox, or Feederbox](/saltbox/install#install-saltbox).
 
 7. Install any extra, not-default containers you had installed previously from [Sandbox](/sandbox/basics) or on your own.
 
-5. Check to see if your [Plex Autoscan URL](/apps/plex-autoscan/#obtaining-the-plex-autoscan-url) has changed and update [Sonarr](/apps/sonarr), [Radarr](/apps/radarr), and [Lidarr](/apps/lidarr) accordingly, if you are using Plex Autoscan.
-6.
+8. Check to see if your [Plex Autoscan URL](/apps/plex-autoscan/#obtaining-the-plex-autoscan-url) has changed and update [Sonarr](/apps/sonarr), [Radarr](/apps/radarr), and [Lidarr](/apps/lidarr) accordingly, if you are using Plex Autoscan.
+
 ## Keep Saltbox on the Same Server but Change the Domain Name
 
 1. [Back up](/saltbox/backup) your current Saltbox server.
@@ -94,10 +94,8 @@ Listed below are some common scenarios and their migration instructions.
 
     - `/opt/plex_patrol/settings.ini` (only if installed)
 
-3. Install the relevant Saltbox type: [Saltbox, Mediabox, or Feederbox](/saltbox/install#install-saltbox).
+6. Install the relevant Saltbox type: [Saltbox, Mediabox, or Feederbox](/saltbox/install#install-saltbox).
 
 7. Install any extra, not-default containers you had installed previously from [Sandbox](/sandbox/basics) or on your own.
 
-5. Check to see if your [Plex Autoscan URL](/apps/plex-autoscan#obtaining-the-plex-autoscan-url) has changed and update [Sonarr](/apps/sonarr), [Radarr](/apps/radarr), and [Lidarr](/apps/lidarr) accordingly, if you are using Plex Autoscan.
-
----
+8. Check to see if your [Plex Autoscan URL](/apps/plex-autoscan#obtaining-the-plex-autoscan-url) has changed and update [Sonarr](/apps/sonarr), [Radarr](/apps/radarr), and [Lidarr](/apps/lidarr) accordingly, if you are using Plex Autoscan.

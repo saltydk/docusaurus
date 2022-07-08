@@ -16,7 +16,7 @@ title: Basics
 
 ### Custom Domains
 
-- Have your server setup behind your own domain, securely (e.g. https://apps.yourdomain.com).
+- Have your server setup behind your own domain, securely (e.g. `https://apps.yourdomain.com`).
 
 ### Fast Deployment
 

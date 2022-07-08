@@ -2,56 +2,81 @@
 title: Restore
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Restore
 
-!!! info
-    Just like the initial install, these instructions are assuming you are running as `root` until told otherwise below.
+:::caution
+Just like the initial install, these instructions are assuming you are running as `root` until told otherwise below.
+:::
 
 ## Dependencies
 
 Start by installing dependencies.
 
-=== "curl"
-    ```shell
-    curl -sL https://install.saltbox.dev | sudo -H bash; cd /srv/git/saltbox
-    ```
+<Tabs>
+<TabItem value="curl" label="curl" default>
 
-=== "wget"
-    ```shell
-    wget -qO- https://install.saltbox.dev | sudo -H bash; cd /srv/git/saltbox
-    ```
+```shell
+curl -sL https://install.saltbox.dev | sudo -H bash; cd /srv/git/saltbox
+```
 
-=== "curl (verbose)"
-    ```shell
-    curl -sL https://install.saltbox.dev | sudo -H bash -s -- -v; cd /srv/git/saltbox
-    ```
+</TabItem>
+<TabItem value="wget" label="wget">
 
-=== "wget (verbose)"
-    ```shell
-    wget -qO- https://install.saltbox.dev | sudo -H bash -s -- -v; cd /srv/git/saltbox
-    ```
+```shell
+wget -qO- https://install.saltbox.dev | sudo -H bash; cd /srv/git/saltbox
+```
+
+</TabItem>
+<TabItem value="curl (verbose)" label="curl (verbose)">
+
+```shell
+curl -sL https://install.saltbox.dev | sudo -H bash -s -- -v; cd /srv/git/saltbox
+```
+
+</TabItem>
+<TabItem value="wget (verbose)" label="wget (verbose)">
+
+```shell
+wget -qO- https://install.saltbox.dev | sudo -H bash -s -- -v; cd /srv/git/saltbox
+```
+
+</TabItem>
+</Tabs>
 
 Then retrieve the configuration files from a backup.
 
 ## Using Restore Service
 
-=== "curl"
-    ```shell
-    curl -sL https://restore.saltbox.dev | bash -s 'USERNAME' 'PASSWORD' # (1)!
-    ```
+<Tabs>
+<TabItem value="curl" label="curl" default>
 
-    1. Use the username and password defined for the service when last backup was executed.
+```shell
+curl -sL https://restore.saltbox.dev | bash -s 'USERNAME' 'PASSWORD' # (1)
+```
 
-        Must wrap the username and password in quotes.
+</TabItem>
+<TabItem value="wget" label="wget">
 
-=== "wget"
-    ```shell
-    wget -qO- https://restore.saltbox.dev | bash -s 'USERNAME' 'PASSWORD' # (1)!
-    ```
+```shell
+wget -qO- https://restore.saltbox.dev | bash -s 'USERNAME' 'PASSWORD' # (1)
+```
 
-    1. Use the username and password defined for the service when last backup was executed.
+</TabItem>
+</Tabs>
 
-        Must wrap the username and password in quotes.
+:::tip Explanations
+<Tabs>
+<TabItem value="restore service" label="1" default>
+Use the username and password defined for the service when last backup was executed.
+
+Must wrap the username and password in quotes.
+</TabItem>
+</Tabs>
+:::
+
 
 Then run `preinstall` which will setup the user account and a few other dependencies for the restore.
 
@@ -59,11 +84,13 @@ Then run `preinstall` which will setup the user account and a few other dependen
 sb install preinstall
 ```
 
-!!!info
-    From this point you'll want to make sure you run commands as the user specified in the accounts.yml
+:::caution
+From this point you'll want to make sure you run commands as the user specified in the accounts.yml
 
-!!!info
-    If you are using a service account to authenticate the rclone remote that holds the backup, you will need to put that SA JSON file in place manually so that the restore process can authenticate the remote to download the rest of the backup.
+
+:::info
+If you are using a service account to authenticate the rclone remote that holds the backup, you will need to put that SA JSON file in place manually so that the restore process can authenticate the remote to download the rest of the backup.
+:::
 
 Start the restore process.
 
@@ -92,11 +119,13 @@ Then run `preinstall` which will setup the user account and a few other dependen
 sb install preinstall
 ```
 
-!!! info
-    From this point you'll want to make sure you run commands as the user specified in the accounts.yml
+:::caution
+From this point you'll want to make sure you run commands as the user specified in the accounts.yml
+:::
 
-!!! info
-    If you are using a service account to authenticate the rclone remote that holds the backup, you will need to put that SA JSON file in place manually so that the restore process can authenticate the remote to download the rest of the backup.
+:::info
+If you are using a service account to authenticate the rclone remote that holds the backup, you will need to put that SA JSON file in place manually so that the restore process can authenticate the remote to download the rest of the backup.
+:::
 
 Start the restore process.
 

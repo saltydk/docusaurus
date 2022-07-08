@@ -6,10 +6,8 @@ title: Update
 
 To update Saltbox run:
 
-``` shell
-
+```shell
 sb update
-
 ```
 
 This will also upgrade Ansible as needed and migrate the configuration files as additional options are added over time.
@@ -22,20 +20,16 @@ For example, if a new feature is added to saltbox, `sb update` will get that new
 
 Generally, to update individual applications, run the tag for that application.  For example,
 
-``` shell
-
+```shell
 sb install radarr
-
 ```
 
 This will retrieve the current version of the radarr image and recreate the container, which will update the application version.
 
 The same thing happens if you run one of the top-level tags:
 
-``` shell
-
+```shell
 sb install saltbox
-
 ```
 
 This will do as above for *all* the containers installed by the `saltbox` tag.

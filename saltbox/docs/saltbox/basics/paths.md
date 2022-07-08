@@ -26,12 +26,12 @@ Media
   ![](/images/google-drive-filesystem.png)
 
 
-| Path                                    | Description                                                                                                                                                                                                                                                          |
-|:---------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `/Media/`     | Location of all your media folders.                                                                                                                         |
-| `/Media/Movies/` | Location of all your movies (folder format: `/Media/Movies/Movie Name (year)/movie file.ext`).                                                                                                  |
-| `/Media/Music/` | Location of all your music.                                 |
-| `/Media/TV/`   | Location of all your TV shows (folder format: `/Media/TV/TV Show Name/Season 00/episode file.ext`). |
+| Path             | Description                                                                                         |
+|:-----------------|:----------------------------------------------------------------------------------------------------|
+| `/Media/`        | Location of all your media folders.                                                                 |
+| `/Media/Movies/` | Location of all your movies (folder format: `/Media/Movies/Movie Name (year)/movie file.ext`).      |
+| `/Media/Music/`  | Location of all your music.                                                                         |
+| `/Media/TV/`     | Location of all your TV shows (folder format: `/Media/TV/TV Show Name/Season 00/episode file.ext`). |
 
 _Note: If you would like to customize your Plex libraries differently, see [Customizing Plex Libraries](/reference/customizing-plex-libs)._
 
@@ -50,19 +50,19 @@ mnt
 
 ### Media
 
-|                   Path                   |                                                                                                   Description                                                                                                                                                            |
-|:---------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `/mnt/local/Media/`     | Location of media stored on the server. This is the local part of `/mnt/unionfs/Media/`.                                                                                                                        |
-| `/mnt/remote/Media/` | Location of media stored on Google Drive (mounted by rclone).                                                                                                  |
-| `/mnt/unionfs/Media/`   | Combined folder of local media (`/mnt/local/Media/`) and online media (`/mnt/remote/Media/`). This is the folder that Plex, Sonarr, and Radarr read when scanning for media.|
+| Path                  | Description                                                                                                                                                                  |
+|:----------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `/mnt/local/Media/`   | Location of media stored on the server. This is the local part of `/mnt/unionfs/Media/`.                                                                                     |
+| `/mnt/remote/Media/`  | Location of media stored on Google Drive (mounted by rclone).                                                                                                                |
+| `/mnt/unionfs/Media/` | Combined folder of local media (`/mnt/local/Media/`) and online media (`/mnt/remote/Media/`). This is the folder that Plex, Sonarr, and Radarr read when scanning for media. |
+
 
 _Note: Make sure `/mnt/local/` has enough space to store the imported media (before cloudplow is able to move it to Google Drive)._
 
 ### Cloudplow
 
-
-| Path                                | Description                                                                                                                                                                                                        |
-|:------------------ |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Path                | Description                                                                                                                                                                                                                                |
+|:--------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `/mnt/local/Media/` | Location of media stored on the server. Size of this path is checked periodically (default 30 min). When the folder size reaches its target (default 200GB), media files are moved off/uploaded to the cloud, freeing up local disk space. |
 
 _Note: For more info, see the [Cloudplow](/reference/cloudplow) page._
@@ -79,11 +79,9 @@ _Note: It is advised to leave at least 100GB free on `/opt` for the storage of D
 
 ### Any container that requires disk access
 
-
-| Docker Path                     | Host Path                                    | Description                                       |
-|:-------------- |:--------------------------- |:---------------------------- |
-| `/mnt` | `/mnt` | Provides access to all standard mounted storage.   |
-
+| Docker Path | Host Path | Description                                      |
+|:------------|:----------|:-------------------------------------------------|
+| `/mnt`      | `/mnt`    | Provides access to all standard mounted storage. |
 
 Every container sees any path inside `/mnt` the same as the host and same as any other container.
 
@@ -91,50 +89,45 @@ That means that no path translation is required from context to context.  If nzb
 
 ### Plex
 
-
-| Docker Path                     | Host Path                                    | Description                                       |
-|:-------------- |:--------------------------- |:---------------------------- |
+| Docker Path                  | Host Path                    | Description                   |
+|:-----------------------------|:-----------------------------|:------------------------------|
 | `/mnt/unionfs/Media/Movies/` | `/mnt/unionfs/Media/Movies/` | Plex reads this for Movies.   |
-| `/mnt/unionfs/Media/TV/`     | `/mnt/unionfs/Media/TV/`    | Plex reads this for TV Shows. |
-| `/mnt/unionfs/Media/Music/`   | `/mnt/unionfs/Media/Music/`     | Plex reads this for Music. |
+| `/mnt/unionfs/Media/TV/`     | `/mnt/unionfs/Media/TV/`     | Plex reads this for TV Shows. |
+| `/mnt/unionfs/Media/Music/`  | `/mnt/unionfs/Media/Music/`  | Plex reads this for Music.    |
+
 
 
 ### Sonarr
 
+| Docker Path                        | Host Path                                  | Description                                                                                                                                                                                                                                                                               |
+|:-----------------------------------|:-------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `/mnt/unionfs/Media/TV/`           | `/mnt/unionfs/Media/TV/`                   | Sonarr will import to `/tv/`, which is actually `/mnt/unionfs/Media/TV/` on host system.                                                                                                                                                                                                  |
+| `/mnt/unionfs/downloads/nzbs/`     | `/mnt/local/downloads/nzbs/` (default)     | NZB downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  For example, when using NZBGet, Sonarr will import from `/mnt/unionfs/downloads/nzbs/nzbget/`, which is essentially `/mnt/local/downloads/nzbs/nzbget/` on host system.                      |
+| `/mnt/unionfs/downloads/torrents/` | `/mnt/local/downloads/torrents/` (default) | Torrent downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  For example, when using ruTorrent, Sonarr will import from `/mnt/unionfs/downloads/torrents/rutorrent/`, which is essentially `/mnt/local/downloads/torrents/rutorrent/` on host system. |
 
-| Docker Path                             | Host Path                                                              | Description                                                                                                                                                                                                                              |
-|:---------------------- |:--------------------------------- |:--------------------------------------------------------------------------- |
-| `/mnt/unionfs/Media/TV/`              | `/mnt/unionfs/Media/TV/`       | Sonarr will import to `/tv/`, which is actually `/mnt/unionfs/Media/TV/` on host system. |
-| `/mnt/unionfs/downloads/nzbs/`    | `/mnt/local/downloads/nzbs/` (default) | NZB downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  For example, when using NZBGet, Sonarr will import from `/mnt/unionfs/downloads/nzbs/nzbget/`, which is essentially `/mnt/local/downloads/nzbs/nzbget/` on host system.                          |
-| `/mnt/unionfs/downloads/torrents/` | `/mnt/local/downloads/torrents/` (default) | Torrent downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  For example, when using ruTorrent, Sonarr will import from `/mnt/unionfs/downloads/torrents/rutorrent/`, which is essentially `/mnt/local/downloads/torrents/rutorrent/` on host system.                     |
 
 
 ### Radarr
 
-
-| Docker Path                             | Host Path                                                              | Description                                                                                                                                                                                                                              |
-|:---------------------- |:--------------------------------- |:--------------------------------------------------------------------------- |
-| `/mnt/unionfs/Media/movies/`              | `/mnt/unionfs/Media/Movies/`       | Radarr will import to `/movies/`, which is actually `/mnt/unionfs/Media/Movies/` on host system. |
-| `/mnt/unionfs/downloads/nzbs/`    | `/mnt/local/downloads/nzbs/` (default) | NZB downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  For example, when using NZBGet, Radarr will import from `/mnt/unionfs/downloads/nzbs/nzbget/`, which is essentially `/mnt/local/downloads/nzbs/nzbget/` on host system.                          |
-| `/mnt/unionfs/downloads/torrents/` | `/mnt/local/downloads/torrents/` (default) | Torrent downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  For example, when using ruTorrent, Radarr will import from `/mnt/unionfs/downloads/torrents/rutorrent/`, which is essentially `/mnt/local/downloads/torrents/rutorrent/` on host system.                     |
+| Docker Path                        | Host Path                                  | Description                                                                                                                                                                                                                                                                               |
+|:-----------------------------------|:-------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `/mnt/unionfs/Media/movies/`       | `/mnt/unionfs/Media/Movies/`               | Radarr will import to `/movies/`, which is actually `/mnt/unionfs/Media/Movies/` on host system.                                                                                                                                                                                          |
+| `/mnt/unionfs/downloads/nzbs/`     | `/mnt/local/downloads/nzbs/` (default)     | NZB downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  For example, when using NZBGet, Radarr will import from `/mnt/unionfs/downloads/nzbs/nzbget/`, which is essentially `/mnt/local/downloads/nzbs/nzbget/` on host system.                      |
+| `/mnt/unionfs/downloads/torrents/` | `/mnt/local/downloads/torrents/` (default) | Torrent downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  For example, when using ruTorrent, Radarr will import from `/mnt/unionfs/downloads/torrents/rutorrent/`, which is essentially `/mnt/local/downloads/torrents/rutorrent/` on host system. |
 
 ### Lidarr
 
-
-| Docker Path            | Host Path                        | Description                                                                |
-|:---------------------- |:--------------------------------- |:--------------------------------------------------------------------------- |
-| `/mnt/unionfs/Media/Music/`              | `/mnt/unionfs/Media/Music/`       | Lidarr will import to `/music/`, which is actually `/mnt/unionfs/Media/Music/` on host system. |
-| `/mnt/unionfs/downloads/nzbs/`    | `/mnt/local/downloads/nzbs/` (default) | NZB downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  For example, when using NZBGet, Lidarr will import from `/mnt/unionfs/downloads/nzbs/nzbget/`, which is essentially `/mnt/local/downloads/nzbs/nzbget/` on host system.                          |
-| `/mnt/unionfs/downloads/torrents/` | `/mnt/local/downloads/torrents/` (default) | Torrent downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  For example, when using ruTorrent, Lidarr will import from `/mnt/unionfs/downloads/torrents/rutorrent/`, which is essentially `/mnt/local/downloads/torrents/rutorrent/` on host system.                     |
+| Docker Path                        | Host Path                                  | Description                                                                                                                                                                                                                                                                               |
+|:-----------------------------------|:-------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `/mnt/unionfs/Media/Music/`        | `/mnt/unionfs/Media/Music/`                | Lidarr will import to `/music/`, which is actually `/mnt/unionfs/Media/Music/` on host system.                                                                                                                                                                                            |
+| `/mnt/unionfs/downloads/nzbs/`     | `/mnt/local/downloads/nzbs/` (default)     | NZB downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  For example, when using NZBGet, Lidarr will import from `/mnt/unionfs/downloads/nzbs/nzbget/`, which is essentially `/mnt/local/downloads/nzbs/nzbget/` on host system.                      |
+| `/mnt/unionfs/downloads/torrents/` | `/mnt/local/downloads/torrents/` (default) | Torrent downloads folder as set in [settings.yml](/reference/accounts#options-in-settingsyml)).  For example, when using ruTorrent, Lidarr will import from `/mnt/unionfs/downloads/torrents/rutorrent/`, which is essentially `/mnt/local/downloads/torrents/rutorrent/` on host system. |
 
 ### Tautulli
 
 
-| Docker Path    | Host Path                        | Description                                                                |
-|:-------------- |:-------------------------------------------------------------- |:------------------------------------- |
-| `/logs/`       | `/opt/plex/Library/Application Support/Plex Media Server/Logs/`| Location of the Plex logs used by Tautulli.  |
-
-
----
+| Docker Path | Host Path                                                       | Description                                 |
+|:------------|:----------------------------------------------------------------|:--------------------------------------------|
+| `/logs/`    | `/opt/plex/Library/Application Support/Plex Media Server/Logs/` | Location of the Plex logs used by Tautulli. |
 
 Next, let's discuss the [inventory](/saltbox/inventory/index) system for customization.

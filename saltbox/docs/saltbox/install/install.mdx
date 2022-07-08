@@ -30,21 +30,21 @@ curl -sL https://install.saltbox.dev | sudo -H bash; cd /srv/git/saltbox
 ```
 
 </TabItem>
-<TabItem value="wget" label="wget" default>
+<TabItem value="wget" label="wget">
 
 ```shell
 wget -qO- https://install.saltbox.dev | sudo -H bash; cd /srv/git/saltbox
 ```
 
 </TabItem>
-<TabItem value="curl (verbose)" label="curl" default>
+<TabItem value="curl (verbose)" label="curl (verbose)">
 
 ```shell
 curl -sL https://install.saltbox.dev | sudo -H bash -s -- -v; cd /srv/git/saltbox
 ```
 
 </TabItem>
-<TabItem value="wget (verbose)" label="wget" default>
+<TabItem value="wget (verbose)" label="wget (verbose)">
 
 ```shell
 wget -qO- https://install.saltbox.dev | sudo -H bash -s -- -v; cd /srv/git/saltbox
@@ -59,11 +59,11 @@ See [here](/reference/dependencies) for more information about the dependencies.
 
 ## Configuration
 
+:::caution
+This section assumes you are running the commands listed as root until told otherwise
+:::
+
 Make sure you fill out the following configuration files before proceeding. Each file will be located in `/srv/git/saltbox`
-
-### accounts.yml
-
-To edit [assuming you are still logged in as `root`]:
 
 ```shell
 nano /srv/git/saltbox/accounts.yml
@@ -139,10 +139,6 @@ apprise url. See their [docs](https://github.com/caronc/apprise#popular-notifica
 </TabItem>
 </Tabs>
 :::
-
-### settings.yml
-
-To edit [assuming you are still logged in as `root`]:
 
 ```shell
 nano /srv/git/saltbox/settings.yml
