@@ -94,6 +94,7 @@ apprise: # (12)
 :::tip Explanations
 <Tabs>
 <TabItem value="username" label="1" default>
+
 Username that will be created (if it doesn't exist) during the installation and apps that have automatic user configuration.
 
 Do not use root.
@@ -101,41 +102,59 @@ Do not use root.
 Required.
 </TabItem>
 <TabItem value="user password" label="2">
+
 Password used for username account during the installation and apps that have automatic user configuration.
 
 Required.
 </TabItem>
 <TabItem value="user domain" label="3">
+
 Domain that you want to use for the server.
+
 </TabItem>
 <TabItem value="user email" label="4">
+
 Email address used for Let's Encrypt SSL certificates.
 
 Required.
 </TabItem>
 <TabItem value="cloudflare email" label="5">
+
 Email used for the Cloudflare account.
+
 </TabItem>
 <TabItem value="cloudflare apikey" label="6">
+
 Cloudflare Global API Key.
+
 </TabItem>
 <TabItem value="plex username" label="7">
+
 Plex.tv username or email address on the account.
+
 </TabItem>
 <TabItem value="plex password" label="8">
+
 Plex.tv password for the account.
+
 </TabItem>
 <TabItem value="plex 2fa status" label="9">
+
 Enable if you want to use the Two Factor Authentication [TFA] compatible Plex account login.
+
 </TabItem>
 <TabItem value="dockerhub username" label="10">
+
 Docker Hub account name. Entering these credentials will at least double your image pull capacity from 100 every 6 hours to [200](https://www.docker.com/blog/checking-your-current-docker-pull-rate-limits-and-status/).
+
 </TabItem>
 <TabItem value="dockerhub token" label="11">
 Docker Hub account token
 </TabItem>
 <TabItem value="apprise endpoint" label="12">
-apprise url. See their [docs](https://github.com/caronc/apprise#popular-notification-services) for more information.
+
+Apprise url. See their [docs](https://github.com/caronc/apprise#popular-notification-services) for more information.
+
 </TabItem>
 </Tabs>
 :::
