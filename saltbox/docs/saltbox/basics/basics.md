@@ -9,7 +9,7 @@ title: Basics
 
 - Primary functions are: the automatic acquisition of media, storing that media on the cloud, and being able to  play it back from anywhere and from any device.
 
-- NOTE: Saltbox does not have a dashboard or GUI of its own. All Saltbox-specific setup and commands are done on the linux command-line.
+- NOTE: Saltbox does not have a dashboard or GUI of its own. All Saltbox-specific setup and commands are done using the Linux command-line.
 
 
 ## Why use Saltbox?
@@ -60,31 +60,35 @@ title: Basics
 
 ## How does Saltbox function?
 
-[Sonarr](https://sonarr.tv/) manages downloading your favorite TV Shows and [Radarr](https://radarr.video/) manages downloading your favorite movies. Both use either Usenet (via [NZBGet](https://nzbget.net/)) and/or Torrents (via [ruTorrent](https://github.com/Novik/ruTorrent)) to do this.<sup name="a1">[\[1\]](#f1) </sup><sup name="a2">[\[2\]](#f2)</sup>
+[Sonarr](https://sonarr.tv/) manages downloading your favorite TV Shows and [Radarr](https://radarr.video/) manages downloading your favorite movies. Both use either Usenet (via [NZBGet](https://nzbget.net/)) and/or Torrents (via [ruTorrent](https://github.com/Novik/ruTorrent)) to do this.[^1][^2]
 
-Once the downloads are complete, Sonarr & Radarr will move [or copy in the case of torrents] these downloads to your server's `/mnt/local/Media/` folder<sup name="a3">[\[3\]](#f3) </sup> and send a notification to _Autoscan_.
+Once the downloads are complete, Sonarr & Radarr will move [or copy in the case of torrents] these downloads to your server's `/mnt/local/Media/` folder[^3] and send a notification to _Autoscan_.
 
 [AutoScan](https://github.com/cloudbox/autoscan/) will, in turn, tell Plex to scan for the newly downloaded TV Show or Movie, by only scanning the specific season or movie folder. This will
 
   - make the media appear in Plex sooner than what a full library scan would have been able to do, and
   - reduce the chances of Cloud Storage API bans for excessive activity.
 
-[Cloudplow](https://github.com/Saltbox/Saltbox/wiki/Cloudplow) will eventually<sup name="a4">[\[4\]](#f4) </sup> move everything<sup name="a5">[\[5\]](#f5) </sup> from `/mnt/local/Media/` to a folder named `Media` on the remote cloud storage, thereby reducing the storage used on the (local) server.
+[Cloudplow](https://github.com/Saltbox/Saltbox/wiki/Cloudplow) will eventually[^4] move everything[^5] from `/mnt/local/Media/` to a folder named `Media` on the remote cloud storage, thereby reducing the storage used on the (local) server.
 
 During this migration, the media files will continue to be accessible to Media Servers (e.g. Plex) because the remote cloud storage (e.g. Google Drive) will be mounted on to the server as if it were a local drive. This is accomplished with an [Rclone](https://rclone.org/) VFS mount pointing to the cloud storage, and a union of that mount with the server’s own local storage (accomplished via [`mergerfs`](https://github.com/trapexit/mergerfs)).
 
 ![](/images/basics-flowchart.png)
 
-***
+[^1]: Some of the applications above can be replaced with similar apps.
 
-<sup><b name="f1">[1](#a1)</b> Some of the applications above can be replaced with similar apps. </sup>
+[^2]: If you want to use Torrents, it is recommended to be a member of a private tracker vs using public ones.
 
-<sup><b name="f2">[2](#a2)</b> If you want to use Torrents, it is recommended to be a member of a private tracker vs using public ones. If you want to to use Usenet, you will need to purchase Usenet provider service (or multiple services) and also be a member of one or more Usenet indexers. </sup>
+      If you want to to use Usenet, you will need to purchase Usenet provider service (or multiple services) and also be a member of one or more Usenet indexers.
 
-<sup><b name="f3">[3](#a3)</b> The move to `/mnt/local/Media` is indirect; Radarr/Sonarr are using `/mnt/unionfs/Media`, and they move the file *there*, however,  `/mnt/local` is the only *writeable* part of the mergerfs [for the purpose of  creating new files], so the newly-written files will be placed in `/mnt/local`. </sup>
+[^3]: The move to `/mnt/local/Media` is indirect; Radarr/Sonarr are using `/mnt/unionfs/Media`, and they move the file *there*, however, `/mnt/local` is the only *writeable* part of the mergerfs [for the purpose of  creating new files], so the newly-written files will be placed in `/mnt/local`.
 
-<sup><b name="f4">[4](#a4)</b> By default, Cloudplow will check every half hour to see if there is 200GB of data staged in `/mnt/local`; if there is, all that data is pushed to your Google Drive.  This threshold can be adjusted as needed in the Cloudplow config. </sup>
+[^4]: By default, Cloudplow will check every half hour to see if there is 200GB of data staged in `/mnt/local`; if there is, all that data is pushed to your Google Drive. This threshold can be adjusted as needed in the Cloudplow config.
 
-<sup><b name="f5">[5](#a5)</b> There is presently a 750GB/day upload limitation on Google accounts.  The standard Saltbox setup will describe setting up a Google Drive remote pointed at your My Drive.  This limit can be eliminated by cycling through a set of service accounts [each of which can upload 750GB] to upload to one or more Shared Drives [aka Teamdrives].  See [Tip44 Doc](/reference/guides/chazguides/tip44) for details.  </sup>
+[^5]: There is presently a 750GB/day upload limitation on Google accounts.
+
+      The standard Saltbox setup will describe setting up a Google Drive remote pointed at your My Drive.
+
+      This limit can be eliminated by cycling through a set of service accounts [each of which can upload 750GB] to upload to one or more Shared Drives [aka Teamdrives].  See [Tip44 Doc](/reference/guides/chazguides/tip44) for details.
 
 Next, let's discuss the [Prerequisites](/saltbox/prerequisites) for Saltbox installation.
