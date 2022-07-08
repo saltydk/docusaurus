@@ -179,30 +179,42 @@ authelia:
 :::tip Explanations
 <Tabs>
 <TabItem value="downloads" label="1" default>
+
 Folder used for downloads.
+
 </TabItem>
 <TabItem value="rclone version" label="2">
+
 Rclone version that Saltbox will install.
 
 Valid options are **latest**, **beta** or a specific version (**1.55**).
+
 </TabItem>
 <TabItem value="rclone remote" label="3">
+
 Name of the rclone remote that Saltbox will mount by default and use in any automated configuration.
 
 Optional - Leave empty to avoid remote mount setup.
+
 </TabItem>
 <TabItem value="shell" label="4">
+
 Shell used by the system. Valid options are bash or zsh.
+
 </TabItem>
 <TabItem value="authelia master" label="5">
+
 If the current server should have Authelia installed or use one installed elsewhere.
+
 </TabItem>
 <TabItem value="authelia subdomain" label="6">
+
 Subdomain used for Authelia.
 
 Use different values here when using a Mediabox + Feederbox setup if deploying multiple Authelia instances.
 
 On a Feederbox where you want to use Authelia on the Mediabox just put in the same subdomain the Mediabox uses for Authelia (master having been set to no on the Feederbox).
+
 </TabItem>
 </Tabs>
 :::
